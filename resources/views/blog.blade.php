@@ -19,7 +19,7 @@
 <body>
 
     <!--================Header Menu Area =================-->
-    <header class="header_area">    
+    <header class="header_area">
         <div class="main_menu">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container">
@@ -33,25 +33,25 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav ml-auto">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li> 
-                            <li class="nav-item"><a class="nav-link" href="feature.html">Features</a></li> 
-                            <li class="nav-item"><a class="nav-link" href="price.html">Price</a></li>     
+                            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="feature">Features</a></li>
+                            <li class="nav-item"><a class="nav-link" href="price">Price</a></li>
                             <li class="nav-item submenu dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
                                 <ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="nav-link" href="feature.html">Features</a></li> 
-                                    <li class="nav-item"><a class="nav-link" href="price.html">Price</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="element.html">Element</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="feature">Features</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="price">Price</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="element">Element</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item submenu dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
                                 <ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="blog">Blog</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="single-blog">Blog Details</a></li>
                                 </ul>
-                            </li> 
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="contact">Contact</a></li>
                         </ul>
                     </div>
                     <div class="right-button">
@@ -59,7 +59,7 @@
                             <li class="shop-icon"><a href="#"><i class="ti-shopping-cart-full"></i><span>0</span></a></li>
                             <li><a class="sign_up" href="">Sign Up</a></li>
                         </ul>
-                    </div> 
+                    </div>
                 </div>
             </nav>
         </div>
@@ -96,7 +96,7 @@
                             <p>Jan</p>
                           </a>
                         </div>
-                        
+
                         <div class="blog_details">
                             <a class="d-inline-block" href="single-blog.html">
                                 <h2>Google inks pact for new 35-storey office</h2>
@@ -108,7 +108,7 @@
                             </ul>
                         </div>
                       </article>
-                      
+
                       <article class="blog_item">
                         <div class="blog_item_img">
                           <img class="card-img rounded-0" src="img/blog/main-blog/m-blog-2.jpg" alt="">
@@ -117,7 +117,7 @@
                             <p>Jan</p>
                           </a>
                         </div>
-                        
+
                         <div class="blog_details">
                             <a class="d-inline-block" href="single-blog.html">
                                 <h2>Google inks pact for new 35-storey office</h2>
@@ -138,7 +138,7 @@
                             <p>Jan</p>
                           </a>
                         </div>
-                        
+
                         <div class="blog_details">
                             <a class="d-inline-block" href="single-blog.html">
                                 <h2>Google inks pact for new 35-storey office</h2>
@@ -159,7 +159,7 @@
                             <p>Jan</p>
                           </a>
                         </div>
-                        
+
                         <div class="blog_details">
                             <a class="d-inline-block" href="single-blog.html">
                                 <h2>Google inks pact for new 35-storey office</h2>
@@ -180,7 +180,7 @@
                             <p>Jan</p>
                           </a>
                         </div>
-                        
+
                         <div class="blog_details">
                             <a class="d-inline-block" href="single-blog.html">
                                 <h2>Google inks pact for new 35-storey office</h2>
@@ -192,7 +192,7 @@
                             </ul>
                         </div>
                       </article>
-                      
+
 
 
                       <nav class="blog-pagination justify-content-center d-flex">
@@ -287,7 +287,7 @@
                               </div>
                           </div>
                           <div class="media post_item">
-                              <img src="img/blog/popular-post/post2.jpg" alt="post">                              
+                              <img src="img/blog/popular-post/post2.jpg" alt="post">
                               <div class="media-body">
                                   <a href="single-blog.html">
                                       <h3>The Amazing Hubble</h3>
@@ -296,7 +296,7 @@
                               </div>
                           </div>
                           <div class="media post_item">
-                              <img src="img/blog/popular-post/post3.jpg" alt="post">                              
+                              <img src="img/blog/popular-post/post3.jpg" alt="post">
                               <div class="media-body">
                                   <a href="single-blog.html">
                                       <h3>Astronomy Or Astrology</h3>
