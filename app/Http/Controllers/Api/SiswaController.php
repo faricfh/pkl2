@@ -81,7 +81,7 @@ class SiswaController extends Controller
         $response = [
             'success' => true,
             'data' => $siswa,
-            'message' => 'siswa berhasil ditemukan'
+            'message' => 'siswa berhasil ditambahkan'
         ];
 
         // 6. tampilkan hasil
