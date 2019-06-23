@@ -11,33 +11,23 @@
 |
 */
 
+// route
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get('/blog', function () {
-    return view('blog');
+Route::get('/about', function () {
+    return view('about');
 });
-
-Route::get('/feature', function () {
-    return view('feature');
+Route::get('/categories-post', function () {
+    return view('categories-post');
 });
-
-Route::get('/price', function () {
-    return view('price');
-});
-
 Route::get('/contact', function () {
     return view('contact');
 });
-
-Route::get('/single-blog', function () {
-    return view('single-blog');
+Route::get('/single-post', function () {
+    return view('single-post');
 });
-
-Route::get('/element', function () {
-    return view('element');
-});
+// end route
 
 
 Auth::routes();

@@ -1,621 +1,937 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="img/favicon.png" type="image/png">
-    <title>Favison SAAS</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/themify-icons.css">
-    <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="vendors/animate-css/animate.css">
-    <!-- main css -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>The News Paper - News &amp; Lifestyle Magazine Template</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
 
-    <!--================Header Menu Area =================-->
-    <header class="header_area">
-        <div class="main_menu">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav menu_nav ml-auto">
-                            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="feature">Features</a></li>
-                            <li class="nav-item"><a class="nav-link" href="price">Price</a></li>
-                            <li class="nav-item submenu dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="nav-link" href="feature">Features</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="price">Price</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="element">Element</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item submenu dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="nav-link" href="blog">Blog</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="single-blog">Blog Details</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="contact">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="right-button">
-                        <ul>
-                            <li class="shop-icon"><a href="#"><i class="ti-shopping-cart-full"></i><span>0</span></a></li>
-                            <li><a class="sign_up" href="">Sign Up</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
-    <!--================Header Menu Area =================-->
-
-    <!--================Home Banner Area =================-->
-    <section class="home_banner_area">
-        <div class="banner_inner d-flex align-items-center">
-            <div class="overlay"></div>
+        <!-- Top Header Area -->
+        <div class="top-header-area">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 offset-lg-6 col-xl-5 offset-xl-7">
-                        <div class="banner_content">
-                            <h3>Build a better<br/>business & faster</h3>
-                            <p>Subdue creature does face signs evening good sixth foreign gaered one. Fruit. Third every fruitful multiply subdue creature doesn't face signs evening good sixth tyou're.</p>
-                            <a class="banner_btn" href="#">Begin Free Trial<i class="ti-arrow-right"></i></a>
+                    <div class="col-12">
+                        <div class="top-header-content d-flex align-items-center justify-content-between">
+                            <!-- Logo -->
+                            <div class="logo">
+                                <a href="/"><img src="img/core-img/logo.png" alt=""></a>
+                            </div>
+
+                            <!-- Login Search Area -->
+                            <div class="login-search-area d-flex align-items-center">
+                                <!-- Login -->
+                                <div class="login d-flex">
+                                    <a href="#">Login</a>
+                                    <a href="#">Register</a>
+                                </div>
+                                <!-- Search Form -->
+                                <div class="search-form">
+                                    <form action="#" method="post">
+                                        <input type="search" name="search" class="form-control" placeholder="Search">
+                                        <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
-    </section>
-    <!--================End Home Banner Area =================-->
 
-    <!--================Service  Area =================-->
-    <section class="service-area area-padding">
-        <div class="container">
-            <div class="row">
-                <!-- Single service -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="single-service">
-                        <div class="service-icon">
-                            <i class="ti-pencil-alt"></i>
+        <!-- Navbar Area -->
+        <div class="newspaper-main-menu" id="stickyMenu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="newspaperNav">
+
+                        <!-- Logo -->
+                        <div class="logo">
+                            <a href="/"><img src="img/core-img/logo.png" alt=""></a>
                         </div>
-                        <div class="service-content">
-                            <h5>Unique Design</h5>
-                            <p>Third don't lights wherein was. bring to build them, seas. Thing gathering answ gaered beast third that heaven after all that living one bank limit</p>
-                            <a href="#">Read More</a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
                         </div>
-                    </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- close btn -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li class="active"><a href="/">Home</a></li>
+                                    <li><a href="#">Pages</a>
+                                        <ul class="dropdown">
+                                            <li><a href="/">Home</a></li>
+                                            <li><a href="categories-post">Categories</a></li>
+                                            <li><a href="single-post">Single Articles</a></li>
+                                            <li><a href="about">About Us</a></li>
+                                            <li><a href="contact">Contact</a></li>
+                                            <li><a href="#">Dropdown</a>
+                                                <ul class="dropdown">
+                                                    <li><a href="/">Home</a></li>
+                                                    <li><a href="categories-post">Categories</a></li>
+                                                    <li><a href="single-post">Single Articles</a></li>
+                                                    <li><a href="about">About Us</a></li>
+                                                    <li><a href="contact">Contact</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Mega Menu</a>
+                                        <div class="megamenu">
+                                            <ul class="single-mega cn-col-4">
+                                                <li class="title">Categories</li>
+                                                <li><a href="/">Home</a></li>
+                                                <li><a href="categories-post">Categories</a></li>
+                                                <li><a href="single-post">Single Articles</a></li>
+                                                <li><a href="about">About Us</a></li>
+                                                <li><a href="contact">Contact</a></li>
+                                            </ul>
+                                            <ul class="single-mega cn-col-4">
+                                                <li class="title">Categories</li>
+                                                <li><a href="/">Home</a></li>
+                                                <li><a href="categories-post">Categories</a></li>
+                                                <li><a href="single-post">Single Articles</a></li>
+                                                <li><a href="about">About Us</a></li>
+                                                <li><a href="contact">Contact</a></li>
+                                            </ul>
+                                            <ul class="single-mega cn-col-4">
+                                                <li class="title">Categories</li>
+                                                <li><a href="/">Home</a></li>
+                                                <li><a href="categories-post">Categories</a></li>
+                                                <li><a href="single-post">Single Articles</a></li>
+                                                <li><a href="about">About Us</a></li>
+                                                <li><a href="contact">Contact</a></li>
+                                            </ul>
+                                            <div class="single-mega cn-col-4">
+                                                <!-- Single Featured Post -->
+                                                <div class="single-blog-post small-featured-post d-flex">
+                                                    <div class="post-thumb">
+                                                        <a href="#"><img src="img/bg-img/23.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="post-data">
+                                                        <a href="#" class="post-catagory">Travel</a>
+                                                        <div class="post-meta">
+                                                            <a href="#" class="post-title">
+                                                                <h6>Pellentesque mattis arcu massa, nec fringilla turpis eleifend id.</h6>
+                                                            </a>
+                                                            <p class="post-date"><span>7:00 AM</span> | <span>April 14</span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Single Featured Post -->
+                                                <div class="single-blog-post small-featured-post d-flex">
+                                                    <div class="post-thumb">
+                                                        <a href="#"><img src="img/bg-img/24.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="post-data">
+                                                        <a href="#" class="post-catagory">Politics</a>
+                                                        <div class="post-meta">
+                                                            <a href="#" class="post-title">
+                                                                <h6>Augue semper congue sit amet ac sapien. Fusce consequat.</h6>
+                                                            </a>
+                                                            <p class="post-date"><span>7:00 AM</span> | <span>April 14</span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><a href="#">Politics</a></li>
+                                    <li><a href="#">Breaking News</a></li>
+                                    <li><a href="#">Business</a></li>
+                                    <li><a href="#">Technology</a></li>
+                                    <li><a href="#">Health</a></li>
+                                    <li><a href="#">Travel</a></li>
+                                    <li><a href="#">Sports</a></li>
+                                    <li><a href="contact">Contact</a></li>
+                                </ul>
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
                 </div>
-
-                <!-- Single service -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="single-service">
-                        <div class="service-icon">
-                            <i class="ti-image"></i>
-                        </div>
-                        <div class="service-content">
-                            <h5>Business Solution</h5>
-                            <p>Third don't lights wherein was. bring to build them, seas. Thing gathering answ gaered beast third that heaven after all that living one bank limit</p>
-                            <a href="#">Read More</a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- Single service -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="single-service">
-                        <div class="service-icon">
-                            <i class="ti-headphone-alt"></i>
-                        </div>
-                        <div class="service-content">
-                            <h5>Customer Support</h5>
-                            <p>Third don't lights wherein was. bring to build them, seas. Thing gathering answ gaered beast third that heaven after all that living one bank limit</p>
-                            <a href="#">Read More</a>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
-    </section>
-    <!--================Service Area end =================-->
+    </header>
+    <!-- ##### Header Area End ##### -->
 
-
-    <!--================About  Area =================-->
-    <section class="about-area area-padding-bottom">
+    <!-- ##### Hero Area Start ##### -->
+    <div class="hero-area">
         <div class="container">
             <div class="row align-items-center">
-
-                <div class="col-lg-6">
-                    <div class="area-heading">
-                        <h4>Form Female From<br>Cattle Evening. </h4>
-                        <h6>And appear great open bearing evening dominion vodi </h6>
-
-                        <p>There earth face earth behold. She'd stars made void two given do and also. Our own grass days.  Greater male Shall There faced earth behold She star</p>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-lg-6">
-                            <div class="single-about">
-                                <div class="about-icon">
-                                    <i class="ti-thought"></i>
-                                </div>
-                                <div class="single-about-content">
-                                    <h5>Cloud Compatibility</h5>
-                                    <p>There earth face earth behold. She stars made void two given and also our own grass days. Greater </p>
-                                </div>
-                            </div>
+                <div class="col-12 col-lg-8">
+                    <!-- Breaking News Widget -->
+                    <div class="breaking-news-area d-flex align-items-center">
+                        <div class="news-title">
+                            <p>Breaking News</p>
                         </div>
-                        <div class="col-md-6 col-lg-6">
-                            <div class="single-about">
-                                <div class="about-icon">
-                                    <i class="ti-truck"></i>
-                                </div>
-                                <div class="single-about-content">
-                                    <h5>On Time Delivery</h5>
-                                    <p>There earth face earth behold. She stars made void two given and also our own grass days. Greater </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--================About Area End =================-->
-
-    <!--================Feature  Area =================-->
-    <section class="feature-area area-padding bg_one">
-        <div class="container">
-            <div class="row align-items-center">
-
-                <div class="offset-lg-6 col-lg-6">
-                    <div class="area-heading light">
-                        <h4>Easy to Use <br>Mobile Application</h4>
-                        <p>There earth face earth behold. She'd stars made void two given do and also. Our own grass days.  Greater male Shall There faced earth behold She star</p>
-                    </div>
-                    <div class="row">
-                        <div class="col-">
-                            <div class="single-feature d-flex">
-                                <div class="feature-icon">
-                                    <i class="ti-layers"></i>
-                                </div>
-                                <div class="single-feature-content">
-                                    <h5>Add New Project</h5>
-                                    <p>There earth face earth behold. She stars made void two given and also our own grass days. Greater </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-">
-                            <div class="single-feature d-flex">
-                                <div class="feature-icon">
-                                    <i class="ti-layers"></i>
-                                </div>
-                                <div class="single-feature-content">
-                                    <h5>Generating Leads</h5>
-                                    <p>There earth face earth behold. She stars made void two given and also our own grass days. Greater </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--================Feature Area End =================-->
-
-
-    <!--================About  Area =================-->
-    <section class="statics-area area-padding">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-5">
-                    <div class="image-box">
-                        <img src="img/banner/about3.png" alt="">
-                    </div>
-                </div>
-
-                <div class="offset-lg-1 col-lg-6">
-                    <div class="area-heading">
-                        <h4>Form Female From<br>Cattle Evening. </h4>
-                        <h6>And appear great open bearing evening dominion vodi </h6>
-
-                        <p>There earth face earth behold. She'd stars made void two given do and also. Our own grass days.  Greater male Shall There faced earth behold She star</p>
-                    </div>
-                    <div class="single-data">
-                        <i class="ti-paint-bucket"></i>
-                        <p>Set dry signs spirit a kind First shall them.</p>
-                    </div>
-                    <div class="single-data">
-                        <i class="ti-check-box"></i>
-                        <p>He two face one moved dominion man you're likeness</p>
-                    </div>
-                    <div class="single-data">
-                        <i class="ti-ruler-pencil"></i>
-                        <p>Sea forth fill have divide be dominion from life</p>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--================About Area End =================-->
-
-
-
-
-
-    <!--================ Start Portfolio Area =================-->
-    <section class="pricing_area area-padding-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="area-heading">
-                        <h4>Our Pricing Plan</h4>
-                        <p>Life firmament under them evening make after called dont saying likeness<br> isn't wherein also forth she'd air two without</p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3">
-                    <div class="single-pricing">
-                        <div class="pricing-icon">
-                            <i class="ti-home"></i>
-                        </div>
-                        <div class="single-pricing-content">
-                            <h5>Standard</h5>
-                            <h4>$25<span class="currency_line">/</span><span>month</span></h4>
+                        <div id="breakingNewsTicker" class="ticker">
                             <ul>
-                                <li>2GB Bandwidth</li>
-                                <li>Two Account</li>
-                                <li>15GB Storage</li>
-                                <li>Sale After Service</li>
-                                <li>3 Host Domain</li>
-                                <li>24/7 Support</li>
+                                <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+                                <li><a href="#">Welcome to Colorlib Family.</a></li>
+                                <li><a href="#">Nam eu metus sitsit amet, consec!</a></li>
                             </ul>
-                            <a href="#">Purchase Now</a>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-sm-6 col-lg-3">
-                    <div class="single-pricing">
-                        <div class="pricing-icon">
-                            <i class="ti-bag"></i>
+                    <!-- Breaking News Widget -->
+                    <div class="breaking-news-area d-flex align-items-center mt-15">
+                        <div class="news-title title2">
+                            <p>International</p>
                         </div>
-                        <div class="single-pricing-content">
-                            <h5>Business</h5>
-                            <h4>$35<span class="currency_line">/</span><span>month</span></h4>
+                        <div id="internationalTicker" class="ticker">
                             <ul>
-                                <li>2GB Bandwidth</li>
-                                <li>Two Account</li>
-                                <li>15GB Storage</li>
-                                <li>Sale After Service</li>
-                                <li>3 Host Domain</li>
-                                <li>24/7 Support</li>
+                                <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+                                <li><a href="#">Welcome to Colorlib Family.</a></li>
+                                <li><a href="#">Nam eu metus sitsit amet, consec!</a></li>
                             </ul>
-                            <a href="#">Purchase Now</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-lg-3">
-                    <div class="single-pricing">
-                        <div class="pricing-icon">
-                            <i class="ti-car"></i>
-                        </div>
-                        <div class="single-pricing-content">
-                            <h5>Premium</h5>
-                            <h4>$45<span class="currency_line">/</span><span>month</span></h4>
-                            <ul>
-                                <li>2GB Bandwidth</li>
-                                <li>Two Account</li>
-                                <li>15GB Storage</li>
-                                <li>Sale After Service</li>
-                                <li>3 Host Domain</li>
-                                <li>24/7 Support</li>
-                            </ul>
-                            <a href="#">Purchase Now</a>
-                        </div>
+                <!-- Hero Add -->
+                <div class="col-12 col-lg-4">
+                    <div class="hero-add">
+                        <a href="#"><img src="img/bg-img/hero-add.gif" alt=""></a>
                     </div>
                 </div>
-
-                <div class="col-sm-6 col-lg-3">
-                    <div class="single-pricing">
-                        <div class="pricing-icon">
-                            <i class="ti-gift"></i>
-                        </div>
-                        <div class="single-pricing-content">
-                            <h5>Ultimate</h5>
-                            <h4>$55<span class="currency_line">/</span><span>month</span></h4>
-                            <ul>
-                                <li>2GB Bandwidth</li>
-                                <li>Two Account</li>
-                                <li>15GB Storage</li>
-                                <li>Sale After Service</li>
-                                <li>3 Host Domain</li>
-                                <li>24/7 Support</li>
-                            </ul>
-                            <a href="#">Purchase Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--================ End Pricing Area =================-->
-
-
-
-    <!--================ Start Blog Area =================-->
-    <section class="latest-blog-area area-padding">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-12">
-                    <div class="area-heading">
-                        <h4>Read Our Latest News</h4>
-                        <p>Life firmament under them evening make after called dont saying likeness<br> isn't wherein also forth she'd air two without</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-8 col-md-6 ">
-                    <div class="single-blog full_image">
-                        <div class="thumb">
-                            <img class="img-fluid w-100" src="img/blog/1.png" alt="">
-                        </div>
-                        <div class="single-blog-content">
-                            <p class="tag">Software / Business</p>
-                            <p class="date">March 10, 2019</p>
-                            <h4>
-                                <a href="#">Appear called is blessed good void had given from <br>
-                                which Lights Saying image.</a>
-                            </h4>
-                            <div class="meta-bottom d-flex">
-                                <p class="likes"><i class="ti-comments"></i> 02 Comments</p>
-                                <p><i class="ti-heart"></i> 15 </p>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <div class="col-lg-4 col-md-6 ">
-                    <div class="single-blog">
-                        <div class="thumb">
-                            <img class="img-fluid w-100" src="img/blog/2.png" alt="">
-                        </div>
-                        <div class="single-blog-content">
-                            <p class="tag">Software / Business</p>
-                            <p class="date">March 10, 2019</p>
-                            <h4>
-                                <a href="#">You living thing whose After
-                                our third you also Us.</a>
-                            </h4>
-                            <div class="meta-bottom d-flex">
-                                <p class="likes"><i class="ti-comments"></i> 02 Comments</p>
-                                <p><i class="ti-heart"></i> 15 </p>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="col-lg-4 col-md-6 ">
-                    <div class="single-blog">
-                        <div class="thumb">
-                            <img class="img-fluid w-100" src="img/blog/1.png" alt="">
-                        </div>
-                        <div class="single-blog-content">
-                            <p class="tag">Software / Business</p>
-                            <p class="date">March 10, 2019</p>
-                            <h4>
-                                <a href="#">You living thing whose After
-                                our third you also Us.</a>
-                            </h4>
-                            <div class="meta-bottom d-flex">
-                                <p class="likes"><i class="ti-comments"></i> 02 Comments</p>
-                                <p><i class="ti-heart"></i> 15 </p>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-
-
-                <div class="col-lg-8 col-md-6">
-                    <div class="single-blog full_image">
-                        <div class="thumb">
-                            <img class="img-fluid w-100" src="img/blog/4.png" alt="">
-                        </div>
-                        <div class="single-blog-content">
-                            <p class="tag">Software / Business</p>
-                            <p class="date">March 10, 2019</p>
-                            <h4>
-                                <a href="#">You living thing whose After
-                                our third you also Us.</a>
-                            </h4>
-                            <div class="meta-bottom d-flex">
-                                <p class="likes"><i class="ti-comments"></i> 02 Comments</p>
-                                <p><i class="ti-heart"></i>15</p>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-    </section>
-    <!--================ End Blog Area =================-->
-
-
-    <!--================ Start Brands Area =================-->
-    <section class="brands-area area-padding-bottom">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="owl-carousel brand-carousel">
-                        <!-- single-brand -->
-                        <div class="single-brand-item d-table">
-                            <div class="d-table-cell">
-                                <img src="img/logo/1.png" alt="">
-                            </div>
-                        </div>
-                        <!-- single-brand -->
-                        <div class="single-brand-item d-table">
-                            <div class="d-table-cell">
-                                <img src="img/logo/2.png" alt="">
-                            </div>
-                        </div>
-                        <!-- single-brand -->
-                        <div class="single-brand-item d-table">
-                            <div class="d-table-cell">
-                                <img src="img/logo/3.png" alt="">
-                            </div>
-                        </div>
-                        <!-- single-brand -->
-                        <div class="single-brand-item d-table">
-                            <div class="d-table-cell">
-                                <img src="img/logo/4.png" alt="">
-                            </div>
-                        </div>
-                        <!-- single-brand -->
-                        <div class="single-brand-item d-table">
-                            <div class="d-table-cell">
-                                <img src="img/logo/5.png" alt="">
-                            </div>
-                        </div>
-                        <!-- single-brand -->
-                        <div class="single-brand-item d-table">
-                            <div class="d-table-cell">
-                                <img src="img/logo/3.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--================ End Brands Area =================-->
-
-
-
-    <!-- ================ start footer Area ================= -->
-    <footer class="footer-area">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-3 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
-                    <h4>About Us</h4>
-                    <p>Heaven fruitful doesn't over lesser days appear creeping seasons so behold bearing days open</p>
-                    <div class="footer-logo">
-                        <img src="img/logo.png" alt="">
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
-                    <h4>Contact Info</h4>
-                    <div class="footer-address">
-                        <p>Address :Your address goes
-                        here, your demo address.</p>
-                        <span>Phone : +8880 44338899</span>
-                        <span>Email : info@colorlib.com</span>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
-                    <h4>Important Link</h4>
-                    <ul>
-                        <li><a href="#">WHMCS-bridge</a></li>
-                        <li><a href="#">Search Domain</a></li>
-                        <li><a href="#">My Account</a></li>
-                        <li><a href="#">Shopping Cart</a></li>
-                        <li><a href="#">Our Shop</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-8 mb-4 mb-xl-0 single-footer-widget">
-                    <h4>Newsletter</h4>
-                    <p>Heaven fruitful doesn't over lesser in days. Appear creeping seasons deve behold bearing days open</p>
-
-                    <div class="form-wrap" id="mc_embed_signup">
-                        <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-                        method="get">
-                        <div class="input-group">
-                            <input type="email" class="form-control" name="EMAIL" placeholder="Your Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address '">
-                            <div class="input-group-append">
-                                <button class="btn click-btn" type="submit">
-                                    <i class="fab fa-telegram-plane"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div style="position: absolute; left: -5000px;">
-                            <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
-                        </div>
-
-                        <div class="info"></div>
-                    </form>
-                </div>
-
-            </div>
-        </div>
-        <div class="footer-bottom row align-items-center text-center text-lg-left no-gutters">
-            <p class="footer-text m-0 col-lg-8 col-md-12"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-            <div class="col-lg-4 col-md-12 text-center text-lg-right footer-social">
-                <a href="#"><i class="ti-facebook"></i></a>
-                <a href="#"><i class="ti-twitter-alt"></i></a>
-                <a href="#"><i class="ti-dribbble"></i></a>
-                <a href="#"><i class="ti-linkedin"></i></a>
             </div>
         </div>
     </div>
-</footer>
-<!-- ================ End footer Area ================= -->
+    <!-- ##### Hero Area End ##### -->
 
+    <!-- ##### Featured Post Area Start ##### -->
+    <div class="featured-post-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-8">
+                    <div class="row">
 
+                        <!-- Single Featured Post -->
+                        <div class="col-12 col-lg-7">
+                            <div class="single-blog-post featured-post">
+                                <div class="post-thumb">
+                                    <a href="#"><img src="img/bg-img/16.jpg" alt=""></a>
+                                </div>
+                                <div class="post-data">
+                                    <a href="#" class="post-catagory">Finance</a>
+                                    <a href="#" class="post-title">
+                                        <h6>Financial news: A new company is born today at the stock market</h6>
+                                    </a>
+                                    <div class="post-meta">
+                                        <p class="post-author">By <a href="#">Christinne Williams</a></p>
+                                        <p class="post-excerp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu metus sit amet odio sodales placerat. Sed varius leo ac leo fermentum, eu cursus nunc maximus. Integer convallis nisi nibh, et ornare neque ullamcorper ac. Nam id congue lectus, a venenatis massa. Maecenas justo libero, vulputate vel nunc id, blandit feugiat sem. </p>
+                                        <!-- Post Like & Post Comment -->
+                                        <div class="d-flex align-items-center">
+                                            <a href="#" class="post-like"><img src="img/core-img/like.png" alt=""> <span>392</span></a>
+                                            <a href="#" class="post-comment"><img src="img/core-img/chat.png" alt=""> <span>10</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="col-12 col-lg-5">
+                            <!-- Single Featured Post -->
+                            <div class="single-blog-post featured-post-2">
+                                <div class="post-thumb">
+                                    <a href="#"><img src="img/bg-img/17.jpg" alt=""></a>
+                                </div>
+                                <div class="post-data">
+                                    <a href="#" class="post-catagory">Finance</a>
+                                    <div class="post-meta">
+                                        <a href="#" class="post-title">
+                                            <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu metus sit amet odio sodales placerat. Sed varius leo ac...</h6>
+                                        </a>
+                                        <!-- Post Like & Post Comment -->
+                                        <div class="d-flex align-items-center">
+                                            <a href="#" class="post-like"><img src="img/core-img/like.png" alt=""> <span>392</span></a>
+                                            <a href="#" class="post-comment"><img src="img/core-img/chat.png" alt=""> <span>10</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
+                            <!-- Single Featured Post -->
+                            <div class="single-blog-post featured-post-2">
+                                <div class="post-thumb">
+                                    <a href="#"><img src="img/bg-img/18.jpg" alt=""></a>
+                                </div>
+                                <div class="post-data">
+                                    <a href="#" class="post-catagory">Finance</a>
+                                    <div class="post-meta">
+                                        <a href="#" class="post-title">
+                                            <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu metus sit amet odio sodales placerat. Sed varius leo ac...</h6>
+                                        </a>
+                                        <!-- Post Like & Post Comment -->
+                                        <div class="d-flex align-items-center">
+                                            <a href="#" class="post-like"><img src="img/core-img/like.png" alt=""> <span>392</span></a>
+                                            <a href="#" class="post-comment"><img src="img/core-img/chat.png" alt=""> <span>10</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col-12 col-md-6 col-lg-4">
+                    <!-- Single Featured Post -->
+                    <div class="single-blog-post small-featured-post d-flex">
+                        <div class="post-thumb">
+                            <a href="#"><img src="img/bg-img/19.jpg" alt=""></a>
+                        </div>
+                        <div class="post-data">
+                            <a href="#" class="post-catagory">Finance</a>
+                            <div class="post-meta">
+                                <a href="#" class="post-title">
+                                    <h6>Pellentesque mattis arcu massa, nec fringilla turpis eleifend id.</h6>
+                                </a>
+                                <p class="post-date"><span>7:00 AM</span> | <span>April 14</span></p>
+                            </div>
+                        </div>
+                    </div>
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="js/jquery-2.2.4.min.js"></script>
-<script src="js/popper.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-<script src="js/jquery.ajaxchimp.min.js"></script>
-<script src="js/waypoints.min.js"></script>
-<script src="js/mail-script.js"></script>
-<script src="js/contact.js"></script>
-<script src="js/jquery.form.js"></script>
-<script src="js/jquery.validate.min.js"></script>
-<script src="js/mail-script.js"></script>
-<script src="js/theme.js"></script>
+                    <!-- Single Featured Post -->
+                    <div class="single-blog-post small-featured-post d-flex">
+                        <div class="post-thumb">
+                            <a href="#"><img src="img/bg-img/20.jpg" alt=""></a>
+                        </div>
+                        <div class="post-data">
+                            <a href="#" class="post-catagory">Politics</a>
+                            <div class="post-meta">
+                                <a href="#" class="post-title">
+                                    <h6>Sed a elit euismod augue semper congue sit amet ac sapien.</h6>
+                                </a>
+                                <p class="post-date"><span>7:00 AM</span> | <span>April 14</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Featured Post -->
+                    <div class="single-blog-post small-featured-post d-flex">
+                        <div class="post-thumb">
+                            <a href="#"><img src="img/bg-img/21.jpg" alt=""></a>
+                        </div>
+                        <div class="post-data">
+                            <a href="#" class="post-catagory">Health</a>
+                            <div class="post-meta">
+                                <a href="#" class="post-title">
+                                    <h6>Pellentesque mattis arcu massa, nec fringilla turpis eleifend id.</h6>
+                                </a>
+                                <p class="post-date"><span>7:00 AM</span> | <span>April 14</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Featured Post -->
+                    <div class="single-blog-post small-featured-post d-flex">
+                        <div class="post-thumb">
+                            <a href="#"><img src="img/bg-img/22.jpg" alt=""></a>
+                        </div>
+                        <div class="post-data">
+                            <a href="#" class="post-catagory">Finance</a>
+                            <div class="post-meta">
+                                <a href="#" class="post-title">
+                                    <h6>Augue semper congue sit amet ac sapien. Fusce consequat.</h6>
+                                </a>
+                                <p class="post-date"><span>7:00 AM</span> | <span>April 14</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Featured Post -->
+                    <div class="single-blog-post small-featured-post d-flex">
+                        <div class="post-thumb">
+                            <a href="#"><img src="img/bg-img/23.jpg" alt=""></a>
+                        </div>
+                        <div class="post-data">
+                            <a href="#" class="post-catagory">Travel</a>
+                            <div class="post-meta">
+                                <a href="#" class="post-title">
+                                    <h6>Pellentesque mattis arcu massa, nec fringilla turpis eleifend id.</h6>
+                                </a>
+                                <p class="post-date"><span>7:00 AM</span> | <span>April 14</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Featured Post -->
+                    <div class="single-blog-post small-featured-post d-flex">
+                        <div class="post-thumb">
+                            <a href="#"><img src="img/bg-img/24.jpg" alt=""></a>
+                        </div>
+                        <div class="post-data">
+                            <a href="#" class="post-catagory">Politics</a>
+                            <div class="post-meta">
+                                <a href="#" class="post-title">
+                                    <h6>Augue semper congue sit amet ac sapien. Fusce consequat.</h6>
+                                </a>
+                                <p class="post-date"><span>7:00 AM</span> | <span>April 14</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Featured Post Area End ##### -->
+
+    <!-- ##### Popular News Area Start ##### -->
+    <div class="popular-news-area section-padding-80-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-8">
+                    <div class="section-heading">
+                        <h6>Popular News</h6>
+                    </div>
+
+                    <div class="row">
+
+                        <!-- Single Post -->
+                        <div class="col-12 col-md-6">
+                            <div class="single-blog-post style-3">
+                                <div class="post-thumb">
+                                    <a href="#"><img src="img/bg-img/12.jpg" alt=""></a>
+                                </div>
+                                <div class="post-data">
+                                    <a href="#" class="post-catagory">Finance</a>
+                                    <a href="#" class="post-title">
+                                        <h6>Dolor sit amet, consectetur adipiscing elit. Nam eu metus sit amet odio sodales placer. Sed varius leo ac...</h6>
+                                    </a>
+                                    <div class="post-meta d-flex align-items-center">
+                                        <a href="#" class="post-like"><img src="img/core-img/like.png" alt=""> <span>392</span></a>
+                                        <a href="#" class="post-comment"><img src="img/core-img/chat.png" alt=""> <span>10</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Single Post -->
+                        <div class="col-12 col-md-6">
+                            <div class="single-blog-post style-3">
+                                <div class="post-thumb">
+                                    <a href="#"><img src="img/bg-img/13.jpg" alt=""></a>
+                                </div>
+                                <div class="post-data">
+                                    <a href="#" class="post-catagory">Finance</a>
+                                    <a href="#" class="post-title">
+                                        <h6>Dolor sit amet, consectetur adipiscing elit. Nam eu metus sit amet odio sodales placer. Sed varius leo ac...</h6>
+                                    </a>
+                                    <div class="post-meta d-flex align-items-center">
+                                        <a href="#" class="post-like"><img src="img/core-img/like.png" alt=""> <span>392</span></a>
+                                        <a href="#" class="post-comment"><img src="img/core-img/chat.png" alt=""> <span>10</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Single Post -->
+                        <div class="col-12 col-md-6">
+                            <div class="single-blog-post style-3">
+                                <div class="post-thumb">
+                                    <a href="#"><img src="img/bg-img/14.jpg" alt=""></a>
+                                </div>
+                                <div class="post-data">
+                                    <a href="#" class="post-catagory">Finance</a>
+                                    <a href="#" class="post-title">
+                                        <h6>Dolor sit amet, consectetur adipiscing elit. Nam eu metus sit amet odio sodales placer. Sed varius leo ac...</h6>
+                                    </a>
+                                    <div class="post-meta d-flex align-items-center">
+                                        <a href="#" class="post-like"><img src="img/core-img/like.png" alt=""> <span>392</span></a>
+                                        <a href="#" class="post-comment"><img src="img/core-img/chat.png" alt=""> <span>10</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Single Post -->
+                        <div class="col-12 col-md-6">
+                            <div class="single-blog-post style-3">
+                                <div class="post-thumb">
+                                    <a href="#"><img src="img/bg-img/15.jpg" alt=""></a>
+                                </div>
+                                <div class="post-data">
+                                    <a href="#" class="post-catagory">Finance</a>
+                                    <a href="#" class="post-title">
+                                        <h6>Dolor sit amet, consectetur adipiscing elit. Nam eu metus sit amet odio sodales placer. Sed varius leo ac...</h6>
+                                    </a>
+                                    <div class="post-meta d-flex align-items-center">
+                                        <a href="#" class="post-like"><img src="img/core-img/like.png" alt=""> <span>392</span></a>
+                                        <a href="#" class="post-comment"><img src="img/core-img/chat.png" alt=""> <span>10</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="section-heading">
+                        <h6>Info</h6>
+                    </div>
+                    <!-- Popular News Widget -->
+                    <div class="popular-news-widget mb-30">
+                        <h3>4 Most Popular News</h3>
+
+                        <!-- Single Popular Blog -->
+                        <div class="single-popular-post">
+                            <a href="#">
+                                <h6><span>1.</span> Amet, consectetur adipiscing elit. Nam eu metus sit amet odio sodales.</h6>
+                            </a>
+                            <p>April 14, 2018</p>
+                        </div>
+
+                        <!-- Single Popular Blog -->
+                        <div class="single-popular-post">
+                            <a href="#">
+                                <h6><span>2.</span> Consectetur adipiscing elit. Nam eu metus sit amet odio sodales placer.</h6>
+                            </a>
+                            <p>April 14, 2018</p>
+                        </div>
+
+                        <!-- Single Popular Blog -->
+                        <div class="single-popular-post">
+                            <a href="#">
+                                <h6><span>3.</span> Adipiscing elit. Nam eu metus sit amet odio sodales placer. Sed varius leo.</h6>
+                            </a>
+                            <p>April 14, 2018</p>
+                        </div>
+
+                        <!-- Single Popular Blog -->
+                        <div class="single-popular-post">
+                            <a href="#">
+                                <h6><span>4.</span> Eu metus sit amet odio sodales placer. Sed varius leo ac...</h6>
+                            </a>
+                            <p>April 14, 2018</p>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter Widget -->
+                    <div class="newsletter-widget">
+                        <h4>Newsletter</h4>
+                        <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        <form action="#" method="post">
+                            <input type="text" name="text" placeholder="Name">
+                            <input type="email" name="email" placeholder="Email">
+                            <button type="submit" class="btn w-100">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Popular News Area End ##### -->
+
+    <!-- ##### Video Post Area Start ##### -->
+    <div class="video-post-area bg-img bg-overlay" style="background-image: url(img/bg-img/bg1.jpg);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- Single Video Post -->
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="single-video-post">
+                        <img src="img/bg-img/video1.jpg" alt="">
+                        <!-- Video Button -->
+                        <div class="videobtn">
+                            <a href="https://www.youtube.com/watch?v=5BQr-j3BBzU" class="videoPlayer"><i class="fa fa-play" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Video Post -->
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="single-video-post">
+                        <img src="img/bg-img/video2.jpg" alt="">
+                        <!-- Video Button -->
+                        <div class="videobtn">
+                            <a href="https://www.youtube.com/watch?v=5BQr-j3BBzU" class="videoPlayer"><i class="fa fa-play" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Video Post -->
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="single-video-post">
+                        <img src="img/bg-img/video3.jpg" alt="">
+                        <!-- Video Button -->
+                        <div class="videobtn">
+                            <a href="https://www.youtube.com/watch?v=5BQr-j3BBzU" class="videoPlayer"><i class="fa fa-play" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Video Post Area End ##### -->
+
+    <!-- ##### Editorial Post Area Start ##### -->
+    <div class="editors-pick-post-area section-padding-80-50">
+        <div class="container">
+            <div class="row">
+                <!-- Editors Pick -->
+                <div class="col-12 col-md-7 col-lg-9">
+                    <div class="section-heading">
+                        <h6>Editor’s Pick</h6>
+                    </div>
+
+                    <div class="row">
+
+                        <!-- Single Post -->
+                        <div class="col-12 col-lg-4">
+                            <div class="single-blog-post">
+                                <div class="post-thumb">
+                                    <a href="#"><img src="img/bg-img/1.jpg" alt=""></a>
+                                </div>
+                                <div class="post-data">
+                                    <a href="#" class="post-title">
+                                        <h6>Orci varius natoque penatibus et magnis dis parturient montes.</h6>
+                                    </a>
+                                    <div class="post-meta">
+                                        <div class="post-date"><a href="#">February 11, 2018</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Single Post -->
+                        <div class="col-12 col-lg-4">
+                            <div class="single-blog-post">
+                                <div class="post-thumb">
+                                    <a href="#"><img src="img/bg-img/2.jpg" alt=""></a>
+                                </div>
+                                <div class="post-data">
+                                    <a href="#" class="post-title">
+                                        <h6>Orci varius natoque penatibus et magnis dis parturient montes.</h6>
+                                    </a>
+                                    <div class="post-meta">
+                                        <div class="post-date"><a href="#">February 11, 2018</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Single Post -->
+                        <div class="col-12 col-lg-4">
+                            <div class="single-blog-post">
+                                <div class="post-thumb">
+                                    <a href="#"><img src="img/bg-img/3.jpg" alt=""></a>
+                                </div>
+                                <div class="post-data">
+                                    <a href="#" class="post-title">
+                                        <h6>Orci varius natoque penatibus et magnis dis parturient montes.</h6>
+                                    </a>
+                                    <div class="post-meta">
+                                        <div class="post-date"><a href="#">February 11, 2018</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Single Post -->
+                        <div class="col-12 col-lg-4">
+                            <div class="single-blog-post">
+                                <div class="post-thumb">
+                                    <a href="#"><img src="img/bg-img/4.jpg" alt=""></a>
+                                </div>
+                                <div class="post-data">
+                                    <a href="#" class="post-title">
+                                        <h6>Orci varius natoque penatibus et magnis dis parturient montes.</h6>
+                                    </a>
+                                    <div class="post-meta">
+                                        <div class="post-date"><a href="#">February 11, 2018</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Single Post -->
+                        <div class="col-12 col-lg-4">
+                            <div class="single-blog-post">
+                                <div class="post-thumb">
+                                    <a href="#"><img src="img/bg-img/5.jpg" alt=""></a>
+                                </div>
+                                <div class="post-data">
+                                    <a href="#" class="post-title">
+                                        <h6>Orci varius natoque penatibus et magnis dis parturient montes.</h6>
+                                    </a>
+                                    <div class="post-meta">
+                                        <div class="post-date"><a href="#">February 11, 2018</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Single Post -->
+                        <div class="col-12 col-lg-4">
+                            <div class="single-blog-post">
+                                <div class="post-thumb">
+                                    <a href="#"><img src="img/bg-img/6.jpg" alt=""></a>
+                                </div>
+                                <div class="post-data">
+                                    <a href="#" class="post-title">
+                                        <h6>Orci varius natoque penatibus et magnis dis parturient montes.</h6>
+                                    </a>
+                                    <div class="post-meta">
+                                        <div class="post-date"><a href="#">February 11, 2018</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- World News -->
+                <div class="col-12 col-md-5 col-lg-3">
+                    <div class="section-heading">
+                        <h6>World News</h6>
+                    </div>
+
+                    <!-- Single Post -->
+                    <div class="single-blog-post style-2">
+                        <div class="post-thumb">
+                            <a href="#"><img src="img/bg-img/7.jpg" alt=""></a>
+                        </div>
+                        <div class="post-data">
+                            <a href="#" class="post-title">
+                                <h6>Orci varius natoque penatibus et magnis</h6>
+                            </a>
+                            <div class="post-meta">
+                                <div class="post-date"><a href="#">February 11, 2018</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Post -->
+                    <div class="single-blog-post style-2">
+                        <div class="post-thumb">
+                            <a href="#"><img src="img/bg-img/8.jpg" alt=""></a>
+                        </div>
+                        <div class="post-data">
+                            <a href="#" class="post-title">
+                                <h6>Orci varius natoque penatibus et magnis</h6>
+                            </a>
+                            <div class="post-meta">
+                                <div class="post-date"><a href="#">February 11, 2018</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Post -->
+                    <div class="single-blog-post style-2">
+                        <div class="post-thumb">
+                            <a href="#"><img src="img/bg-img/9.jpg" alt=""></a>
+                        </div>
+                        <div class="post-data">
+                            <a href="#" class="post-title">
+                                <h6>Orci varius natoque penatibus et magnis</h6>
+                            </a>
+                            <div class="post-meta">
+                                <div class="post-date"><a href="#">February 11, 2018</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Post -->
+                    <div class="single-blog-post style-2">
+                        <div class="post-thumb">
+                            <a href="#"><img src="img/bg-img/10.jpg" alt=""></a>
+                        </div>
+                        <div class="post-data">
+                            <a href="#" class="post-title">
+                                <h6>Orci varius natoque penatibus et magnis</h6>
+                            </a>
+                            <div class="post-meta">
+                                <div class="post-date"><a href="#">February 11, 2018</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Post -->
+                    <div class="single-blog-post style-2">
+                        <div class="post-thumb">
+                            <a href="#"><img src="img/bg-img/11.jpg" alt=""></a>
+                        </div>
+                        <div class="post-data">
+                            <a href="#" class="post-title">
+                                <h6>Orci varius natoque penatibus et magnis</h6>
+                            </a>
+                            <div class="post-meta">
+                                <div class="post-date"><a href="#">February 11, 2018</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Editorial Post Area End ##### -->
+
+    <!-- ##### Footer Add Area Start ##### -->
+    <div class="footer-add-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-add">
+                        <a href="#"><img src="img/bg-img/footer-add.gif" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Footer Add Area End ##### -->
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+
+        <!-- Main Footer Area -->
+        <div class="main-footer-area">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Footer Widget Area -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="footer-widget-area mt-80">
+                            <!-- Footer Logo -->
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="img/core-img/logo.png" alt=""></a>
+                            </div>
+                            <!-- List -->
+                            <ul class="list">
+                                <li><a href="mailto:contact@youremail.com">contact@youremail.com</a></li>
+                                <li><a href="tel:+4352782883884">+43 5278 2883 884</a></li>
+                                <li><a href="http://yoursitename.com">www.yoursitename.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Footer Widget Area -->
+                    <div class="col-12 col-sm-6 col-lg-2">
+                        <div class="footer-widget-area mt-80">
+                            <!-- Title -->
+                            <h4 class="widget-title">Politics</h4>
+                            <!-- List -->
+                            <ul class="list">
+                                <li><a href="#">Business</a></li>
+                                <li><a href="#">Markets</a></li>
+                                <li><a href="#">Tech</a></li>
+                                <li><a href="#">Luxury</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Footer Widget Area -->
+                    <div class="col-12 col-sm-4 col-lg-2">
+                        <div class="footer-widget-area mt-80">
+                            <!-- Title -->
+                            <h4 class="widget-title">Featured</h4>
+                            <!-- List -->
+                            <ul class="list">
+                                <li><a href="#">Football</a></li>
+                                <li><a href="#">Golf</a></li>
+                                <li><a href="#">Tennis</a></li>
+                                <li><a href="#">Motorsport</a></li>
+                                <li><a href="#">Horseracing</a></li>
+                                <li><a href="#">Equestrian</a></li>
+                                <li><a href="#">Sailing</a></li>
+                                <li><a href="#">Skiing</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Footer Widget Area -->
+                    <div class="col-12 col-sm-4 col-lg-2">
+                        <div class="footer-widget-area mt-80">
+                            <!-- Title -->
+                            <h4 class="widget-title">FAQ</h4>
+                            <!-- List -->
+                            <ul class="list">
+                                <li><a href="#">Aviation</a></li>
+                                <li><a href="#">Business</a></li>
+                                <li><a href="#">Traveller</a></li>
+                                <li><a href="#">Destinations</a></li>
+                                <li><a href="#">Features</a></li>
+                                <li><a href="#">Food/Drink</a></li>
+                                <li><a href="#">Hotels</a></li>
+                                <li><a href="#">Partner Hotels</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Footer Widget Area -->
+                    <div class="col-12 col-sm-4 col-lg-2">
+                        <div class="footer-widget-area mt-80">
+                            <!-- Title -->
+                            <h4 class="widget-title">+More</h4>
+                            <!-- List -->
+                            <ul class="list">
+                                <li><a href="#">Fashion</a></li>
+                                <li><a href="#">Design</a></li>
+                                <li><a href="#">Architecture</a></li>
+                                <li><a href="#">Arts</a></li>
+                                <li><a href="#">Autos</a></li>
+                                <li><a href="#">Luxury</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Footer Area -->
+        <div class="bottom-footer-area">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <!-- Copywrite -->
+                        <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Files ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
 </body>
+
 </html>
