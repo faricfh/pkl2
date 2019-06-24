@@ -13,19 +13,25 @@
 
 // route
 Route::get('/', function () {
-    return view('welcome');
+    return view('frontend.index');
 });
 Route::get('/about', function () {
-    return view('about');
+    return view('frontend.about');
 });
-Route::get('/categories-post', function () {
-    return view('categories-post');
+Route::get('/blog-detail', function () {
+    return view('frontend.blog-detail');
 });
 Route::get('/contact', function () {
-    return view('contact');
+    return view('frontend.contact');
 });
-Route::get('/single-post', function () {
-    return view('single-post');
+Route::get('/blog-grid', function () {
+    return view('frontend.blog-grid');
+});
+Route::get('/blog-list', function () {
+    return view('frontend.blog-list');
+});
+Route::get('/category', function () {
+    return view('frontend.category');
 });
 // end route
 
