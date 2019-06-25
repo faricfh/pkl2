@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Home 01</title>
+	<title>MagNews2</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
@@ -92,11 +92,6 @@
 				<!-- Logo desktop -->
 				<div class="logo">
 					<a href="{{ url('/') }}"><img src="{{ asset('assets/frontend/images/icons/logo-01.png') }}" alt="LOGO"></a>
-				</div>
-
-				<!-- Banner -->
-				<div class="banner-header">
-					<a href="#"><img src="i{{ asset('assets/frontend/mages/banner-01.jpg') }}" alt="IMG"></a>
 				</div>
 			</div>
 
