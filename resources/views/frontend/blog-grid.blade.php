@@ -4,7 +4,7 @@
 <div class="container">
     <div class="bg0 flex-wr-sb-c p-rl-20 p-tb-8">
         <div class="f2-s-1 p-r-30 m-tb-6">
-            <a href="index.html" class="breadcrumb-item f1-s-3 cl9">
+            <a href="/" class="breadcrumb-item f1-s-3 cl9">
                 Home
             </a>
 
@@ -39,7 +39,7 @@
                         <!-- Item latest -->
                         <div class="m-b-45">
                             <a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-                                <img src="images/entertaiment-06.jpg" alt="IMG">
+                                <img src="{{ asset('assets/frontend/images/entertaiment-06.jpg') }}" alt="IMG">
                             </a>
 
                             <div class="p-t-16">
@@ -70,7 +70,7 @@
                         <!-- Item latest -->
                         <div class="m-b-45">
                             <a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-                                <img src="images/entertaiment-07.jpg" alt="IMG">
+                                <img src="{{ asset('assets/frontend/images/entertaiment-07.jpg') }}" alt="IMG">
                             </a>
 
                             <div class="p-t-16">
@@ -101,7 +101,7 @@
                         <!-- Item latest -->
                         <div class="m-b-45">
                             <a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-                                <img src="images/entertaiment-08.jpg" alt="IMG">
+                                <img src="{{ asset('assets/frontend/images/entertaiment-08.jpg') }}" alt="IMG">
                             </a>
 
                             <div class="p-t-16">
@@ -132,7 +132,7 @@
                         <!-- Item latest -->
                         <div class="m-b-45">
                             <a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-                                <img src="images/entertaiment-09.jpg" alt="IMG">
+                                <img src="{{ asset('assets/frontend/images/entertaiment-09.jpg') }}" alt="IMG">
                             </a>
 
                             <div class="p-t-16">
@@ -163,7 +163,7 @@
                         <!-- Item latest -->
                         <div class="m-b-45">
                             <a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-                                <img src="images/latest-05.jpg" alt="IMG">
+                                <img src="{{ asset('assets/frontend/images/latest-05.jpg') }}" alt="IMG">
                             </a>
 
                             <div class="p-t-16">
@@ -194,7 +194,7 @@
                         <!-- Item latest -->
                         <div class="m-b-45">
                             <a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-                                <img src="images/latest-06.jpg" alt="IMG">
+                                <img src="{{ asset('assets/frontend/images/latest-06.jpg') }}" alt="IMG">
                             </a>
 
                             <div class="p-t-16">
@@ -225,7 +225,7 @@
                         <!-- Item latest -->
                         <div class="m-b-45">
                             <a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-                                <img src="images/entertaiment-10.jpg" alt="IMG">
+                                <img src="{{ asset('assets/frontend/images/entertaiment-10.jpg') }}" alt="IMG">
                             </a>
 
                             <div class="p-t-16">
@@ -256,7 +256,7 @@
                         <!-- Item latest -->
                         <div class="m-b-45">
                             <a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-                                <img src="images/entertaiment-11.jpg" alt="IMG">
+                                <img src="{{ asset('assets/frontend/images/entertaiment-11.jpg') }}" alt="IMG">
                             </a>
 
                             <div class="p-t-16">
@@ -287,7 +287,7 @@
                         <!-- Item latest -->
                         <div class="m-b-45">
                             <a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-                                <img src="images/entertaiment-12.jpg" alt="IMG">
+                                <img src="{{ asset('assets/frontend/images/entertaiment-12.jpg') }}" alt="IMG">
                             </a>
 
                             <div class="p-t-16">
@@ -318,7 +318,7 @@
                         <!-- Item latest -->
                         <div class="m-b-45">
                             <a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-                                <img src="images/entertaiment-13.jpg" alt="IMG">
+                                <img src="{{ asset('assets/frontend/images/entertaiment-13.jpg') }}" alt="IMG">
                             </a>
 
                             <div class="p-t-16">
@@ -349,7 +349,7 @@
                         <!-- Item latest -->
                         <div class="m-b-45">
                             <a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-                                <img src="images/entertaiment-14.jpg" alt="IMG">
+                                <img src="{{ asset('assets/frontend/images/entertaiment-14.jpg') }}" alt="IMG">
                             </a>
 
                             <div class="p-t-16">
@@ -380,7 +380,7 @@
                         <!-- Item latest -->
                         <div class="m-b-45">
                             <a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-                                <img src="images/entertaiment-15.jpg" alt="IMG">
+                                <img src="{{ asset('assets/frontend/images/entertaiment-15.jpg') }}" alt="IMG">
                             </a>
 
                             <div class="p-t-16">

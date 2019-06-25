@@ -65,7 +65,7 @@
 							</div>
 
 							<div class="wrap-pic-max-w p-b-30">
-								<img src="images/blog-list-01.jpg" alt="IMG">
+								<img src="{{ asset('assets/frontend/images/blog-list-01.jpg') }}" alt="IMG">
 							</div>
 
 							<p class="f1-s-11 cl6 p-b-25">
@@ -316,7 +316,7 @@
 							<ul class="p-t-35">
 								<li class="flex-wr-sb-s p-b-30">
 									<a href="#" class="size-w-10 wrap-pic-w hov1 trans-03">
-										<img src="images/popular-post-04.jpg" alt="IMG">
+										<img src="{{ asset('assets/frontend/images/popular-post-04.jpg') }}" alt="IMG">
 									</a>
 
 									<div class="size-w-11">
@@ -344,7 +344,7 @@
 
 								<li class="flex-wr-sb-s p-b-30">
 									<a href="#" class="size-w-10 wrap-pic-w hov1 trans-03">
-										<img src="images/popular-post-05.jpg" alt="IMG">
+										<img src="{{ asset('assets/frontend/images/popular-post-05.jpg') }}" alt="IMG">
 									</a>
 
 									<div class="size-w-11">
@@ -372,7 +372,7 @@
 
 								<li class="flex-wr-sb-s p-b-30">
 									<a href="#" class="size-w-10 wrap-pic-w hov1 trans-03">
-										<img src="images/popular-post-06.jpg" alt="IMG">
+										<img src="{{ asset('assets/frontend/images/popular-post-06.jpg') }}" alt="IMG">
 									</a>
 
 									<div class="size-w-11">

@@ -4,9 +4,8 @@ namespace App\Http\Controllers\Api;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Kategori;
 
-class KategoriController extends Controller
+class TagController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,23 +14,7 @@ class KategoriController extends Controller
      */
     public function index()
     {
-        $kategori = Kategori::all();
-        if (count($kategori) <= 0) {
-            $respons = [
-                'success' => false,
-                'data' => 'Empety',
-                'message' => 'Kategori tidak ditemukan'
-
-            ];
-            return response()->json($respons, 404);
-        }
-
-        $respons = [
-            'success' => true,
-            'data' => $kategori,
-            'message' => 'Berhasil'
-        ];
-        return response()->json($respons, 200);
+        //
     }
 
     /**

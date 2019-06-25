@@ -37,7 +37,7 @@
     <div class="container">
         <div class="row m-rl--1">
             <div class="col-md-6 p-rl-1 p-b-2">
-                <div class="bg-img1 size-a-3 how1 pos-relative" style="background-image: url(images/post-01.jpg);">
+                <div class="bg-img1 size-a-3 how1 pos-relative" style="background-image: url(assets/frontend/images/post-01.jpg);">
                     <a href="blog-detail-01.html" class="dis-block how1-child1 trans-03"></a>
 
                     <div class="flex-col-e-s s-full p-rl-25 p-tb-20">
@@ -71,7 +71,7 @@
             <div class="col-md-6 p-rl-1">
                 <div class="row m-rl--1">
                     <div class="col-12 p-rl-1 p-b-2">
-                        <div class="bg-img1 size-a-4 how1 pos-relative" style="background-image: url(images/post-02.jpg);">
+                        <div class="bg-img1 size-a-4 how1 pos-relative" style="background-image: url(assets/frontend/images/post-02.jpg);">
                             <a href="blog-detail-01.html" class="dis-block how1-child1 trans-03"></a>
 
                             <div class="flex-col-e-s s-full p-rl-25 p-tb-24">
@@ -89,7 +89,7 @@
                     </div>
 
                     <div class="col-sm-6 p-rl-1 p-b-2">
-                        <div class="bg-img1 size-a-5 how1 pos-relative" style="background-image: url(images/post-03.jpg);">
+                        <div class="bg-img1 size-a-5 how1 pos-relative" style="background-image: url(assets/frontend/images/post-03.jpg);">
                             <a href="blog-detail-01.html" class="dis-block how1-child1 trans-03"></a>
 
                             <div class="flex-col-e-s s-full p-rl-25 p-tb-20">
@@ -107,7 +107,7 @@
                     </div>
 
                     <div class="col-sm-6 p-rl-1 p-b-2">
-                        <div class="bg-img1 size-a-5 how1 pos-relative" style="background-image: url(images/post-04.jpg);">
+                        <div class="bg-img1 size-a-5 how1 pos-relative" style="background-image: url(assets/frontend/images/post-04.jpg);">
                             <a href="blog-detail-01.html" class="dis-block how1-child1 trans-03"></a>
 
                             <div class="flex-col-e-s s-full p-rl-25 p-tb-20">
@@ -193,7 +193,7 @@
                                         <!-- Item post -->
                                         <div class="m-b-30">
                                             <a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-05.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-05.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="p-t-20">
@@ -224,7 +224,7 @@
                                         <!-- Item post -->
                                         <div class="flex-wr-sb-s m-b-30">
                                             <a href="blog-detail-01.html" class="size-w-1 wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-06.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-06.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="size-w-2">
@@ -253,7 +253,7 @@
                                         <!-- Item post -->
                                         <div class="flex-wr-sb-s m-b-30">
                                             <a href="blog-detail-01.html" class="size-w-1 wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-07.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-07.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="size-w-2">
@@ -282,7 +282,7 @@
                                         <!-- Item post -->
                                         <div class="flex-wr-sb-s m-b-30">
                                             <a href="blog-detail-01.html" class="size-w-1 wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-08.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-08.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="size-w-2">
@@ -318,7 +318,7 @@
                                         <!-- Item post -->
                                         <div class="m-b-30">
                                             <a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-09.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-09.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="p-t-20">
@@ -349,7 +349,7 @@
                                         <!-- Item post -->
                                         <div class="flex-wr-sb-s m-b-30">
                                             <a href="blog-detail-01.html" class="size-w-1 wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-08.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-08.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="size-w-2">
@@ -378,7 +378,7 @@
                                         <!-- Item post -->
                                         <div class="flex-wr-sb-s m-b-30">
                                             <a href="blog-detail-01.html" class="size-w-1 wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-06.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-06.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="size-w-2">
@@ -407,7 +407,7 @@
                                         <!-- Item post -->
                                         <div class="flex-wr-sb-s m-b-30">
                                             <a href="blog-detail-01.html" class="size-w-1 wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-07.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-07.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="size-w-2">
@@ -443,7 +443,7 @@
                                         <!-- Item post -->
                                         <div class="m-b-30">
                                             <a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-08.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-08.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="p-t-20">
@@ -474,7 +474,7 @@
                                         <!-- Item post -->
                                         <div class="flex-wr-sb-s m-b-30">
                                             <a href="blog-detail-01.html" class="size-w-1 wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-07.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-07.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="size-w-2">
@@ -503,7 +503,7 @@
                                         <!-- Item post -->
                                         <div class="flex-wr-sb-s m-b-30">
                                             <a href="blog-detail-01.html" class="size-w-1 wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-06.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-06.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="size-w-2">
@@ -532,7 +532,7 @@
                                         <!-- Item post -->
                                         <div class="flex-wr-sb-s m-b-30">
                                             <a href="blog-detail-01.html" class="size-w-1 wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-05.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-05.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="size-w-2">
@@ -568,7 +568,7 @@
                                         <!-- Item post -->
                                         <div class="m-b-30">
                                             <a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-06.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-06.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="p-t-20">
@@ -599,7 +599,7 @@
                                         <!-- Item post -->
                                         <div class="flex-wr-sb-s m-b-30">
                                             <a href="blog-detail-01.html" class="size-w-1 wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-09.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-09.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="size-w-2">
@@ -628,7 +628,7 @@
                                         <!-- Item post -->
                                         <div class="flex-wr-sb-s m-b-30">
                                             <a href="blog-detail-01.html" class="size-w-1 wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-07.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-07.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="size-w-2">
@@ -657,7 +657,7 @@
                                         <!-- Item post -->
                                         <div class="flex-wr-sb-s m-b-30">
                                             <a href="blog-detail-01.html" class="size-w-1 wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-08.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-08.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="size-w-2">
@@ -693,7 +693,7 @@
                                         <!-- Item post -->
                                         <div class="m-b-30">
                                             <a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-07.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-07.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="p-t-20">
@@ -724,7 +724,7 @@
                                         <!-- Item post -->
                                         <div class="flex-wr-sb-s m-b-30">
                                             <a href="blog-detail-01.html" class="size-w-1 wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-08.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-08.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="size-w-2">
@@ -753,7 +753,7 @@
                                         <!-- Item post -->
                                         <div class="flex-wr-sb-s m-b-30">
                                             <a href="blog-detail-01.html" class="size-w-1 wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-06.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-06.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="size-w-2">
@@ -782,7 +782,7 @@
                                         <!-- Item post -->
                                         <div class="flex-wr-sb-s m-b-30">
                                             <a href="blog-detail-01.html" class="size-w-1 wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-09.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-09.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="size-w-2">
@@ -867,7 +867,7 @@
                                         <!-- Item post -->
                                         <div class="m-b-30">
                                             <a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-10.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-10.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="p-t-20">
@@ -898,7 +898,7 @@
                                         <!-- Item post -->
                                         <div class="flex-wr-sb-s m-b-30">
                                             <a href="blog-detail-01.html" class="size-w-1 wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-11.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-11.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="size-w-2">
@@ -927,7 +927,7 @@
                                         <!-- Item post -->
                                         <div class="flex-wr-sb-s m-b-30">
                                             <a href="blog-detail-01.html" class="size-w-1 wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-12.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-12.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="size-w-2">
@@ -956,7 +956,7 @@
                                         <!-- Item post -->
                                         <div class="flex-wr-sb-s m-b-30">
                                             <a href="blog-detail-01.html" class="size-w-1 wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-13.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-13.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="size-w-2">
@@ -992,7 +992,7 @@
                                         <!-- Item post -->
                                         <div class="m-b-30">
                                             <a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-13.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-13.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="p-t-20">
@@ -1023,7 +1023,7 @@
                                         <!-- Item post -->
                                         <div class="flex-wr-sb-s m-b-30">
                                             <a href="blog-detail-01.html" class="size-w-1 wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-12.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-12.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="size-w-2">
@@ -1052,7 +1052,7 @@
                                         <!-- Item post -->
                                         <div class="flex-wr-sb-s m-b-30">
                                             <a href="blog-detail-01.html" class="size-w-1 wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-11.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-11.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="size-w-2">
@@ -1081,7 +1081,7 @@
                                         <!-- Item post -->
                                         <div class="flex-wr-sb-s m-b-30">
                                             <a href="blog-detail-01.html" class="size-w-1 wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-10.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-10.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="size-w-2">
@@ -1117,7 +1117,7 @@
                                         <!-- Item post -->
                                         <div class="m-b-30">
                                             <a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-11.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-11.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="p-t-20">
@@ -1148,7 +1148,7 @@
                                         <!-- Item post -->
                                         <div class="flex-wr-sb-s m-b-30">
                                             <a href="blog-detail-01.html" class="size-w-1 wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-12.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-12.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="size-w-2">
@@ -1177,7 +1177,7 @@
                                         <!-- Item post -->
                                         <div class="flex-wr-sb-s m-b-30">
                                             <a href="blog-detail-01.html" class="size-w-1 wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-13.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-13.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="size-w-2">
@@ -1206,7 +1206,7 @@
                                         <!-- Item post -->
                                         <div class="flex-wr-sb-s m-b-30">
                                             <a href="blog-detail-01.html" class="size-w-1 wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-10.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-10.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="size-w-2">
@@ -1242,7 +1242,7 @@
                                         <!-- Item post -->
                                         <div class="m-b-30">
                                             <a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-12.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-12.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="p-t-20">
@@ -1273,7 +1273,7 @@
                                         <!-- Item post -->
                                         <div class="flex-wr-sb-s m-b-30">
                                             <a href="blog-detail-01.html" class="size-w-1 wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-13.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-13.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="size-w-2">
@@ -1302,7 +1302,7 @@
                                         <!-- Item post -->
                                         <div class="flex-wr-sb-s m-b-30">
                                             <a href="blog-detail-01.html" class="size-w-1 wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-10.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-10.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="size-w-2">
@@ -1331,7 +1331,7 @@
                                         <!-- Item post -->
                                         <div class="flex-wr-sb-s m-b-30">
                                             <a href="blog-detail-01.html" class="size-w-1 wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-11.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-11.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="size-w-2">
@@ -1420,7 +1420,7 @@
                                         <!-- Item post -->
                                         <div class="m-b-30">
                                             <a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-14.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-14.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="p-t-20">
@@ -1451,7 +1451,7 @@
                                         <!-- Item post -->
                                         <div class="flex-wr-sb-s m-b-30">
                                             <a href="blog-detail-01.html" class="size-w-1 wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-15.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-15.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="size-w-2">
@@ -1480,7 +1480,7 @@
                                         <!-- Item post -->
                                         <div class="flex-wr-sb-s m-b-30">
                                             <a href="blog-detail-01.html" class="size-w-1 wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-16.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-16.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="size-w-2">
@@ -1509,7 +1509,7 @@
                                         <!-- Item post -->
                                         <div class="flex-wr-sb-s m-b-30">
                                             <a href="blog-detail-01.html" class="size-w-1 wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-17.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-17.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="size-w-2">
@@ -1545,7 +1545,7 @@
                                         <!-- Item post -->
                                         <div class="m-b-30">
                                             <a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-15.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-15.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="p-t-20">
@@ -1576,7 +1576,7 @@
                                         <!-- Item post -->
                                         <div class="flex-wr-sb-s m-b-30">
                                             <a href="blog-detail-01.html" class="size-w-1 wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-16.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-16.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="size-w-2">
@@ -1605,7 +1605,7 @@
                                         <!-- Item post -->
                                         <div class="flex-wr-sb-s m-b-30">
                                             <a href="blog-detail-01.html" class="size-w-1 wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-17.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-17.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="size-w-2">
@@ -1634,7 +1634,7 @@
                                         <!-- Item post -->
                                         <div class="flex-wr-sb-s m-b-30">
                                             <a href="blog-detail-01.html" class="size-w-1 wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-18.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-18.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="size-w-2">
@@ -1670,7 +1670,7 @@
                                         <!-- Item post -->
                                         <div class="m-b-30">
                                             <a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-16.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-16.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="p-t-20">
@@ -1701,7 +1701,7 @@
                                         <!-- Item post -->
                                         <div class="flex-wr-sb-s m-b-30">
                                             <a href="blog-detail-01.html" class="size-w-1 wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-17.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-17.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="size-w-2">
@@ -1730,7 +1730,7 @@
                                         <!-- Item post -->
                                         <div class="flex-wr-sb-s m-b-30">
                                             <a href="blog-detail-01.html" class="size-w-1 wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-18.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-18.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="size-w-2">
@@ -1759,7 +1759,7 @@
                                         <!-- Item post -->
                                         <div class="flex-wr-sb-s m-b-30">
                                             <a href="blog-detail-01.html" class="size-w-1 wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-14.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-14.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="size-w-2">
@@ -1795,7 +1795,7 @@
                                         <!-- Item post -->
                                         <div class="m-b-30">
                                             <a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-17.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-17.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="p-t-20">
@@ -1826,7 +1826,7 @@
                                         <!-- Item post -->
                                         <div class="flex-wr-sb-s m-b-30">
                                             <a href="blog-detail-01.html" class="size-w-1 wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-18.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-18.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="size-w-2">
@@ -1855,7 +1855,7 @@
                                         <!-- Item post -->
                                         <div class="flex-wr-sb-s m-b-30">
                                             <a href="blog-detail-01.html" class="size-w-1 wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-14.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-14.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="size-w-2">
@@ -1884,7 +1884,7 @@
                                         <!-- Item post -->
                                         <div class="flex-wr-sb-s m-b-30">
                                             <a href="blog-detail-01.html" class="size-w-1 wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-15.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-15.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="size-w-2">
@@ -1920,7 +1920,7 @@
                                         <!-- Item post -->
                                         <div class="m-b-30">
                                             <a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-18.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-18.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="p-t-20">
@@ -1951,7 +1951,7 @@
                                         <!-- Item post -->
                                         <div class="flex-wr-sb-s m-b-30">
                                             <a href="blog-detail-01.html" class="size-w-1 wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-17.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-17.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="size-w-2">
@@ -1980,7 +1980,7 @@
                                         <!-- Item post -->
                                         <div class="flex-wr-sb-s m-b-30">
                                             <a href="blog-detail-01.html" class="size-w-1 wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-16.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-16.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="size-w-2">
@@ -2009,7 +2009,7 @@
                                         <!-- Item post -->
                                         <div class="flex-wr-sb-s m-b-30">
                                             <a href="blog-detail-01.html" class="size-w-1 wrap-pic-w hov1 trans-03">
-                                                <img src="images/post-15.jpg" alt="IMG">
+                                                <img src="{{  asset('assets/frontend/images/post-15.jpg') }}" alt="IMG">
                                             </a>
 
                                             <div class="size-w-2">
@@ -2185,7 +2185,7 @@
                         <!-- Item latest -->
                         <div class="m-b-45">
                             <a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-                                <img src="images/latest-01.jpg" alt="IMG">
+                                <img src="{{  asset('assets/frontend/images/latest-01.jpg') }}" alt="IMG">
                             </a>
 
                             <div class="p-t-16">
@@ -2216,7 +2216,7 @@
                         <!-- Item latest -->
                         <div class="m-b-45">
                             <a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-                                <img src="images/latest-02.jpg" alt="IMG">
+                                <img src="{{  asset('assets/frontend/images/latest-02.jpg') }}" alt="IMG">
                             </a>
 
                             <div class="p-t-16">
@@ -2247,7 +2247,7 @@
                         <!-- Item latest -->
                         <div class="m-b-45">
                             <a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-                                <img src="images/latest-03.jpg" alt="IMG">
+                                <img src="{{  asset('assets/frontend/images/latest-03.jpg') }}" alt="IMG">
                             </a>
 
                             <div class="p-t-16">
@@ -2278,7 +2278,7 @@
                         <!-- Item latest -->
                         <div class="m-b-45">
                             <a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-                                <img src="images/latest-04.jpg" alt="IMG">
+                                <img src="{{  asset('assets/frontend/images/latest-04.jpg') }}" alt="IMG">
                             </a>
 
                             <div class="p-t-16">
@@ -2309,7 +2309,7 @@
                         <!-- Item latest -->
                         <div class="m-b-45">
                             <a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-                                <img src="images/latest-05.jpg" alt="IMG">
+                                <img src="{{  asset('assets/frontend/images/latest-05.jpg') }}" alt="IMG">
                             </a>
 
                             <div class="p-t-16">
@@ -2340,7 +2340,7 @@
                         <!-- Item latest -->
                         <div class="m-b-45">
                             <a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-                                <img src="images/latest-06.jpg" alt="IMG">
+                                <img src="{{  asset('assets/frontend/images/latest-06.jpg') }}" alt="IMG">
                             </a>
 
                             <div class="p-t-16">
@@ -2381,7 +2381,7 @@
 
                         <div>
                             <div class="wrap-pic-w pos-relative">
-                                <img src="images/video-01.jpg" alt="IMG">
+                                <img src="{{  asset('assets/frontend/images/video-01.jpg') }}" alt="IMG">
 
                                 <button class="s-full ab-t-l flex-c-c fs-32 cl0 hov-cl10 trans-03" data-toggle="modal" data-target="#modal-video-01">
                                     <span class="fab fa-youtube"></span>

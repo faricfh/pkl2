@@ -4,26 +4,25 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Kategori extends Model
+class Tag extends Model
 {
-    protected $fillable = ['nama_kategori', 'slug'];
+    protected $fillable = ['nama_tag', 'slug'];
     public $timestamps = true;
 
     public function artikel()
     {
-        return $this->hasMany('App\Artikel', 'id_kategori');
+        return $this->belongsToMany('App\Artikel', 'artikel_tag', 'id_tag', 'id_artikel');
     }
-
     public static function boot()
     {
         parent::boot();
-        self::deleting(function ($kategori) {
+        self::deleting(function ($tag) {
             // mengecek apakah penulis masih punya buku
-            if ($kategori->artikel->count() > 0) {
+            if ($tag->artikel->count() > 0) {
                 //menyiapkan pesan error
                 $html = 'Kategori tidak bisa dihapus karena masih digunakan oleh artikel: ';
                 $html .= '<ul>';
-                foreach ($kategori->artikel as $data) {
+                foreach ($tag->artikel as $data) {
                     $html .= "<li>$data->judul<li>";
                 }
                 $html .= '<ul>';

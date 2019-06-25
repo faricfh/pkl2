@@ -38,7 +38,7 @@
     <div class="container">
         <div class="row m-rl--1">
             <div class="col-md-6 p-rl-1 p-b-2">
-                <div class="bg-img1 size-a-3 how1 pos-relative" style="background-image: url(images/entertaiment-01.jpg);">
+                <div class="bg-img1 size-a-3 how1 pos-relative" style="background-image: url(assets/frontend/images/entertaiment-01.jpg);">
                     <a href="blog-detail-01.html" class="dis-block how1-child1 trans-03"></a>
 
                     <div class="flex-col-e-s s-full p-rl-25 p-tb-20">
@@ -72,7 +72,7 @@
             <div class="col-md-6 p-rl-1">
                 <div class="row m-rl--1">
                     <div class="col-sm-6 p-rl-1 p-b-2">
-                        <div class="bg-img1 size-a-14 how1 pos-relative" style="background-image: url(images/entertaiment-02.jpg);">
+                        <div class="bg-img1 size-a-14 how1 pos-relative" style="background-image: url(assets/frontend/images/entertaiment-02.jpg);">
                             <a href="blog-detail-01.html" class="dis-block how1-child1 trans-03"></a>
 
                             <div class="flex-col-e-s s-full p-rl-25 p-tb-20">
@@ -90,7 +90,7 @@
                     </div>
 
                     <div class="col-sm-6 p-rl-1 p-b-2">
-                        <div class="bg-img1 size-a-14 how1 pos-relative" style="background-image: url(images/entertaiment-03.jpg);">
+                        <div class="bg-img1 size-a-14 how1 pos-relative" style="background-image: url(assets/frontend/images/entertaiment-03.jpg);">
                             <a href="blog-detail-01.html" class="dis-block how1-child1 trans-03"></a>
 
                             <div class="flex-col-e-s s-full p-rl-25 p-tb-20">
@@ -108,7 +108,7 @@
                     </div>
 
                     <div class="col-sm-6 p-rl-1 p-b-2">
-                        <div class="bg-img1 size-a-14 how1 pos-relative" style="background-image: url(images/entertaiment-04.jpg);">
+                        <div class="bg-img1 size-a-14 how1 pos-relative" style="background-image: url(assets/frontend/images/entertaiment-04.jpg);">
                             <a href="blog-detail-01.html" class="dis-block how1-child1 trans-03"></a>
 
                             <div class="flex-col-e-s s-full p-rl-25 p-tb-20">
@@ -126,7 +126,7 @@
                     </div>
 
                     <div class="col-sm-6 p-rl-1 p-b-2">
-                        <div class="bg-img1 size-a-14 how1 pos-relative" style="background-image: url(images/entertaiment-05.jpg);">
+                        <div class="bg-img1 size-a-14 how1 pos-relative" style="background-image: url(assets/frontend/images/entertaiment-05.jpg);">
                             <a href="blog-detail-01.html" class="dis-block how1-child1 trans-03"></a>
 
                             <div class="flex-col-e-s s-full p-rl-25 p-tb-20">
@@ -158,7 +158,7 @@
                         <!-- Item latest -->
                         <div class="m-b-45">
                             <a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-                                <img src="images/entertaiment-06.jpg" alt="IMG">
+                                <img src="{{ asset('assets/frontend/images/entertaiment-06.jpg') }}" alt="IMG">
                             </a>
 
                             <div class="p-t-16">
@@ -189,7 +189,7 @@
                         <!-- Item latest -->
                         <div class="m-b-45">
                             <a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-                                <img src="images/entertaiment-07.jpg" alt="IMG">
+                                <img src="{{ asset('assets/frontend/images/entertaiment-07.jpg') }}" alt="IMG">
                             </a>
 
                             <div class="p-t-16">
@@ -220,7 +220,7 @@
                         <!-- Item latest -->
                         <div class="m-b-45">
                             <a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-                                <img src="images/entertaiment-08.jpg" alt="IMG">
+                                <img src="{{ asset('assets/frontend/images/entertaiment-08.jpg') }}" alt="IMG">
                             </a>
 
                             <div class="p-t-16">
@@ -251,7 +251,7 @@
                         <!-- Item latest -->
                         <div class="m-b-45">
                             <a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-                                <img src="images/entertaiment-09.jpg" alt="IMG">
+                                <img src="{{ asset('assets/frontend/images/entertaiment-09.jpg') }}" alt="IMG">
                             </a>
 
                             <div class="p-t-16">
@@ -282,7 +282,7 @@
                         <!-- Item latest -->
                         <div class="m-b-45">
                             <a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-                                <img src="images/latest-05.jpg" alt="IMG">
+                                <img src="{{ asset('assets/frontend/images/latest-05.jpg') }}" alt="IMG">
                             </a>
 
                             <div class="p-t-16">
@@ -313,7 +313,7 @@
                         <!-- Item latest -->
                         <div class="m-b-45">
                             <a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-                                <img src="images/latest-06.jpg" alt="IMG">
+                                <img src="{{ asset('assets/frontend/images/latest-06.jpg') }}" alt="IMG">
                             </a>
 
                             <div class="p-t-16">
@@ -344,7 +344,7 @@
                         <!-- Item latest -->
                         <div class="m-b-45">
                             <a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-                                <img src="images/entertaiment-10.jpg" alt="IMG">
+                                <img src="{{ asset('assets/frontend/images/entertaiment-10.jpg') }}" alt="IMG">
                             </a>
 
                             <div class="p-t-16">
@@ -375,7 +375,7 @@
                         <!-- Item latest -->
                         <div class="m-b-45">
                             <a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-                                <img src="images/entertaiment-11.jpg" alt="IMG">
+                                <img src="{{ asset('assets/frontend/images/entertaiment-11.jpg') }}" alt="IMG">
                             </a>
 
                             <div class="p-t-16">
@@ -406,7 +406,7 @@
                         <!-- Item latest -->
                         <div class="m-b-45">
                             <a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-                                <img src="images/entertaiment-12.jpg" alt="IMG">
+                                <img src="{{ asset('assets/frontend/images/entertaiment-12.jpg') }}" alt="IMG">
                             </a>
 
                             <div class="p-t-16">
@@ -437,7 +437,7 @@
                         <!-- Item latest -->
                         <div class="m-b-45">
                             <a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-                                <img src="images/entertaiment-13.jpg" alt="IMG">
+                                <img src="{{ asset('assets/frontend/images/entertaiment-13.jpg') }}" alt="IMG">
                             </a>
 
                             <div class="p-t-16">
@@ -468,7 +468,7 @@
                         <!-- Item latest -->
                         <div class="m-b-45">
                             <a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-                                <img src="images/entertaiment-14.jpg" alt="IMG">
+                                <img src="{{ asset('assets/frontend/images/entertaiment-14.jpg') }}" alt="IMG">
                             </a>
 
                             <div class="p-t-16">
@@ -499,7 +499,7 @@
                         <!-- Item latest -->
                         <div class="m-b-45">
                             <a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-                                <img src="images/entertaiment-15.jpg" alt="IMG">
+                                <img src="{{ asset('assets/frontend/images/entertaiment-15.jpg') }}" alt="IMG">
                             </a>
 
                             <div class="p-t-16">

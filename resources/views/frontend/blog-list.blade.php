@@ -4,7 +4,7 @@
 <div class="container">
     <div class="bg0 flex-wr-sb-c p-rl-20 p-tb-8">
         <div class="f2-s-1 p-r-30 m-tb-6">
-            <a href="index.html" class="breadcrumb-item f1-s-3 cl9">
+            <a href="/" class="breadcrumb-item f1-s-3 cl9">
                 Home
             </a>
 
@@ -39,7 +39,7 @@
                         <!-- Item post -->
                         <div class="flex-wr-sb-s p-t-40 p-b-15 how-bor2">
                             <a href="blog-detail-02.html" class="size-w-8 wrap-pic-w hov1 trans-03 w-full-sr575 m-b-25">
-                                <img src="images/post-43.jpg" alt="IMG">
+                                <img src="{{ asset('assets/frontend/images/post-43.jpg') }}" alt="IMG">
                             </a>
 
                             <div class="size-w-9 w-full-sr575 m-b-25">
@@ -77,7 +77,7 @@
                         <!-- Item post -->
                         <div class="flex-wr-sb-s p-t-40 p-b-15 how-bor2">
                             <a href="blog-detail-02.html" class="size-w-8 wrap-pic-w hov1 trans-03 w-full-sr575 m-b-25">
-                                <img src="images/post-44.jpg" alt="IMG">
+                                <img src="{{ asset('assets/frontend/images/post-44.jpg') }}" alt="IMG">
                             </a>
 
                             <div class="size-w-9 w-full-sr575 m-b-25">
@@ -115,7 +115,7 @@
                         <!-- Item post -->
                         <div class="flex-wr-sb-s p-t-40 p-b-15 how-bor2">
                             <a href="blog-detail-02.html" class="size-w-8 wrap-pic-w hov1 trans-03 w-full-sr575 m-b-25">
-                                <img src="images/post-45.jpg" alt="IMG">
+                                <img src="{{ asset('assets/frontend/images/post-45.jpg') }}" alt="IMG">
                             </a>
 
                             <div class="size-w-9 w-full-sr575 m-b-25">
@@ -153,7 +153,7 @@
                         <!-- Item post -->
                         <div class="flex-wr-sb-s p-t-40 p-b-15 how-bor2">
                             <a href="blog-detail-02.html" class="size-w-8 wrap-pic-w hov1 trans-03 w-full-sr575 m-b-25">
-                                <img src="images/post-46.jpg" alt="IMG">
+                                <img src="{{ asset('assets/frontend/images/post-46.jpg') }}" alt="IMG">
                             </a>
 
                             <div class="size-w-9 w-full-sr575 m-b-25">
@@ -191,7 +191,7 @@
                         <!-- Item post -->
                         <div class="flex-wr-sb-s p-t-40 p-b-15 how-bor2">
                             <a href="blog-detail-02.html" class="size-w-8 wrap-pic-w hov1 trans-03 w-full-sr575 m-b-25">
-                                <img src="images/post-47.jpg" alt="IMG">
+                                <img src="{{ asset('assets/frontend/images/post-47.jpg') }}" alt="IMG">
                             </a>
 
                             <div class="size-w-9 w-full-sr575 m-b-25">
@@ -229,7 +229,7 @@
                         <!-- Item post -->
                         <div class="flex-wr-sb-s p-t-40 p-b-15 how-bor2">
                             <a href="blog-detail-02.html" class="size-w-8 wrap-pic-w hov1 trans-03 w-full-sr575 m-b-25">
-                                <img src="images/post-48.jpg" alt="IMG">
+                                <img src="{{ asset('assets/frontend/images/post-48.jpg') }}" alt="IMG">
                             </a>
 
                             <div class="size-w-9 w-full-sr575 m-b-25">
@@ -267,7 +267,7 @@
                         <!-- Item post -->
                         <div class="flex-wr-sb-s p-t-40 p-b-15 how-bor2">
                             <a href="blog-detail-02.html" class="size-w-8 wrap-pic-w hov1 trans-03 w-full-sr575 m-b-25">
-                                <img src="images/post-49.jpg" alt="IMG">
+                                <img src="{{ asset('assets/frontend/images/post-49.jpg') }}" alt="IMG">
                             </a>
 
                             <div class="size-w-9 w-full-sr575 m-b-25">
