@@ -142,45 +142,6 @@
                             <h3 class="f1-m-2 cl12 tab01-title">
                                 Entertainment
                             </h3>
-
-                            <!-- Nav tabs -->
-                            <ul class="nav nav-tabs" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link active" data-toggle="tab" href="#tab1-1" role="tab">All</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tab1-2" role="tab">Celebrity</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tab1-3" role="tab">Movies</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tab1-4" role="tab">Music</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tab1-5" role="tab">Games</a>
-                                </li>
-
-                                <li class="nav-item-more dropdown dis-none">
-                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">
-                                        <i class="fa fa-ellipsis-h"></i>
-                                    </a>
-
-                                    <ul class="dropdown-menu">
-
-                                    </ul>
-                                </li>
-                            </ul>
-
-                            <!--  -->
-                            <a href="category-01.html" class="tab01-link f1-s-1 cl9 hov-cl10 trans-03">
-                                View all
-                                <i class="fs-12 m-l-5 fa fa-caret-right"></i>
-                            </a>
                         </div>
 
 
@@ -798,41 +759,6 @@
                             <h3 class="f1-m-2 cl13 tab01-title">
                                 Business
                             </h3>
-
-                            <!-- Nav tabs -->
-                            <ul class="nav nav-tabs" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link active" data-toggle="tab" href="#tab2-1" role="tab">All</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tab2-2" role="tab">Finance</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tab2-3" role="tab">Money & Markets</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tab2-4" role="tab">Small Business</a>
-                                </li>
-
-                                <li class="nav-item-more dropdown dis-none">
-                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">
-                                        <i class="fa fa-ellipsis-h"></i>
-                                    </a>
-
-                                    <ul class="dropdown-menu">
-
-                                    </ul>
-                                </li>
-                            </ul>
-
-                            <!--  -->
-                            <a href="category-01.html" class="tab01-link f1-s-1 cl9 hov-cl10 trans-03">
-                                View all
-                                <i class="fs-12 m-l-5 fa fa-caret-right"></i>
-                            </a>
                         </div>
 
 
@@ -1347,45 +1273,6 @@
                             <h3 class="f1-m-2 cl14 tab01-title">
                                 Travel
                             </h3>
-
-                            <!-- Nav tabs -->
-                            <ul class="nav nav-tabs" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link active" data-toggle="tab" href="#tab3-1" role="tab">All</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tab3-2" role="tab">Hotels</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tab3-3" role="tab">Flight</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tab3-4" role="tab">Beachs</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tab3-5" role="tab">Culture</a>
-                                </li>
-
-                                <li class="nav-item-more dropdown dis-none">
-                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">
-                                        <i class="fa fa-ellipsis-h"></i>
-                                    </a>
-
-                                    <ul class="dropdown-menu">
-
-                                    </ul>
-                                </li>
-                            </ul>
-
-                            <!--  -->
-                            <a href="category-01.html" class="tab01-link f1-s-1 cl9 hov-cl10 trans-03">
-                                View all
-                                <i class="fs-12 m-l-5 fa fa-caret-right"></i>
-                            </a>
                         </div>
 
 
@@ -2208,13 +2095,13 @@ var url = 'api/latest';
                     <div class="col-sm-6 p-r-25 p-r-15-sr991">
                         <!-- Item latest -->
                         <div class="m-b-45 ">
-                            <a href="blog-detail/${value.id}" class="wrap-pic-w hov1 trans-03">
+                            <a href="blog-detail/${value.slug}" class="wrap-pic-w hov1 trans-03">
                                 <img src="/assets/img/artikel/${value.foto}" alt="IMG" style="height:200px">
                             </a>
 
                             <div class="p-t-16">
                                 <h5 class="p-b-5">
-                                    <a url="blog-detail/${value.id}" class="f1-m-3 cl2 hov-cl10 trans-03">
+                                    <a href="blog-detail/${value.slug}" class="f1-m-3 cl2 hov-cl10 trans-03">
                                         ${value.judul}
                                     </a>
                                 </h5>

@@ -37,7 +37,8 @@ Route::get('/category', function () {
 
 
 //route parameter
-Route::resource('/blog-detail/{id}', 'FrontendController@blogdetail');
+
+route::get('blog-detail/{artikel}', 'FrontendController@blogdetail');
 //end route
 
 Auth::routes();
@@ -62,5 +63,3 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::resource('artikel', 'Artikel_Controller');
     Route::resource('review', 'Review_Controller');
 });
-
-route::get('berita-terakhir', 'FrontendController@beritaterakhir');

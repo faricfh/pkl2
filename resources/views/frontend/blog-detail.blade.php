@@ -448,3 +448,25 @@
 		</div>
 	</section>
 @endsection
+@push('script')
+    <script>
+var url = 'api/latest';
+    $.ajax({
+        url: url,
+        datatype : 'json',
+        success : function(berhasil){
+            $.each(berhasil.data.artikel, function(key, value){
+                console.log(berhasil)
+                $(".latest").append(
+                `
+
+                `
+                )
+            })
+        },
+        error: function(gagal){
+            console.log(gagal)
+        }
+    });
+</script>
+@endpush

@@ -121,9 +121,9 @@ class FrontendController extends Controller
         return response()->json($respons, 200);
     }
 
-    public function blogdetail($id)
+    public function blogdetail(Artikel $artikel)
     {
-        $artikel = Artikel::orderBy('created_at', 'desc')->take(4)->get();
+        $artikel = Artikel::all();
         $kategori = Kategori::all();
         $tag = Tag::all();
         $user = User::all();
