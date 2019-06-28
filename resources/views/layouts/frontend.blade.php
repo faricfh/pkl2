@@ -21,7 +21,8 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="{{ asset('assets/frontend/css/util.min.css') }}">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="{{ asset('assets/frontend/css/main.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/frontend/css/main.css') }}">
+    @yield('css')
 <!--===============================================================================================-->
 </head>
 <body class="animsition">
@@ -105,9 +106,9 @@
 						</a>
 
 						<ul class="main-menu">
-                            <li class="mega-menu-item">
-                                <a href="{{ url('/') }}">Home</a>
-                            </li>
+							<li class="mega-menu-item">
+									<a href="{{ url('/') }}">Home</a>
+							</li>
 
 							<li class="mega-menu-item">
 								<a href="{{ url('/category') }}">News</a>
@@ -279,6 +280,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="{{ asset('assets/frontend/vendor/bootstrap/js/bootstrap.min.js') }}"></script>
 <!--===============================================================================================-->
 	<script src="{{ asset('assets/frontend/js/main.js') }}"></script>
-
+    @stack('script')
+    @yield('js')
 </body>
 </html>

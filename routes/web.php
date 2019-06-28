@@ -36,10 +36,31 @@ Route::get('/category', function () {
 // end route
 
 
+//route parameter
+Route::resource('/blog-detail/{id}', 'FrontendController@blogdetail');
+//end route
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/admin', function () {
-    return view('backend');
+// Route::get('/admin', function () {
+//     return view('backend');
+// });
+
+Route::get('adminbackend', function () {
+    return view('adminbackend');
 });
+
+Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
+    Route::get('/', function () {
+        return view('admin.index');
+    });
+
+    Route::resource('kategori', 'Kategori_Controller');
+    Route::resource('tag', 'Tag_Controller');
+    Route::resource('artikel', 'Artikel_Controller');
+    Route::resource('review', 'Review_Controller');
+});
+
+route::get('berita-terakhir', 'FrontendController@beritaterakhir');
