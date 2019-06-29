@@ -34,6 +34,31 @@ class FrontendController extends Controller
         // ];
 
         // return response()->json($response, 200);
+        $artikel = Artikel::orderBy('created_at', 'desc')->take(4)->get();
+        $kategori = Kategori::all();
+        $populer = Artikel::all();
+        $entertainment = Artikel::orderBy('created_at', 'desc')->take(3)->get();
+        // $latest = Artikel::select('artikels.judul', 'artikels.slug',
+        //  'kategoris.nama_kategori as kategori', 'users.name as author')
+        //  ->join('users', 'users.id', '=', 'artikels.id_user')
+        //     ->join('kategoris', 'kategoris.id', '=', 'artikels.id_kategori');
+        $kategori = Kategori::all();
+        $tag = Tag::all();
+        $user = User::all();
+        $respons = [
+            'success' => true,
+            'data' => [
+                'artikel' => $artikel,
+                'kategori' => $kategori,
+                'tag' => $tag,
+                'user' => $user,
+                'entertainment' => $entertainment,
+                'popular' => $populer,
+                'kategori' => $kategori
+            ],
+            'message' => 'Berhasil'
+        ];
+        return response()->json($respons, 200);
     }
 
     /**
@@ -65,7 +90,24 @@ class FrontendController extends Controller
      */
     public function show($id)
     {
-        //
+        $artikel = Artikel::where('slug', $id)->first();
+
+        if (!$artikel) {
+            $response = [
+                'success' => false,
+                'data' => 'Empty',
+                'message' => 'artikel tidak ditemukan.'
+            ];
+            return response()->json($response, 404);
+        }
+
+        $response = [
+            'success' => true,
+            'data' =>  $artikel,
+            'message' => 'Berhasil.'
+        ];
+
+        return response()->json($response, 200);
     }
 
     /**
@@ -102,24 +144,24 @@ class FrontendController extends Controller
         //
     }
 
-    public function latest()
-    {
-        $artikel = Artikel::orderBy('created_at', 'desc')->take(4)->get();
-        $kategori = Kategori::all();
-        $tag = Tag::all();
-        $user = User::all();
-        $respons = [
-            'success' => true,
-            'data' => [
-                'artikel' => $artikel,
-                'kategori' => $kategori,
-                'tag' => $tag,
-                'user' => $user
-            ],
-            'message' => 'Berhasil'
-        ];
-        return response()->json($respons, 200);
-    }
+    // public function latest()
+    // {
+    //     $artikel = Artikel::orderBy('created_at', 'desc')->take(4)->get();
+    //     $kategori = Kategori::all();
+    //     $tag = Tag::all();
+    //     $user = User::all();
+    //     $respons = [
+    //         'success' => true,
+    //         'data' => [
+    //             'artikel' => $artikel,
+    //             'kategori' => $kategori,
+    //             'tag' => $tag,
+    //             'user' => $user
+    //         ],
+    //         'message' => 'Berhasil'
+    //     ];
+    //     return response()->json($respons, 200);
+    // }
 
     public function blogdetail(Artikel $artikel)
     {
@@ -127,16 +169,7 @@ class FrontendController extends Controller
         $kategori = Kategori::all();
         $tag = Tag::all();
         $user = User::all();
-        $respons = [
-            'success' => true,
-            'data' => [
-                'artikel' => $artikel,
-                'kategori' => $kategori,
-                'tag' => $tag,
-                'user' => $user
-            ],
-            'message' => 'Berhasil'
-        ];
-        return view('frontend.blog-detail');
+  
+        return view('frontend.blog-detail', compact('artikel'));
     }
 }

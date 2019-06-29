@@ -22,4 +22,5 @@ Route::resource('kategori', 'Api\KategoriController');
 Route::resource('artikel', 'Api\ArtikelController');
 Route::resource('tag', 'Api\TagController');
 
-Route::get('latest', 'FrontendController@latest');
+Route::resource('frontend', 'FrontendController');
+

@@ -280,6 +280,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="{{ asset('assets/frontend/vendor/bootstrap/js/bootstrap.min.js') }}"></script>
 <!--===============================================================================================-->
 	<script src="{{ asset('assets/frontend/js/main.js') }}"></script>
+	<script src="{{ asset('js/frontend.js') }}"></script>
     @stack('script')
     @yield('js')
 </body>
