@@ -38,7 +38,7 @@ Route::get('/category', function () {
 
 //route parameter
 route::get('blog-detail/{artikel}', 'FrontendController@blogdetail');
-route::get('category/{kategori}', 'FrontendController');
+// route::get('category/{kategori}', 'FrontendController');
 //end route
 
 Auth::routes();

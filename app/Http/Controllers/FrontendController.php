@@ -247,31 +247,31 @@ class FrontendController extends Controller
         return view('frontend.blog-detail', compact('artikel'));
     }
 
-    public function category(Kategori $kategori)
-    {
-        $category = Artikel::select('artikels.judul', 'artikels.slug', 'foto', 'konten','artikels.created_at', 'kategoris.nama_kategori as kategori',
-                                  'users.name as author')
-        ->join('users', 'users.id', '=', 'artikels.id_user')
-        ->join('kategoris', 'kategoris.id', '=', 'artikels.id_kategori')
-        ->where('kategoris.nama_kategori','=','adventure')->get();
+    // public function category(Kategori $kategori)
+    // {
+    //     $category = Artikel::select('artikels.judul', 'artikels.slug', 'foto', 'konten','artikels.created_at', 'kategoris.nama_kategori as kategori',
+    //                               'users.name as author')
+    //     ->join('users', 'users.id', '=', 'artikels.id_user')
+    //     ->join('kategoris', 'kategoris.id', '=', 'artikels.id_kategori')
+    //     ->where('kategoris.nama_kategori','=','adventure')->get();
 
 
-        if (!$category) {
-            $response = [
-                'success' => false,
-                'data' => 'Empty',
-                'message' => 'kategori tidak ditemukan.'
-            ];
-            return response()->json($response, 404);
-        }
+    //     if (!$category) {
+    //         $response = [
+    //             'success' => false,
+    //             'data' => 'Empty',
+    //             'message' => 'kategori tidak ditemukan.'
+    //         ];
+    //         return response()->json($response, 404);
+    //     }
 
-        $response = [
-            'success' => true,
-            'data' => ['category' => $category],
+    //     $response = [
+    //         'success' => true,
+    //         'data' => ['category' => $category],
  
-            'message' => 'Berhasil.'
-        ];
+    //         'message' => 'Berhasil.'
+    //     ];
 
-        return view('frontend.category');
-    }
+    //     return view('frontend.category');
+    // }
 }
