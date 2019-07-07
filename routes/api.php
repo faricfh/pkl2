@@ -23,4 +23,8 @@ Route::resource('artikel', 'Api\ArtikelController');
 Route::resource('tag', 'Api\TagController');
 
 Route::resource('frontend', 'FrontendController');
+// Route::resource('category', 'FrontendController', [
+//     'only' => ['index', 'show', 'store', 'update', 'destroy','blogdetail','category']
+// ]);
+
 

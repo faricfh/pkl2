@@ -15,6 +15,11 @@ class FrontendController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    // public function kategori(kategori){
+
+    // }
+
     public function index()
     {
         // $menu = Category::take(3)->get();
@@ -34,27 +39,82 @@ class FrontendController extends Controller
         // ];
 
         // return response()->json($response, 200);
+        // LATEST ARTIKEL
+        $latest = Artikel::select('artikels.judul', 'artikels.slug', 'foto', 'konten','artikels.created_at', 'kategoris.nama_kategori as kategori',
+                                  'users.name as author')
+        ->join('users', 'users.id', '=', 'artikels.id_user')
+        ->join('kategoris', 'kategoris.id', '=', 'artikels.id_kategori')->take(4)->get();
+
+        // KATEGORI ADVENTURE
+        $adventure = Artikel::select('artikels.judul', 'artikels.slug', 'foto', 'konten','artikels.created_at', 'kategoris.nama_kategori as kategori',
+                                  'users.name as author')
+        ->join('users', 'users.id', '=', 'artikels.id_user')
+        ->join('kategoris', 'kategoris.id', '=', 'artikels.id_kategori')
+        ->where('kategoris.nama_kategori','=','adventure')->take(3)->get();
+
+        // KATEGORI RPG
+        $rpg = Artikel::select('artikels.judul', 'artikels.slug', 'foto', 'konten','artikels.created_at', 'kategoris.nama_kategori as kategori',
+                                  'users.name as author')
+        ->join('users', 'users.id', '=', 'artikels.id_user')
+        ->join('kategoris', 'kategoris.id', '=', 'artikels.id_kategori')
+        ->where('kategoris.nama_kategori','=','rpg')->take(3)->get();
+
+        //  KATEGORI FPS
+        $fps = Artikel::select('artikels.judul', 'artikels.slug', 'foto', 'konten','artikels.created_at', 'kategoris.nama_kategori as kategori',
+                                  'users.name as author')
+        ->join('users', 'users.id', '=', 'artikels.id_user')
+        ->join('kategoris', 'kategoris.id', '=', 'artikels.id_kategori')
+        ->where('kategoris.nama_kategori','=','fps')->take(3)->get();
+
+        // MOST POPULAR
+        $most_popular = Artikel::inRandomOrder()->take(5)->get();
+
+        // BLOG
+        $blog = Artikel::select('artikels.judul', 'artikels.slug', 'foto', 'konten','artikels.created_at', 'kategoris.nama_kategori as kategori',
+                                  'users.name as author')
+        ->join('users', 'users.id', '=', 'artikels.id_user')
+        ->join('kategoris', 'kategoris.id', '=', 'artikels.id_kategori')->get();
+
+        //  POPULAR POST
+        $popular_post = Artikel::select('artikels.judul', 'artikels.slug', 'foto', 'konten','artikels.created_at', 'kategoris.nama_kategori as kategori',
+                                  'users.name as author')
+        ->join('users', 'users.id', '=', 'artikels.id_user')
+        ->join('kategoris', 'kategoris.id', '=', 'artikels.id_kategori')->inRandomOrder()->take(3)->get();
+
         $artikel = Artikel::orderBy('created_at', 'desc')->take(4)->get();
-        $kategori = Kategori::all();
         $populer = Artikel::all();
-        $entertainment = Artikel::orderBy('created_at', 'desc')->take(3)->get();
-        // $latest = Artikel::select('artikels.judul', 'artikels.slug',
-        //  'kategoris.nama_kategori as kategori', 'users.name as author')
-        //  ->join('users', 'users.id', '=', 'artikels.id_user')
-        //     ->join('kategoris', 'kategoris.id', '=', 'artikels.id_kategori');
-        $kategori = Kategori::all();
+        $article = Artikel::select('artikels.judul', 'artikels.slug', 'foto', 'konten', 'kategoris.nama_kategori as kategori',
+                                   'users.name as author')
+        ->join('users', 'users.id', '=', 'artikels.id_user')
+        ->join('kategoris', 'kategoris.id', '=', 'artikels.id_kategori')->get();
+
+        // CATEGORY
+        $category = Artikel::select('artikels.judul', 'artikels.slug', 'foto', 'konten','artikels.created_at', 'kategoris.nama_kategori as kategori',
+                                  'users.name as author')
+        ->join('users', 'users.id', '=', 'artikels.id_user')
+        ->join('kategoris', 'kategoris.id', '=', 'artikels.id_kategori')->get();
+
+        $kategori = Kategori::take(5)->get();
         $tag = Tag::all();
         $user = User::all();
         $respons = [
             'success' => true,
             'data' => [
+                'latest_artikel' => $latest,
+                'adventure' => $adventure,
+                'rpg' => $rpg,
+                'fps' => $fps,
+                'most_popular' => $most_popular,
+                'popular_post' => $popular_post,
+                'category' => $category,
                 'artikel' => $artikel,
                 'kategori' => $kategori,
                 'tag' => $tag,
                 'user' => $user,
-                'entertainment' => $entertainment,
                 'popular' => $populer,
-                'kategori' => $kategori
+                'kategori' => $kategori,
+                'article' => $article,
+                'blog' => $blog
             ],
             'message' => 'Berhasil'
         ];
@@ -90,24 +150,24 @@ class FrontendController extends Controller
      */
     public function show($id)
     {
-        $artikel = Artikel::where('slug', $id)->first();
+        // $artikel = Artikel::where('slug', $id)->first();
 
-        if (!$artikel) {
-            $response = [
-                'success' => false,
-                'data' => 'Empty',
-                'message' => 'artikel tidak ditemukan.'
-            ];
-            return response()->json($response, 404);
-        }
+        // if (!$artikel) {
+        //     $response = [
+        //         'success' => false,
+        //         'data' => 'Empty',
+        //         'message' => 'artikel tidak ditemukan.'
+        //     ];
+        //     return response()->json($response, 404);
+        // }
 
-        $response = [
-            'success' => true,
-            'data' =>  $artikel,
-            'message' => 'Berhasil.'
-        ];
+        // $response = [
+        //     'success' => true,
+        //     'data' =>  $artikel,
+        //     'message' => 'Berhasil.'
+        // ];
 
-        return response()->json($response, 200);
+        // return response()->json($response, 200);
     }
 
     /**
@@ -163,13 +223,55 @@ class FrontendController extends Controller
     //     return response()->json($respons, 200);
     // }
 
-    public function blogdetail(Artikel $artikel)
+    public function blogdetail($id)
     {
-        $artikel = Artikel::all();
-        $kategori = Kategori::all();
-        $tag = Tag::all();
-        $user = User::all();
-  
+
+        $artikel = Artikel::where('slug', $id)->first();
+
+        if (!$artikel) {
+            $response = [
+                'success' => false,
+                'data' => 'Empty',
+                'message' => 'artikel tidak ditemukan.'
+            ];
+            return response()->json($response, 404);
+        }
+
+        $response = [
+            'success' => true,
+            'data' => $artikel,
+ 
+            'message' => 'Berhasil.'
+        ];
+
         return view('frontend.blog-detail', compact('artikel'));
+    }
+
+    public function category(Kategori $kategori)
+    {
+        $category = Artikel::select('artikels.judul', 'artikels.slug', 'foto', 'konten','artikels.created_at', 'kategoris.nama_kategori as kategori',
+                                  'users.name as author')
+        ->join('users', 'users.id', '=', 'artikels.id_user')
+        ->join('kategoris', 'kategoris.id', '=', 'artikels.id_kategori')
+        ->where('kategoris.nama_kategori','=','adventure')->get();
+
+
+        if (!$category) {
+            $response = [
+                'success' => false,
+                'data' => 'Empty',
+                'message' => 'kategori tidak ditemukan.'
+            ];
+            return response()->json($response, 404);
+        }
+
+        $response = [
+            'success' => true,
+            'data' => ['category' => $category],
+ 
+            'message' => 'Berhasil.'
+        ];
+
+        return view('frontend.category');
     }
 }

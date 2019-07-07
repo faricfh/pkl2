@@ -105,7 +105,7 @@
 							<img src="{{ asset('assets/frontend/images/icons/logo-01.png') }}" alt="LOGO">
 						</a>
 
-						<ul class="main-menu">
+						<ul class="main-menu nav_kategori">
 							<li class="mega-menu-item">
 									<a href="{{ url('/') }}">Home</a>
 							</li>
@@ -114,32 +114,8 @@
 								<a href="{{ url('/category') }}">News</a>
 							</li>
 
-							<li class="mega-menu-item">
-								<a href="{{ url('/category') }}">Business</a>
-							</li>
-
-							<li class="mega-menu-item">
-								<a href="{{ url('/category') }}">Travel</a>
-							</li>
-
-							<li class="mega-menu-item">
-								<a href="{{ url('/category') }}">Life Style</a>
-							</li>
-
-							<li class="mega-menu-item">
-								<a href="{{ url('/category') }}">Video</a>
-							</li>
-
 							<li>
-								<a href="#">Features</a>
-								<ul class="sub-menu">
-									<li><a href="{{ url('/category') }}">Category Page v1</a></li>
-									<li><a href="{{ url('/blog-grid') }}">Blog Grid Sidebar</a></li>
-									<li><a href="{{ url('/blog-list') }}">Blog List Sidebar v1</a></li>
-									<li><a href="{{ url('/blog-detail') }}">Blog Detail Sidebar</a></li>
-									<li><a href="{{ url('/about') }}">About Us</a></li>
-									<li><a href="{{ url('/contact') }}">Contact Us</a></li>
-								</ul>
+								<a href="{{ url('/blog-grid') }}">Blog</a>
 							</li>
 						</ul>
 					</nav>
@@ -164,11 +140,11 @@
 
 						<div>
 							<p class="f1-s-1 cl11 p-b-16">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempor magna eget elit efficitur, at accumsan sem placerat. Nulla tellus libero, mattis nec molestie at, facilisis ut turpis. Vestibulum dolor metus, tincidunt eget odio
+								Website ini kami menyediakan bermacam macam video game, Website kami akan merekomendasikan para pengunjung bisa mencari video game yang menurut pengunjung sekalian menarik di Website ini 
 							</p>
 
 							<p class="f1-s-1 cl11 p-b-16">
-								Any questions? Call us on (+1) 96 716 6879
+								Ada Pertanyaan? Hubungi kami di (+62)xxxxxxx
 							</p>
 
 							<div class="p-t-15">
@@ -202,36 +178,8 @@
 							</h5>
 						</div>
 
-						<ul class="m-t--12">
-							<li class="how-bor1 p-rl-5 p-tb-10">
-								<a href="#" class="f1-s-5 cl11 hov-cl10 trans-03 p-tb-8">
-									Fashion (22)
-								</a>
-							</li>
-
-							<li class="how-bor1 p-rl-5 p-tb-10">
-								<a href="#" class="f1-s-5 cl11 hov-cl10 trans-03 p-tb-8">
-									Technology (29)
-								</a>
-							</li>
-
-							<li class="how-bor1 p-rl-5 p-tb-10">
-								<a href="#" class="f1-s-5 cl11 hov-cl10 trans-03 p-tb-8">
-									Street Style (15)
-								</a>
-							</li>
-
-							<li class="how-bor1 p-rl-5 p-tb-10">
-								<a href="#" class="f1-s-5 cl11 hov-cl10 trans-03 p-tb-8">
-									Life Style (28)
-								</a>
-							</li>
-
-							<li class="how-bor1 p-rl-5 p-tb-10">
-								<a href="#" class="f1-s-5 cl11 hov-cl10 trans-03 p-tb-8">
-									DIY & Crafts (16)
-								</a>
-							</li>
+						<ul class="m-t--12 footer_kategori">
+							
 						</ul>
 					</div>
 				</div>
@@ -244,7 +192,7 @@
 					Copyright © 2018
 
 					<a href="#" class="f1-s-1 cl10 hov-link1"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template edit <i class="fa fa-heart" aria-hidden="true"></i> by <a href="{{url('/about')}}" target="_blank">Ousama</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 				</span>
 			</div>

@@ -37,8 +37,8 @@ Route::get('/category', function () {
 
 
 //route parameter
-
 route::get('blog-detail/{artikel}', 'FrontendController@blogdetail');
+route::get('category/{kategori}', 'FrontendController');
 //end route
 
 Auth::routes();
@@ -63,3 +63,4 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::resource('artikel', 'Artikel_Controller');
     Route::resource('review', 'Review_Controller');
 });
+
