@@ -20,6 +20,23 @@ class FrontendController extends Controller
 
     // }
 
+     public function kategori()
+    {
+        $ver_kategori = Artikel::all();
+
+        return view('frontend.category', compact('ver_kategori'));
+    }
+
+
+    public function listkategori(Kategori $kategori)
+    {
+        $artikel = Artikel::all();
+        $ver_kategori = $kategori->artikel;
+
+        return view('frontend.category', compact('ver_kategori','artikel'));
+    }
+
+
     public function index()
     {
         // $menu = Category::take(3)->get();
@@ -112,7 +129,6 @@ class FrontendController extends Controller
                 'tag' => $tag,
                 'user' => $user,
                 'popular' => $populer,
-                'kategori' => $kategori,
                 'article' => $article,
                 'blog' => $blog
             ],
@@ -222,10 +238,10 @@ class FrontendController extends Controller
     //     ];
     //     return response()->json($respons, 200);
     // }
-
+        
     public function blogdetail($id)
     {
-
+        
         $artikel = Artikel::where('slug', $id)->first();
 
         if (!$artikel) {
@@ -247,31 +263,4 @@ class FrontendController extends Controller
         return view('frontend.blog-detail', compact('artikel'));
     }
 
-    // public function category(Kategori $kategori)
-    // {
-    //     $category = Artikel::select('artikels.judul', 'artikels.slug', 'foto', 'konten','artikels.created_at', 'kategoris.nama_kategori as kategori',
-    //                               'users.name as author')
-    //     ->join('users', 'users.id', '=', 'artikels.id_user')
-    //     ->join('kategoris', 'kategoris.id', '=', 'artikels.id_kategori')
-    //     ->where('kategoris.nama_kategori','=','adventure')->get();
-
-
-    //     if (!$category) {
-    //         $response = [
-    //             'success' => false,
-    //             'data' => 'Empty',
-    //             'message' => 'kategori tidak ditemukan.'
-    //         ];
-    //         return response()->json($response, 404);
-    //     }
-
-    //     $response = [
-    //         'success' => true,
-    //         'data' => ['category' => $category],
- 
-    //         'message' => 'Berhasil.'
-    //     ];
-
-    //     return view('frontend.category');
-    // }
 }

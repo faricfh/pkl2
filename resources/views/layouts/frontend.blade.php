@@ -105,17 +105,32 @@
 							<img src="{{ asset('assets/frontend/images/icons/logo-01.png') }}" alt="LOGO">
 						</a>
 
-						<ul class="main-menu nav_kategori">
+						<ul class="main-menu">
 							<li class="mega-menu-item">
 									<a href="{{ url('/') }}">Home</a>
 							</li>
 
 							<li class="mega-menu-item">
-								<a href="{{ url('/category') }}">News</a>
+								<a href="{{ url('/kategori') }}">News</a>
 							</li>
 
 							<li>
 								<a href="{{ url('/blog-grid') }}">Blog</a>
+							</li>
+							<li class="mega-menu-item">
+								<a href="{{ url('kategori/adventure') }}">Adventure</a>
+							</li>
+							<li class="mega-menu-item">
+								<a href="{{ url('kategori/strategi') }}">Strategi</a>
+							</li>
+							<li class="mega-menu-item">
+								<a href="{{ url('kategori/rpg') }}">RPG</a>
+							</li>
+							<li class="mega-menu-item">
+								<a href="{{ url('kategori/sport') }}">Sport</a>
+							</li>
+							<li class="mega-menu-item">
+								<a href="{{ url('kategori/racing') }}">Racing</a>
 							</li>
 						</ul>
 					</nav>

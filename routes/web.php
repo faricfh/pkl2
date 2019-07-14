@@ -30,16 +30,19 @@ Route::get('/blog-grid', function () {
 Route::get('/blog-list', function () {
     return view('frontend.blog-list');
 });
-Route::get('/category', function () {
-    return view('frontend.category');
-});
+// Route::get('/kategori', function () {
+//     return view('frontend.category');
+// });
+
 // end route
 
 
 //route parameter
 route::get('blog-detail/{artikel}', 'FrontendController@blogdetail');
-// route::get('category/{kategori}', 'FrontendController');
-//end route
+route::get('kategori', 'FrontendController@kategori');
+route::get('kategori/{kategori}', 'FrontendController@listkategori');
+route::get('kategori/blog-detail/{artikel}', 'FrontendController@blogdetail');
+//end routee
 
 Auth::routes();
 

@@ -149,8 +149,39 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-10 col-lg-8 p-b-80">
-                <div class="row category">
-                    
+                <div class="row">
+                @foreach($ver_kategori as $data)
+                <div class="col-sm-6 p-r-25 p-r-15-sr991">
+                <!-- Item latest -->
+                    <div class="m-b-45">
+                        <a href="blog-detail/{{ $data->slug}}" class="wrap-pic-w hov1 trans-03">
+                            <img src="/assets/img/artikel/{{ $data->foto}}" alt="IMG" style="height:200px">
+                        </a>
+
+                        <div class="p-t-16">
+                            <h5 class="p-b-5">
+                                <a href="blog-detail/{{ $data->slug }}" class="f1-m-3 cl2 hov-cl10 trans-03">
+                                    {{ $data->judul }}
+                                </a>
+                            </h5>
+
+                            <span class="cl8">
+                                <a href="#" class="f1-s-4 cl8 hov-cl10 trans-03">
+                                    {{ $data->kategori->nama_kategori}}
+                                </a>
+
+                                <span class="f1-s-3 m-rl-3">
+                                    -
+                                </span>
+
+                                <span class="f1-s-3">
+            
+                                </span>
+                            </span>
+                        </div>
+                    </div>   
+                </div>
+                @endforeach
                 </div>
 
                 <!-- Pagination -->
