@@ -35,6 +35,11 @@ class RegisterController extends Controller
      *
      * @return void
      */
+
+      public function showRegistrationform(){
+         return view('error.oke');
+     }
+     
     public function __construct()
     {
         $this->middleware('guest');

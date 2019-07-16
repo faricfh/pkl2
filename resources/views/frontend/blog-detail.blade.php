@@ -61,7 +61,7 @@
 							</div>
 
 							<p class="f1-s-11 cl6 p-b-25">
-								{{ $artikel->konten }}
+								{!!  $artikel->konten !!}
 							</p>
 
 							<!-- Tag -->
