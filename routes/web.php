@@ -24,23 +24,19 @@ Route::get('/blog-detail', function () {
 Route::get('/contact', function () {
     return view('frontend.contact');
 });
-Route::get('/blog-grid', function () {
-    return view('frontend.blog-grid');
-});
 Route::get('/blog-list', function () {
     return view('frontend.blog-list');
 });
-// Route::get('/kategori', function () {
-//     return view('frontend.category');
-// });
 
 // end route
 
 
 //route parameter
+route::get('blog-grid/{tag}', 'FrontendController@blogtag');
+route::get('blog-grid', 'FrontendController@blog');
 route::get('blog-detail/{artikel}', 'FrontendController@blogdetail');
-route::get('kategori', 'FrontendController@kategori');
-route::get('kategori/{kategori}', 'FrontendController@listkategori');
+route::get('kategori', 'FrontendController@news');
+route::get('kategori/{kategori}', 'FrontendController@newskategori');
 route::get('kategori/blog-detail/{artikel}', 'FrontendController@blogdetail');
 //end routee
 

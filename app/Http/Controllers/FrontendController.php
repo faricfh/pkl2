@@ -20,22 +20,43 @@ class FrontendController extends Controller
 
     // }
 
-     public function kategori()
+    // BLOG
+    public function blog()
     {
-        $ver_kategori = Artikel::all();
-
-        return view('frontend.category', compact('ver_kategori'));
+        $artikel = Artikel::orderBy('created_at','desc')->paginate(5);
+        $popular = Artikel::inRandomOrder()->take(5)->get();
+        $tags = Tag::all();
+        return view('frontend.blog-grid', compact('artikel','popular','tags'));
     }
 
-
-    public function listkategori(Kategori $kategori)
+    // BLOG TAG
+    public function blogtag(Tag $tag)
     {
-        $artikel = Artikel::all();
-        $ver_kategori = $kategori->artikel;
+        $artikel = $tag->artikel()->latest()->paginate(5);
+        $popular = Artikel::inRandomOrder()->take(5)->get();
+        $tags = Tag::all();
 
-        return view('frontend.category', compact('ver_kategori','artikel'));
+        return view('frontend.blog-grid', compact('artikel','popular','tags'));
     }
 
+    //  NEWS
+     public function news()
+    {
+        $ver_kategori = Artikel::orderBy('created_at','desc')->paginate(5);
+        $popular = Artikel::inRandomOrder()->take(5)->get();
+        $tags = Tag::all();
+        return view('frontend.category', compact('ver_kategori','popular','tags'));
+    }
+
+    // KATEGORI
+    public function newskategori(Kategori $kategori)
+    {
+        $ver_kategori = $kategori->artikel()->latest()->paginate(5);
+        $popular = Artikel::inRandomOrder()->take(5)->get();
+        $tags = Tag::all();
+        return view('frontend.category', compact('ver_kategori','popular','tags'));
+    }
+    // END NAV NEWS
 
     public function index()
     {
@@ -118,9 +139,6 @@ class FrontendController extends Controller
             'success' => true,
             'data' => [
                 'latest_artikel' => $latest,
-                'adventure' => $adventure,
-                'rpg' => $rpg,
-                'fps' => $fps,
                 'most_popular' => $most_popular,
                 'popular_post' => $popular_post,
                 'category' => $category,
@@ -130,7 +148,10 @@ class FrontendController extends Controller
                 'user' => $user,
                 'popular' => $populer,
                 'article' => $article,
-                'blog' => $blog
+                'blog' => $blog,
+                'adventure' => $adventure,
+                'rpg' => $rpg,
+                'fps' => $fps
             ],
             'message' => 'Berhasil'
         ];
@@ -238,10 +259,12 @@ class FrontendController extends Controller
     //     ];
     //     return response()->json($respons, 200);
     // }
-        
+
     public function blogdetail($id)
     {
-        
+        $popular = Artikel::inRandomOrder()->take(5)->get();
+        $tags = Tag::all();
+        $kategori = Kategori::take(5)->get();
         $artikel = Artikel::where('slug', $id)->first();
 
         if (!$artikel) {
@@ -256,11 +279,11 @@ class FrontendController extends Controller
         $response = [
             'success' => true,
             'data' => $artikel,
- 
+
             'message' => 'Berhasil.'
         ];
 
-        return view('frontend.blog-detail', compact('artikel'));
+        return view('frontend.blog-detail', compact('artikel','popular','tags','kategori'));
     }
 
 }

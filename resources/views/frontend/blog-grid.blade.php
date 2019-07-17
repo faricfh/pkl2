@@ -34,16 +34,53 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-10 col-lg-8 p-b-80">
-                <div class="row blog_grid">
-                    
-                        <!-- Item latest -->
-                
-                </div>
 
+                <div class="row">
+                    @foreach ($artikel as $data)
+                    <div class="col-sm-6 p-r-25 p-r-15-sr991">
+                        <div class="m-b-45">
+                            <a href="{{ url('blog-detail/'.$data->slug) }}" class="wrap-pic-w hov1 trans-03">
+                                <img src="/assets/img/artikel/{{ $data->foto }}" alt="IMG" style="height:200px">
+                            </a>
+
+                            <div class="p-t-16">
+                                <h5 class="p-b-5">
+                                    <a href="{{ url('blog-detail/'.$data->slug) }}" class="f1-m-3 cl2 hov-cl10 trans-03">
+                                        {{ $data->judul }}
+                                    </a>
+                                </h5>
+
+                                <span class="cl8">
+                                    <a href="#" class="f1-s-4 cl8 hov-cl10 trans-03">
+                                        {{ $data->kategori->nama_kategori }}
+                                    </a>
+
+                                    <span class="f1-s-3 m-rl-3">
+                                        -
+                                    </span>
+
+                                    @foreach ($data->tag as $tag)
+                                        <a href="#" class="f1-s-4 cl8 hov-cl10 trans-03">
+                                            #{{ $tag->nama_tag }}
+                                        </a>
+                                    @endforeach
+
+                                    <span class="f1-s-3 m-rl-3">
+                                        -
+                                    </span>
+
+                                    <span class="f1-s-3">
+                                        {{ $data->created_at }}
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    @endforeach
+                </div>
                 <!-- Pagination -->
                 <div class="flex-wr-s-c m-rl--7 p-t-15">
-                    <a href="#" class="flex-c-c pagi-item hov-btn1 trans-03 m-all-7 pagi-active">1</a>
-                    <a href="#" class="flex-c-c pagi-item hov-btn1 trans-03 m-all-7">2</a>
+                    {{ $artikel->links() }}
                 </div>
             </div>
 
@@ -77,55 +114,17 @@
                         </div>
 
                         <ul class="p-t-35">
+                            @foreach ($popular as $data)
                             <li class="flex-wr-sb-s p-b-22">
-                                <div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
-                                    1
-                                </div>
+                                    <div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+                                        >
+                                    </div>
 
-                                <a href="#" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                </a>
-                            </li>
-
-                            <li class="flex-wr-sb-s p-b-22">
-                                <div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
-                                    2
-                                </div>
-
-                                <a href="#" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03">
-                                    Proin velit consectetur non neque
-                                </a>
-                            </li>
-
-                            <li class="flex-wr-sb-s p-b-22">
-                                <div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
-                                    3
-                                </div>
-
-                                <a href="#" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03">
-                                    Nunc vestibulum, enim vitae condimentum volutpat lobortis ante
-                                </a>
-                            </li>
-
-                            <li class="flex-wr-sb-s p-b-22">
-                                <div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
-                                    4
-                                </div>
-
-                                <a href="#" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03">
-                                    Proin velit justo consectetur non neque elementum
-                                </a>
-                            </li>
-
-                            <li class="flex-wr-sb-s p-b-22">
-                                <div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0">
-                                    5
-                                </div>
-
-                                <a href="#" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03">
-                                    Proin velit consectetur non neque
-                                </a>
-                            </li>
+                                    <a href="{{ url('blog-detail/'.$data->slug) }}" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03">
+                                        {{ $data->judul }}
+                                    </a>
+                                </li>
+                            @endforeach
                         </ul>
                     </div>
 
@@ -138,37 +137,11 @@
                         </div>
 
                         <div class="flex-wr-s-s m-rl--5">
-                            <a href="#" class="flex-c-c size-h-2 bo-1-rad-20 bocl12 f1-s-1 cl8 hov-btn2 trans-03 p-rl-20 p-tb-5 m-all-5">
-                                Fashion
-                            </a>
-
-                            <a href="#" class="flex-c-c size-h-2 bo-1-rad-20 bocl12 f1-s-1 cl8 hov-btn2 trans-03 p-rl-20 p-tb-5 m-all-5">
-                                Lifestyle
-                            </a>
-
-                            <a href="#" class="flex-c-c size-h-2 bo-1-rad-20 bocl12 f1-s-1 cl8 hov-btn2 trans-03 p-rl-20 p-tb-5 m-all-5">
-                                Denim
-                            </a>
-
-                            <a href="#" class="flex-c-c size-h-2 bo-1-rad-20 bocl12 f1-s-1 cl8 hov-btn2 trans-03 p-rl-20 p-tb-5 m-all-5">
-                                Streetstyle
-                            </a>
-
-                            <a href="#" class="flex-c-c size-h-2 bo-1-rad-20 bocl12 f1-s-1 cl8 hov-btn2 trans-03 p-rl-20 p-tb-5 m-all-5">
-                                Crafts
-                            </a>
-
-                            <a href="#" class="flex-c-c size-h-2 bo-1-rad-20 bocl12 f1-s-1 cl8 hov-btn2 trans-03 p-rl-20 p-tb-5 m-all-5">
-                                Magazine
-                            </a>
-
-                            <a href="#" class="flex-c-c size-h-2 bo-1-rad-20 bocl12 f1-s-1 cl8 hov-btn2 trans-03 p-rl-20 p-tb-5 m-all-5">
-                                News
-                            </a>
-
-                            <a href="#" class="flex-c-c size-h-2 bo-1-rad-20 bocl12 f1-s-1 cl8 hov-btn2 trans-03 p-rl-20 p-tb-5 m-all-5">
-                                Blogs
-                            </a>
+                            @foreach ($tags as $data)
+                                <a href="{{ url('blog-grid/'.$data->slug) }}" class="flex-c-c size-h-2 bo-1-rad-20 bocl12 f1-s-1 cl8 hov-btn2 trans-03 p-rl-20 p-tb-5 m-all-5">
+                                    {{ $data->nama_tag }}
+                                </a>
+                            @endforeach
                         </div>
                     </div>
                 </div>

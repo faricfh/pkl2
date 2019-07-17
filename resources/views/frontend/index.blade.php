@@ -154,14 +154,14 @@
                                         <!-- Item post -->
                                         <div class="m-b-30">
                                             <a class="wrap-pic-w hov1 trans-03">
-                                                <img src="{{ asset('assets/frontend/images/post-05.jpg') }}" alt="IMG">
+                                                <img src="{{ url('img/adventure.jpg') }}" alt="IMG">
                                             </a>
                                         </div>
                                     </div>
 
                                     <div class="col-sm-6 p-r-25 p-r-15-sr991 adventure">
                                         <!-- Item post -->
-                                       
+
 
                                     </div>
                                 </div>
@@ -188,13 +188,13 @@
                                         <!-- Item post -->
                                         <div class="m-b-30">
                                             <a class="wrap-pic-w hov1 trans-03">
-                                                <img src="{{  asset('assets/frontend/images/post-10.jpg') }}" alt="IMG">
+                                                <img src="{{  url('img/rpg.jpg') }}" alt="IMG">
                                             </a>
                                         </div>
                                     </div>
 
                                     <div class="col-sm-6 p-r-25 p-r-15-sr991 rpg">
-                                     
+
                                     </div>
                                 </div>
                             </div>
@@ -220,13 +220,13 @@
                                         <!-- Item post -->
                                         <div class="m-b-30">
                                             <a class="wrap-pic-w hov1 trans-03">
-                                                <img src="{{  asset('assets/frontend/images/post-14.jpg') }}" alt="IMG">
+                                                <img src="{{  url('img/fps.jpg') }}" alt="IMG">
                                             </a>
                                         </div>
                                     </div>
 
                                     <div class="col-sm-6 p-r-25 p-r-15-sr991 fps">
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -246,7 +246,7 @@
                         </div>
 
                         <ul class="p-t-35 most_popular">
-                            
+
                         </ul>
                     </div>
                 </div>
@@ -273,46 +273,6 @@
 
             <div class="col-md-10 col-lg-4">
                 <div class="p-l-10 p-rl-0-sr991 p-b-20">
-                    <!-- Video -->
-                    <div class="p-b-55">
-                        <div class="how2 how2-cl4 flex-s-c m-b-35">
-                            <h3 class="f1-m-2 cl3 tab01-title">
-                                Featured Video
-                            </h3>
-                        </div>
-
-                        <div>
-                            <div class="wrap-pic-w pos-relative">
-                                <img src="{{  asset('assets/frontend/images/video-01.jpg') }}" alt="IMG">
-
-                                <button class="s-full ab-t-l flex-c-c fs-32 cl0 hov-cl10 trans-03" data-toggle="modal" data-target="#modal-video-01">
-                                    <span class="fab fa-youtube"></span>
-                                </button>
-                            </div>
-
-                            <div class="p-tb-16 p-rl-25 bg3">
-                                <h5 class="p-b-5">
-                                    <a href="#" class="f1-m-3 cl0 hov-cl10 trans-03">
-                                        Music lorem ipsum dolor sit amet consectetur
-                                    </a>
-                                </h5>
-
-                                <span class="cl15">
-                                    <a href="#" class="f1-s-4 cl8 hov-cl10 trans-03">
-                                        by John Alvarado
-                                    </a>
-
-                                    <span class="f1-s-3 m-rl-3">
-                                        -
-                                    </span>
-
-                                    <span class="f1-s-3">
-                                        Feb 18
-                                    </span>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
                     <!-- Tag -->
                     <div class="p-b-55">
                         <div class="how2 how2-cl4 flex-s-c m-b-30">
@@ -322,7 +282,7 @@
                         </div>
 
                         <div class="flex-wr-s-s m-rl--5 tag">
-                            
+
                         </div>
                     </div>
                 </div>

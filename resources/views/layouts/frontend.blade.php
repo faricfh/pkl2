@@ -34,32 +34,12 @@
 			<div class="topbar">
 				<div class="content-topbar container h-100">
 					<div class="left-topbar">
-						<span class="left-topbar-item flex-wr-s-c">
-							<span>
-								New York, NY
-							</span>
-
-							<img class="m-b-1 m-rl-8" src="{{ asset('assets/frontend/images/icons/icon-night.png') }}" alt="IMG">
-
-							<span>
-								HI 58° LO 56°
-							</span>
-						</span>
-
 						<a href="{{ url('/about') }}" class="left-topbar-item">
 							About
 						</a>
 
 						<a href="{{ url('/contact') }}" class="left-topbar-item">
 							Contact
-						</a>
-
-						<a href="#" class="left-topbar-item">
-							Sing up
-						</a>
-
-						<a href="#" class="left-topbar-item">
-							Log in
 						</a>
 					</div>
 
@@ -121,11 +101,11 @@
 								<a href="{{ url('kategori/adventure') }}">Adventure</a>
 							</li>
 							<li class="mega-menu-item">
-								<a href="{{ url('kategori/strategi') }}">Strategi</a>
-							</li>
-							<li class="mega-menu-item">
 								<a href="{{ url('kategori/rpg') }}">RPG</a>
-							</li>
+                            </li>
+                            <li class="mega-menu-item">
+                                <a href="{{ url('kategori/fps') }}">FPS</a>
+                            </li>
 							<li class="mega-menu-item">
 								<a href="{{ url('kategori/sport') }}">Sport</a>
 							</li>
@@ -155,7 +135,7 @@
 
 						<div>
 							<p class="f1-s-1 cl11 p-b-16">
-								Website ini kami menyediakan bermacam macam video game, Website kami akan merekomendasikan para pengunjung bisa mencari video game yang menurut pengunjung sekalian menarik di Website ini 
+								Website ini kami menyediakan bermacam macam video game, Website kami akan merekomendasikan para pengunjung bisa mencari video game yang menurut pengunjung sekalian menarik di Website ini
 							</p>
 
 							<p class="f1-s-1 cl11 p-b-16">
@@ -186,7 +166,7 @@
 						</div>
 					</div>
 
-					<div class="col-sm-6 col-lg-4 p-b-20">
+					{{-- <div class="col-sm-6 col-lg-4 p-b-20">
 						<div class="size-h-3 flex-s-c">
 							<h5 class="f1-m-7 cl0">
 								Category
@@ -194,9 +174,9 @@
 						</div>
 
 						<ul class="m-t--12 footer_kategori">
-							
+
 						</ul>
-					</div>
+					</div> --}}
 				</div>
 			</div>
 		</div>
@@ -207,7 +187,7 @@
 					Copyright © 2018
 
 					<a href="#" class="f1-s-1 cl10 hov-link1"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template edit <i class="fa fa-heart" aria-hidden="true"></i> by <a href="{{url('/about')}}" target="_blank">Ousama</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template edit <i class="fa fa-heart" aria-hidden="true"></i> by <a href="{{ url('/about') }}" target="_blank">Ousama</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 				</span>
 			</div>
