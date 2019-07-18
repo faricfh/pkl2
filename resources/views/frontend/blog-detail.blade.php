@@ -16,13 +16,6 @@
 					 {{ $artikel->judul }}
 				</span>
 			</div>
-
-			<div class="pos-relative size-a-2 bo-1-rad-22 of-hidden bocl11 m-tb-6">
-				<input class="f1-s-1 cl6 plh9 s-full p-l-25 p-r-45" type="text" name="search" placeholder="Search">
-				<button class="flex-c-c size-a-1 ab-t-r fs-20 cl2 hov-cl10 trans-03">
-					<i class="zmdi zmdi-search"></i>
-				</button>
-			</div>
 		</div>
 	</div>
 
@@ -76,35 +69,6 @@
 										{{ $data->nama_tag }}
 								</a>
 								@endforeach
-								</div>
-							</div>
-
-							<!-- Share -->
-							<div class="flex-s-s">
-								<span class="f1-s-12 cl5 p-t-1 m-r-15">
-									Share:
-								</span>
-
-								<div class="flex-wr-s-s size-w-0">
-									<a href="#" class="dis-block f1-s-13 cl0 bg-facebook borad-3 p-tb-4 p-rl-18 hov-btn1 m-r-3 m-b-3 trans-03">
-										<i class="fab fa-facebook-f m-r-7"></i>
-										Facebook
-									</a>
-
-									<a href="#" class="dis-block f1-s-13 cl0 bg-twitter borad-3 p-tb-4 p-rl-18 hov-btn1 m-r-3 m-b-3 trans-03">
-										<i class="fab fa-twitter m-r-7"></i>
-										Twitter
-									</a>
-
-									<a href="#" class="dis-block f1-s-13 cl0 bg-google borad-3 p-tb-4 p-rl-18 hov-btn1 m-r-3 m-b-3 trans-03">
-										<i class="fab fa-google-plus-g m-r-7"></i>
-										Google+
-									</a>
-
-									<a href="#" class="dis-block f1-s-13 cl0 bg-pinterest borad-3 p-tb-4 p-rl-18 hov-btn1 m-r-3 m-b-3 trans-03">
-										<i class="fab fa-pinterest-p m-r-7"></i>
-										Pinterest
-									</a>
 								</div>
 							</div>
 						</div>

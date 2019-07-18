@@ -30,7 +30,6 @@ Route::get('/blog-list', function () {
 
 // end route
 
-
 //route parameter
 route::get('blog-grid/{tag}', 'FrontendController@blogtag');
 route::get('blog-grid', 'FrontendController@blog');

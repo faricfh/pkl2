@@ -199,6 +199,25 @@
 
     // AKHIR MOST PUPULAR
 
+    // MULAI SIDE KATEGORI
+    $.ajax({
+        url: url,
+        datatype : 'json',
+        success : function(berhasil){
+            $.each(berhasil.data.kategori, function(key, value){
+                console.log(berhasil)
+                $(".side_kategori").append(
+                `
+                <a href="kategori/${value.slug}" class="dis-block f1-s-10 text-uppercase cl2 hov-cl10 trans-03 p-tb-13">
+                    ${value.nama_kategori}
+                </a>
+                `
+                );
+            });
+        }
+    });
+    // AKHIR SIDE KATEGORI
+
     // $.ajax({
     //     url: url,
     //     datatype : 'json',

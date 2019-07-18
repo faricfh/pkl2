@@ -22,13 +22,6 @@
                 </span>
             </span>
         </div>
-
-        <div class="pos-relative size-a-2 bo-1-rad-22 of-hidden bocl11 m-tb-6">
-            <input class="f1-s-1 cl6 plh9 s-full p-l-25 p-r-45" type="text" name="search" placeholder="Search">
-            <button class="flex-c-c size-a-1 ab-t-r fs-20 cl2 hov-cl10 trans-03">
-                <i class="zmdi zmdi-search"></i>
-            </button>
-        </div>
     </div>
 </div>
 
@@ -37,8 +30,8 @@
     <div class="container">
         <div class="row m-rl--1">
             <div class="col-md-6 p-rl-1 p-b-2">
-                <div class="bg-img1 size-a-3 how1 pos-relative" style="background-image: url(assets/gambar/banner10.jpg);">
-                    <a href="blog-detail-01.html" class="dis-block how1-child1 trans-03"></a>
+                <div class="bg-img1 size-a-3 how1 pos-relative" style="background-image: url(../image/banner10.jpg);">
+                    <a href="#" class="dis-block how1-child1 trans-03"></a>
 
                     <div class="flex-col-e-s s-full p-rl-25 p-tb-20">
                         <a href="#" class="dis-block how1-child2 f1-s-2 cl0 bo-all-1 bocl0 hov-btn1 trans-03 p-rl-5 p-t-2">
@@ -46,7 +39,7 @@
                         </a>
 
                         <h3 class="how1-child2 m-t-14 m-b-10">
-                            <a href="blog-detail-01.html" class="how-txt1 size-a-6 f1-l-1 cl0 hov-cl10 trans-03">
+                            <a href="#" class="how-txt1 size-a-6 f1-l-1 cl0 hov-cl10 trans-03">
                                 Microsoft quisque at ipsum vel orci eleifend ultrices
                             </a>
                         </h3>
@@ -71,8 +64,8 @@
             <div class="col-md-6 p-rl-1">
                 <div class="row m-rl--1">
                     <div class="col-12 p-rl-1 p-b-2">
-                        <div class="bg-img1 size-a-4 how1 pos-relative" style="background-image: url(assets/gambar/banner1.jpg);">
-                            <a href="blog-detail-01.html" class="dis-block how1-child1 trans-03"></a>
+                        <div class="bg-img1 size-a-4 how1 pos-relative" style="background-image: url(../image/banner1.jpg);">
+                            <a href="#" class="dis-block how1-child1 trans-03"></a>
 
                             <div class="flex-col-e-s s-full p-rl-25 p-tb-24">
                                 <a href="#" class="dis-block how1-child2 f1-s-2 cl0 bo-all-1 bocl0 hov-btn1 trans-03 p-rl-5 p-t-2">
@@ -80,7 +73,7 @@
                                 </a>
 
                                 <h3 class="how1-child2 m-t-14">
-                                    <a href="blog-detail-01.html" class="how-txt1 size-a-7 f1-l-2 cl0 hov-cl10 trans-03">
+                                    <a href="#" class="how-txt1 size-a-7 f1-l-2 cl0 hov-cl10 trans-03">
                                         London ipsum dolor sit amet, consectetur adipiscing elit.
                                     </a>
                                 </h3>
@@ -89,8 +82,8 @@
                     </div>
 
                     <div class="col-sm-6 p-rl-1 p-b-2">
-                        <div class="bg-img1 size-a-5 how1 pos-relative" style="background-image: url(assets/gambar/banner2.jpg);">
-                            <a href="blog-detail-01.html" class="dis-block how1-child1 trans-03"></a>
+                        <div class="bg-img1 size-a-5 how1 pos-relative" style="background-image: url(../image/banner2.jpg);">
+                            <a href="#" class="dis-block how1-child1 trans-03"></a>
 
                             <div class="flex-col-e-s s-full p-rl-25 p-tb-20">
                                 <a href="#" class="dis-block how1-child2 f1-s-2 cl0 bo-all-1 bocl0 hov-btn1 trans-03 p-rl-5 p-t-2">
@@ -98,7 +91,7 @@
                                 </a>
 
                                 <h3 class="how1-child2 m-t-14">
-                                    <a href="blog-detail-01.html" class="how-txt1 size-h-1 f1-m-1 cl0 hov-cl10 trans-03">
+                                    <a href="#" class="how-txt1 size-h-1 f1-m-1 cl0 hov-cl10 trans-03">
                                         Pellentesque dui nibh, pellen-tesque ut dapibus ut
                                     </a>
                                 </h3>
@@ -107,8 +100,8 @@
                     </div>
 
                     <div class="col-sm-6 p-rl-1 p-b-2">
-                        <div class="bg-img1 size-a-5 how1 pos-relative" style="background-image: url(assets/gambar/banner3.jpg);">
-                            <a href="blog-detail-01.html" class="dis-block how1-child1 trans-03"></a>
+                        <div class="bg-img1 size-a-5 how1 pos-relative" style="background-image: url(../image/banner3.jpg);">
+                            <a href="#" class="dis-block how1-child1 trans-03"></a>
 
                             <div class="flex-col-e-s s-full p-rl-25 p-tb-20">
                                 <a href="#" class="dis-block how1-child2 f1-s-2 cl0 bo-all-1 bocl0 hov-btn1 trans-03 p-rl-5 p-t-2">
@@ -116,7 +109,7 @@
                                 </a>
 
                                 <h3 class="how1-child2 m-t-14">
-                                    <a href="blog-detail-01.html" class="how-txt1 size-h-1 f1-m-1 cl0 hov-cl10 trans-03">
+                                    <a href="#" class="how-txt1 size-h-1 f1-m-1 cl0 hov-cl10 trans-03">
                                         Motobike Vestibulum vene-natis purus nec nibh volutpat
                                     </a>
                                 </h3>
@@ -154,7 +147,7 @@
                                         <!-- Item post -->
                                         <div class="m-b-30">
                                             <a class="wrap-pic-w hov1 trans-03">
-                                                <img src="{{ asset('assets/gambar/adventure.jpg') }}" alt="IMG">
+                                                <img src="{{ asset('../image/adventure.jpg') }}" alt="IMG">
                                             </a>
                                         </div>
                                     </div>
@@ -188,7 +181,7 @@
                                         <!-- Item post -->
                                         <div class="m-b-30">
                                             <a class="wrap-pic-w hov1 trans-03">
-                                                <img src="{{ asset('assets/gambar/rpg.jpg') }}" alt="IMG">
+                                                <img src="{{ asset('../image/rpg.jpg') }}" alt="IMG">
                                             </a>
                                         </div>
                                     </div>
@@ -220,7 +213,7 @@
                                         <!-- Item post -->
                                         <div class="m-b-30">
                                             <a class="wrap-pic-w hov1 trans-03">
-                                                <img src="{{ asset('assets/gambar/fps.jpg') }}" alt="IMG">
+                                                <img src="{{ asset('../image/fps.jpg') }}" alt="IMG">
                                             </a>
                                         </div>
                                     </div>
@@ -247,6 +240,21 @@
 
                         <ul class="p-t-35 most_popular">
 
+                        </ul>
+                    </div>
+
+                    <!--  -->
+                    <div class="p-t-50">
+                        <div class="how2 how2-cl4 flex-s-c">
+                            <h3 class="f1-m-2 cl3 tab01-title">
+                                Category
+                            </h3>
+                        </div>
+
+                        <ul class="p-t-35">
+                            <li class="how-bor3 p-rl-4 side_kategori">
+
+                            </li>
                         </ul>
                     </div>
                 </div>

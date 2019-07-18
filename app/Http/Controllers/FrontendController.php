@@ -23,20 +23,22 @@ class FrontendController extends Controller
     // BLOG
     public function blog()
     {
+        $kategori = Kategori::all();
         $artikel = Artikel::orderBy('created_at','desc')->paginate(5);
         $popular = Artikel::inRandomOrder()->take(5)->get();
         $tags = Tag::all();
-        return view('frontend.blog-grid', compact('artikel','popular','tags'));
+        return view('frontend.blog-grid', compact('artikel','popular','tags','kategori'));
     }
 
     // BLOG TAG
     public function blogtag(Tag $tag)
     {
+        $kategori = Kategori::all();
         $artikel = $tag->artikel()->latest()->paginate(5);
         $popular = Artikel::inRandomOrder()->take(5)->get();
         $tags = Tag::all();
 
-        return view('frontend.blog-grid', compact('artikel','popular','tags'));
+        return view('frontend.blog-grid', compact('artikel','popular','tags','kategori'));
     }
 
     //  NEWS
@@ -54,7 +56,8 @@ class FrontendController extends Controller
         $ver_kategori = $kategori->artikel()->latest()->paginate(5);
         $popular = Artikel::inRandomOrder()->take(5)->get();
         $tags = Tag::all();
-        return view('frontend.category', compact('ver_kategori','popular','tags'));
+        $kategori = Kategori::all();
+        return view('frontend.category', compact('ver_kategori','popular','tags','kategori'));
     }
     // END NAV NEWS
 
@@ -81,7 +84,7 @@ class FrontendController extends Controller
         $latest = Artikel::select('artikels.judul', 'artikels.slug', 'foto', 'konten','artikels.created_at', 'kategoris.nama_kategori as kategori',
                                   'users.name as author')
         ->join('users', 'users.id', '=', 'artikels.id_user')
-        ->join('kategoris', 'kategoris.id', '=', 'artikels.id_kategori')->take(4)->get();
+        ->join('kategoris', 'kategoris.id', '=', 'artikels.id_kategori')->orderBy('created_at', 'desc')->take(6)->get();
 
         // KATEGORI ADVENTURE
         $adventure = Artikel::select('artikels.judul', 'artikels.slug', 'foto', 'konten','artikels.created_at', 'kategoris.nama_kategori as kategori',
@@ -120,7 +123,7 @@ class FrontendController extends Controller
         ->join('kategoris', 'kategoris.id', '=', 'artikels.id_kategori')->inRandomOrder()->take(3)->get();
 
         $artikel = Artikel::orderBy('created_at', 'desc')->take(4)->get();
-        $populer = Artikel::all();
+
         $article = Artikel::select('artikels.judul', 'artikels.slug', 'foto', 'konten', 'kategoris.nama_kategori as kategori',
                                    'users.name as author')
         ->join('users', 'users.id', '=', 'artikels.id_user')
@@ -146,7 +149,6 @@ class FrontendController extends Controller
                 'kategori' => $kategori,
                 'tag' => $tag,
                 'user' => $user,
-                'popular' => $populer,
                 'article' => $article,
                 'blog' => $blog,
                 'adventure' => $adventure,

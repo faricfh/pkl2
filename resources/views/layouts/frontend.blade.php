@@ -42,28 +42,6 @@
 							Contact
 						</a>
 					</div>
-
-					<div class="right-topbar">
-						<a href="#">
-							<span class="fab fa-facebook-f"></span>
-						</a>
-
-						<a href="#">
-							<span class="fab fa-twitter"></span>
-						</a>
-
-						<a href="#">
-							<span class="fab fa-pinterest-p"></span>
-						</a>
-
-						<a href="#">
-							<span class="fab fa-vimeo-v"></span>
-						</a>
-
-						<a href="#">
-							<span class="fab fa-youtube"></span>
-						</a>
-					</div>
 				</div>
 			</div>
 
@@ -84,7 +62,6 @@
 						<a class="logo-stick" href="{{ url('/') }}">
 							<img src="{{ asset('assets/frontend/images/icons/logo-01.png') }}" alt="LOGO">
 						</a>
-
 						<ul class="main-menu">
 							<li class="mega-menu-item">
 									<a href="{{ url('/') }}">Home</a>
@@ -111,7 +88,7 @@
 							</li>
 							<li class="mega-menu-item">
 								<a href="{{ url('kategori/racing') }}">Racing</a>
-							</li>
+                            </li>
 						</ul>
 					</nav>
 				</div>
@@ -141,28 +118,6 @@
 							<p class="f1-s-1 cl11 p-b-16">
 								Ada Pertanyaan? Hubungi kami di (+62)xxxxxxx
 							</p>
-
-							<div class="p-t-15">
-								<a href="#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
-									<span class="fab fa-facebook-f"></span>
-								</a>
-
-								<a href="#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
-									<span class="fab fa-twitter"></span>
-								</a>
-
-								<a href="#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
-									<span class="fab fa-pinterest-p"></span>
-								</a>
-
-								<a href="#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
-									<span class="fab fa-vimeo-v"></span>
-								</a>
-
-								<a href="#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
-									<span class="fab fa-youtube"></span>
-								</a>
-							</div>
 						</div>
 					</div>
 
