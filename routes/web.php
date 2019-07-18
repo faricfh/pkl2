@@ -31,6 +31,7 @@ Route::get('/blog-list', function () {
 // end route
 
 //route parameter
+route::get('b_kategori', 'FrontendController@b_kategori');
 route::get('blog-grid/{tag}', 'FrontendController@blogtag');
 route::get('blog-grid', 'FrontendController@blog');
 route::get('blog-detail/{artikel}', 'FrontendController@blogdetail');

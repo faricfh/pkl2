@@ -21,6 +21,12 @@ class FrontendController extends Controller
     // }
 
     // BLOG
+    public function b_kategori()
+    {
+        $kategori = Kategori::all();
+        return view('frontend.b_kategori', compact('kategori'));
+    }
+
     public function blog()
     {
         $kategori = Kategori::all();
@@ -136,6 +142,7 @@ class FrontendController extends Controller
         ->join('kategoris', 'kategoris.id', '=', 'artikels.id_kategori')->get();
 
         $kategori = Kategori::take(5)->get();
+        $b_kategori = Kategori::all();
         $tag = Tag::all();
         $user = User::all();
         $respons = [
@@ -153,7 +160,8 @@ class FrontendController extends Controller
                 'blog' => $blog,
                 'adventure' => $adventure,
                 'rpg' => $rpg,
-                'fps' => $fps
+                'fps' => $fps,
+                'b_kategori' => $b_kategori
             ],
             'message' => 'Berhasil'
         ];

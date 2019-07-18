@@ -74,20 +74,8 @@
 							<li>
 								<a href="{{ url('/blog-grid') }}">Blog</a>
                             </li>
-							<li class="mega-menu-item">
-								<a href="{{ url('kategori/adventure') }}">Adventure</a>
-							</li>
-							<li class="mega-menu-item">
-								<a href="{{ url('kategori/rpg') }}">RPG</a>
-                            </li>
-                            <li class="mega-menu-item">
-                                <a href="{{ url('kategori/fps') }}">FPS</a>
-                            </li>
-							<li class="mega-menu-item">
-								<a href="{{ url('kategori/sport') }}">Sport</a>
-							</li>
-							<li class="mega-menu-item">
-								<a href="{{ url('kategori/racing') }}">Racing</a>
+                            <li>
+								<a href="{{ url('/b_kategori') }}">Kategori</a>
                             </li>
 						</ul>
 					</nav>
@@ -120,18 +108,6 @@
 							</p>
 						</div>
 					</div>
-
-					{{-- <div class="col-sm-6 col-lg-4 p-b-20">
-						<div class="size-h-3 flex-s-c">
-							<h5 class="f1-m-7 cl0">
-								Category
-							</h5>
-						</div>
-
-						<ul class="m-t--12 footer_kategori">
-
-						</ul>
-					</div> --}}
 				</div>
 			</div>
 		</div>
@@ -178,7 +154,27 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="{{ asset('assets/frontend/vendor/bootstrap/js/bootstrap.min.js') }}"></script>
 <!--===============================================================================================-->
 	<script src="{{ asset('assets/frontend/js/main.js') }}"></script>
-	<script src="{{ asset('js/frontend.js') }}"></script>
+    <script src="{{ asset('js/frontend.js') }}"></script>
+    <script id="dsq-count-scr" src="//stormy-1.disqus.com/count.js" async></script>
+    <script>
+
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stormy-1.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     @stack('script')
     @yield('js')
 </body>
