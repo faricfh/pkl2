@@ -1,15 +1,5 @@
-(function($) {
-    "use strict";
-
-    var browserWindow = $(window);
     var url = 'api/frontend';
 
-    // :: 1.0 Preloader Active Code
-    browserWindow.on("load", function() {
-        $("#preloader").fadeOut("slow", function() {
-            $(this).remove();
-        });
-    });
 
     // latest
     $.ajax({
@@ -261,8 +251,8 @@
                 console.log(berhasil)
                 $(".tag").append(
                 `
-                <a href="{/blog-grid/${$value.slug}}" class="flex-c-c size-h-2 bo-1-rad-20 bocl12 f1-s-1 cl8 hov-btn2 trans-03 p-rl-20 p-tb-5 m-all-5">
-                    ${value.nama_tag}
+                <a href="blog-grid/${value.slug}" class="flex-c-c size-h-2 bo-1-rad-20 bocl12 f1-s-1 cl8 hov-btn2 trans-03 p-rl-20 p-tb-5 m-all-5">
+                ${value.nama_tag}
                 </a>
 
                 `
@@ -383,5 +373,5 @@
     //     }
     // });
     // AKHIR CATEGORY
-})(jQuery);
+
 

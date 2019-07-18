@@ -37,7 +37,7 @@
     <div class="container">
         <div class="row m-rl--1">
             <div class="col-md-6 p-rl-1 p-b-2">
-                <div class="bg-img1 size-a-3 how1 pos-relative" style="background-image: url(assets/frontend/images/post-01.jpg);">
+                <div class="bg-img1 size-a-3 how1 pos-relative" style="background-image: url(assets/gambar/banner10.jpg);">
                     <a href="blog-detail-01.html" class="dis-block how1-child1 trans-03"></a>
 
                     <div class="flex-col-e-s s-full p-rl-25 p-tb-20">
@@ -71,7 +71,7 @@
             <div class="col-md-6 p-rl-1">
                 <div class="row m-rl--1">
                     <div class="col-12 p-rl-1 p-b-2">
-                        <div class="bg-img1 size-a-4 how1 pos-relative" style="background-image: url(assets/frontend/images/post-02.jpg);">
+                        <div class="bg-img1 size-a-4 how1 pos-relative" style="background-image: url(assets/gambar/banner1.jpg);">
                             <a href="blog-detail-01.html" class="dis-block how1-child1 trans-03"></a>
 
                             <div class="flex-col-e-s s-full p-rl-25 p-tb-24">
@@ -89,7 +89,7 @@
                     </div>
 
                     <div class="col-sm-6 p-rl-1 p-b-2">
-                        <div class="bg-img1 size-a-5 how1 pos-relative" style="background-image: url(assets/frontend/images/post-03.jpg);">
+                        <div class="bg-img1 size-a-5 how1 pos-relative" style="background-image: url(assets/gambar/banner2.jpg);">
                             <a href="blog-detail-01.html" class="dis-block how1-child1 trans-03"></a>
 
                             <div class="flex-col-e-s s-full p-rl-25 p-tb-20">
@@ -107,7 +107,7 @@
                     </div>
 
                     <div class="col-sm-6 p-rl-1 p-b-2">
-                        <div class="bg-img1 size-a-5 how1 pos-relative" style="background-image: url(assets/frontend/images/post-04.jpg);">
+                        <div class="bg-img1 size-a-5 how1 pos-relative" style="background-image: url(assets/gambar/banner3.jpg);">
                             <a href="blog-detail-01.html" class="dis-block how1-child1 trans-03"></a>
 
                             <div class="flex-col-e-s s-full p-rl-25 p-tb-20">
@@ -154,7 +154,7 @@
                                         <!-- Item post -->
                                         <div class="m-b-30">
                                             <a class="wrap-pic-w hov1 trans-03">
-                                                <img src="{{ url('img/adventure.jpg') }}" alt="IMG">
+                                                <img src="{{ asset('assets/gambar/adventure.jpg') }}" alt="IMG">
                                             </a>
                                         </div>
                                     </div>
@@ -188,7 +188,7 @@
                                         <!-- Item post -->
                                         <div class="m-b-30">
                                             <a class="wrap-pic-w hov1 trans-03">
-                                                <img src="{{  url('img/rpg.jpg') }}" alt="IMG">
+                                                <img src="{{ asset('assets/gambar/rpg.jpg') }}" alt="IMG">
                                             </a>
                                         </div>
                                     </div>
@@ -220,7 +220,7 @@
                                         <!-- Item post -->
                                         <div class="m-b-30">
                                             <a class="wrap-pic-w hov1 trans-03">
-                                                <img src="{{  url('img/fps.jpg') }}" alt="IMG">
+                                                <img src="{{ asset('assets/gambar/fps.jpg') }}" alt="IMG">
                                             </a>
                                         </div>
                                     </div>

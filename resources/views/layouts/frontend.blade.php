@@ -96,7 +96,7 @@
 
 							<li>
 								<a href="{{ url('/blog-grid') }}">Blog</a>
-							</li>
+                            </li>
 							<li class="mega-menu-item">
 								<a href="{{ url('kategori/adventure') }}">Adventure</a>
 							</li>
