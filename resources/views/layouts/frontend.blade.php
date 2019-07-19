@@ -100,7 +100,7 @@
 
 						<div>
 							<p class="f1-s-1 cl11 p-b-16">
-								Website ini kami menyediakan bermacam macam video game, Website kami akan merekomendasikan para pengunjung bisa mencari video game yang menurut pengunjung sekalian menarik di Website ini
+								Website ini kami menyediakan bermacam macam video game, Website kami akan memberi referensi dan merekomendasikan para pengunjung agar bisa mencari video games yang mereka inginkan
 							</p>
 
 							<p class="f1-s-1 cl11 p-b-16">
