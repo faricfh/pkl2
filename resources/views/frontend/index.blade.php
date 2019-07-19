@@ -32,6 +32,12 @@
                             <a href="#" class="dis-block how1-child1 trans-03"></a>
                         </div>
                     </div>
+
+                    <div class="col-sm-6 p-rl-1 p-b-2">
+                        <div class="bg-img1 size-a-5 how1 pos-relative" style="background-image: url(../image/banner3.jpg);">
+                            <a href="#" class="dis-block how1-child1 trans-03"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
