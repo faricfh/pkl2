@@ -25,53 +25,11 @@
 			<div class="row justify-content-center">
 				<div class="col-md-10 col-lg-8 p-b-30">
 					<div class="p-r-10 p-r-0-sr991 single">
-						<!-- Blog Detail -->
-						<div class="p-b-70">
-							<a href="#" class="f1-s-10 cl2 hov-cl10 trans-03 text-uppercase">
-								{{ $artikel->kategori->nama_kategori }}
-							</a>
+                        <!-- Blog Detail -->
+                        <div id="blogdetail">
 
-							<h3 class="f1-l-3 cl2 p-b-16 p-t-33 respon2">
-								{{ $artikel->judul }}
-							</h3>
+                        </div>
 
-							<div class="flex-wr-s-s p-b-40">
-								<span class="f1-s-3 cl8 m-r-15">
-									<a href="#" class="f1-s-4 cl8 hov-cl10 trans-03">
-										By {{ $artikel->user->name }}
-									</a>
-
-									<span class="m-rl-3">-</span>
-
-									<span>
-										{{ $artikel->created_at }}
-									</span>
-								</span>
-							</div>
-
-							<div class="wrap-pic-max-w p-b-30">
-								<img src="/assets/img/artikel/{{ $artikel->foto }}" alt="IMG">
-							</div>
-
-							<p class="f1-s-11 cl6 p-b-25">
-								{!!  $artikel->konten !!}
-							</p>
-
-							<!-- Tag -->
-							<div class="flex-s-s p-t-12 p-b-15">
-								<span class="f1-s-12 cl5 m-r-8">
-									Tags:
-								</span>
-
-								<div class="flex-wr-s-s size-w-0 tag_detail">
-								@foreach($artikel->tag as $data)
-								<a href="#" class="f1-s-12 cl8 hov-link1 m-r-15">
-										{{ $data->nama_tag }}
-								</a>
-								@endforeach
-								</div>
-							</div>
-						</div>
 
 						<!-- Leave a comment -->
 						<div>
@@ -92,13 +50,13 @@
 							</div>
 
 							<ul class="p-t-35">
-                                @foreach ($kategori as $data)
+                                {{-- @foreach ($kategori as $data)
 								<li class="how-bor3 p-rl-4">
 									<a href="{{ url('kategori/'.$data->slug) }}" class="dis-block f1-s-10 text-uppercase cl2 hov-cl10 trans-03 p-tb-13">
 										{{ $data->nama_kategori }}
 									</a>
 								</li>
-                                @endforeach
+                                @endforeach --}}
 							</ul>
 						</div>
 
@@ -111,17 +69,7 @@
 							</div>
 
 							<ul class="p-t-35">
-								@foreach ($popular as $data)
-                            <li class="flex-wr-sb-s p-b-22">
-                                    <div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
-                                        >
-                                    </div>
 
-                                    <a href="{{ url('blog-detail/'.$data->slug) }}" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03">
-                                        {{ $data->judul }}
-                                    </a>
-                                </li>
-                            @endforeach
 							</ul>
 						</div>
 
@@ -134,11 +82,11 @@
 							</div>
 
 							<div class="flex-wr-s-s m-rl--5">
-								@foreach ($tags as $data)
+								{{-- @foreach ($tags as $data)
                                 <a href="{{ url('blog-grid/'.$data->slug) }}" class="flex-c-c size-h-2 bo-1-rad-20 bocl12 f1-s-1 cl8 hov-btn2 trans-03 p-rl-20 p-tb-5 m-all-5">
                                     {{ $data->nama_tag }}
                                 </a>
-                            @endforeach
+                            @endforeach --}}
 							</div>
 						</div>
 					</div>

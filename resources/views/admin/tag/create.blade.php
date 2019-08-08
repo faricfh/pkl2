@@ -26,22 +26,22 @@
                     <form action="{{ route('tag.store') }}" method="post">
                         {{ csrf_field() }}
 
-    <div class="form-group">
-        <label for="">Tag</label>
-        <input class="form-control" type="text" name="nama_tag">
-    </div>
-    <div class="form-group">
-        <button type="submit" class="btn btn-outline-info">
-        Simpan Data
-        </button>
-    </div>
-    <div class="form-group">
-        <a href="{{ url('tag') }}" class="btn btn-outline-info">Kembali</a>
-    </div>
-        </form>
-            </div>
-                </div>
-                    </div>
+                        <div class="form-group">
+                            <label for="">Tag</label>
+                            <input class="form-control" type="text" name="nama_tag">
                         </div>
-                            </div>
-                                @endsection
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-outline-info">
+                            Simpan Data
+                            </button>
+                        </div>
+                        <div class="form-group">
+                            <a href="{{ url('tag') }}" class="btn btn-outline-info">Kembali</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection

@@ -155,6 +155,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <!--===============================================================================================-->
 	<script src="{{ asset('assets/frontend/js/main.js') }}"></script>
     <script src="{{ asset('js/frontend.js') }}"></script>
+    <script src="{{ asset('js/single-blog.js') }}"></script>
     <script id="dsq-count-scr" src="//stormy-1.disqus.com/count.js" async></script>
     <script>
 
