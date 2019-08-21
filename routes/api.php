@@ -20,8 +20,10 @@ Route::group(
     ['as' => 'api.', 'middleware' => ['cors']],
     function () {
         // Json
-        Route::resource('frontend2', 'Api\FrontendController');
-        Route::get('blog-detail/{artikel}', 'Api\FrontendController@singleblog');
+        Route::resource('frontend', 'Api\FrontendController');
+        Route::get('singlepost/{artikel}', 'Api\FrontendController@singlepost');
+        Route::get('post', 'Api\FrontendController@post');
+        Route::get('post/{kategori}', 'Api\FrontendController@postkategori');
         // Route::get('blog-tag/{tag}', 'Api\FrontController@blogtag');
         // Route::get('blog-kategori/{kategori}', 'Api\FrontController@blogkategori');
         // Route::get('front', 'Api\FrontController@index')->name('json_front');
@@ -35,9 +37,6 @@ Route::resource('siswa', 'Api\SiswaController');
 Route::resource('kategori', 'Api\KategoriController');
 Route::resource('artikel', 'Api\ArtikelController');
 Route::resource('tag', 'Api\TagController');
-
-Route::resource('frontend', 'FrontendController');
-Route::resource('kategori/adventure', 'FrontendController');
 
 // Route::resource('category', 'FrontendController', [
 //     'only' => ['index', 'show', 'store', 'update', 'destroy','blogdetail','category']

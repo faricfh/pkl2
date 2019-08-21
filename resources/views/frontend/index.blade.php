@@ -1,223 +1,202 @@
-@extends('layouts.frontend')
+@extends('layouts.frontend.frontend')
 @section('content')
 <!-- Headline -->
-<div class="container">
-    <div class="bg0 flex-wr-sb-c p-rl-20 p-tb-8">
-        <div class="f2-s-1 p-r-30 size-w-0 m-tb-6 flex-wr-s-c">
+<!-- ##### Hero Area Start ##### -->
+<div class="hero-area">
+    <!-- Hero Post Slides -->
+    <div class="hero-post-slides owl-carousel">
+
+        <!-- Single Slide -->
+        <div class="single-slide bg-img bg-overlay" style="background-image: url(assets/frontend/img/bg-img/1.jpg);">
+            <!-- Blog Content -->
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12 col-lg-9">
+                        <div class="blog-content" data-animation="fadeInUp" data-delay="100ms">
+                            <h2 data-animation="fadeInUp" data-delay="400ms">The Power of Gaming</h2>
+                            <p data-animation="fadeInUp" data-delay="700ms">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique justo id elit bibendum pharetra non vitae lectus. Mauris libero felis, dapibus a ultrices sed, commodo vitae odio. Sed auctor tellus quis arcu tempus, egestas tincidunt.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Single Slide -->
+        <div class="single-slide bg-img bg-overlay" style="background-image: url(assets/frontend/img/bg-img/2.jpg);">
+            <!-- Blog Content -->
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12 col-lg-9">
+                        <div class="blog-content" data-animation="fadeInUp" data-delay="100ms">
+                            <h2 data-animation="fadeInUp" data-delay="400ms">The Power of Gaming</h2>
+                            <p data-animation="fadeInUp" data-delay="700ms">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique justo id elit bibendum pharetra non vitae lectus. Mauris libero felis, dapibus a ultrices sed, commodo vitae odio. Sed auctor tellus quis arcu tempus, egestas tincidunt.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- ##### Hero Area End ##### -->
+
+<!-- ##### Games Area Start ##### -->
+<div class="games-area section-padding-100-0">
+    <div class="container">
+        <div class="row">
 
         </div>
     </div>
 </div>
+<!-- ##### Games Area End ##### -->
 
-<!-- Feature post -->
-<section class="bg0">
+<!-- ##### Monthly Picks Area Start ##### -->
+<section class="monthly-picks-area section-padding-100 bg-pattern">
     <div class="container">
-        <div class="row m-rl--1">
-            <div class="col-md-6 p-rl-1 p-b-2">
-                <div class="bg-img1 size-a-3 how1 pos-relative" style="background-image: url(../image/banner10.jpg);">
-                    <a href="#" class="dis-block how1-child1 trans-03"></a>
+        <div class="row">
+            <div class="col-12">
+                <div class="left-right-pattern"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- Title -->
+                <h2 class="section-title mb-70 wow fadeInUp" data-wow-delay="100ms">This Month’s Pick</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <ul class="nav nav-tabs wow fadeInUp" data-wow-delay="300ms" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="popular-tab" data-toggle="tab" href="#popular" role="tab" aria-controls="popular" aria-selected="true">Popular</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-content wow fadeInUp" data-wow-delay="500ms" id="myTabContent">
+        <div class="tab-pane fade show active" id="popular" role="tabpanel" aria-labelledby="popular-tab">
+            <!-- Popular Games Slideshow -->
+            <div class="popular-games-slideshow owl-carousel">
+                <div class="oke">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ##### Monthly Picks Area End ##### -->
+
+<!-- ##### Video Area Start ##### -->
+<div class="egames-video-area section-padding-100 bg-pattern2">
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="egames-nav-btn">
+                    <div class="nav flex-column list_random" id="video-tab" role="tablist" aria-orientation="vertical">
+
+                    </div>
                 </div>
             </div>
 
-            <div class="col-md-6 p-rl-1">
-                <div class="row m-rl--1">
-                    <div class="col-12 p-rl-1 p-b-2">
-                        <div class="bg-img1 size-a-4 how1 pos-relative" style="background-image: url(../image/banner1.jpg);">
-                            <a href="#" class="dis-block how1-child1 trans-03"></a>
+            <div class="col-12 col-md-6 col-lg-8">
+                <div class="tab-content" id="video-tabContent">
+                    <div class="tab-pane fade show active" id="video-1" role="tabpanel" aria-labelledby="video1">
+                        <div class="video-playground bg-img" style="background-image: url(assets/frontend/img/bg-img/45.jpg);">
+                           <!-- Play Button -->
+                            <div class="play-btn">
+                                <a href="https://www.youtube.com/watch?v=7HKoqNJtMTQ" class="play-button"><img src="{{ asset('assets/frontend/img/core-img/play.png') }}" alt=""></a>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="col-sm-6 p-rl-1 p-b-2">
-                        <div class="bg-img1 size-a-5 how1 pos-relative" style="background-image: url(../image/banner2.jpg);">
-                            <a href="#" class="dis-block how1-child1 trans-03"></a>
+                    <div class="tab-pane fade" id="video-2" role="tabpanel" aria-labelledby="video2">
+                        <div class="video-playground bg-img" style="background-image: url(assets/frontend/img/bg-img/46.jpg);">
+                            <!-- Play Button -->
+                            <div class="play-btn">
+                                <a href="https://www.youtube.com/watch?v=7HKoqNJtMTQ" class="play-button"><img src="{{ asset('assets/frontend/img/core-img/play.png') }}" alt=""></a>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="col-sm-6 p-rl-1 p-b-2">
-                        <div class="bg-img1 size-a-5 how1 pos-relative" style="background-image: url(../image/banner3.jpg);">
-                            <a href="#" class="dis-block how1-child1 trans-03"></a>
+                    <div class="tab-pane fade" id="video-3" role="tabpanel" aria-labelledby="video3">
+                        <div class="video-playground bg-img" style="background-image: url(assets/frontend/img/bg-img/47.jpg);">
+                            <!-- Play Button -->
+                            <div class="play-btn">
+                                <a href="https://www.youtube.com/watch?v=7HKoqNJtMTQ" class="play-button"><img src="{{ asset('assets/frontend/img/core-img/play.png') }}" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="video-4" role="tabpanel" aria-labelledby="video4">
+                        <div class="video-playground bg-img" style="background-image: url(assets/frontend/img/bg-img/48.jpg);">
+                            <!-- Play Button -->
+                            <div class="play-btn">
+                                <a href="https://www.youtube.com/watch?v=7HKoqNJtMTQ" class="play-button"><img src="{{ asset('assets/frontend/img/core-img/play.png') }}" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="video-5" role="tabpanel" aria-labelledby="video5">
+                        <div class="video-playground bg-img" style="background-image: url(assets/frontend/img/bg-img/49.jpg);">
+                            <!-- Play Button -->
+                            <div class="play-btn">
+                                <a href="https://www.youtube.com/watch?v=7HKoqNJtMTQ" class="play-button"><img src="{{ asset('assets/frontend/img/core-img/play.png') }}" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="video-6" role="tabpanel" aria-labelledby="video6">
+                        <div class="video-playground bg-img" style="background-image: url(assets/frontend/img/bg-img/45.jpg);">
+                            <!-- Play Button -->
+                            <div class="play-btn">
+                                <a href="https://www.youtube.com/watch?v=7HKoqNJtMTQ" class="play-button"><img src="{{ asset('assets/frontend/img/core-img/play.png') }}" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="video-7" role="tabpanel" aria-labelledby="video7">
+                        <div class="video-playground bg-img" style="background-image: url(assets/frontend/img/bg-img/46.jpg);">
+                            <!-- Play Button -->
+                            <div class="play-btn">
+                                <a href="https://www.youtube.com/watch?v=7HKoqNJtMTQ" class="play-button"><img src="{{ asset('assets/frontend/img/core-img/play.png') }}" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="video-8" role="tabpanel" aria-labelledby="video8">
+                        <div class="video-playground bg-img" style="background-image: url(assets/frontend/img/bg-img/47.jpg);">
+                            <!-- Play Button -->
+                            <div class="play-btn">
+                                <a href="https://www.youtube.com/watch?v=7HKoqNJtMTQ" class="play-button"><img src="{{ asset('assets/frontend/img/core-img/play.png') }}" alt=""></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
+</div>
+<!-- ##### Video Area End ##### -->
 
-<!-- Post -->
-<section class="bg0 p-t-70">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-10 col-lg-8">
-                <div class="p-b-20">
-                    <!-- Entertainment -->
-                    <div class="tab01 p-b-20">
-                        <div class="tab01-head how2 how2-cl1 bocl12 flex-s-c m-r-10 m-r-0-sr991">
-                            <!-- Brand tab -->
-                            <h3 class="f1-m-2 cl12 tab01-title">
-                                Adventure
-                            </h3>
-                        </div>
-
-
-                        <!-- Tab panes -->
-                        <div class="tab-content p-t-35">
-                            <!-- - -->
-                            <div class="tab-pane fade show active" id="tab1-1" role="tabpanel">
-                                <div class="row">
-                                    <div class="col-sm-6 p-r-25 p-r-15-sr991">
-                                        <!-- Item post -->
-                                        <div class="m-b-30">
-                                            <a class="wrap-pic-w hov1 trans-03">
-                                                <img src="{{ asset('../image/adventure.jpg') }}" alt="IMG">
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-sm-6 p-r-25 p-r-15-sr991 adventure">
-                                        <!-- Item post -->
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Business -->
-                    <div class="tab01 p-b-20">
-                        <div class="tab01-head how2 how2-cl2 bocl12 flex-s-c m-r-10 m-r-0-sr991">
-                            <!-- Brand tab -->
-                            <h3 class="f1-m-2 cl13 tab01-title">
-                                RPG
-                            </h3>
-                        </div>
-
-
-                        <!-- Tab panes -->
-                        <div class="tab-content p-t-35">
-                            <!-- - -->
-                            <div class="tab-pane fade show active" id="tab2-1" role="tabpanel">
-                                <div class="row">
-                                    <div class="col-sm-6 p-r-25 p-r-15-sr991">
-                                        <!-- Item post -->
-                                        <div class="m-b-30">
-                                            <a class="wrap-pic-w hov1 trans-03">
-                                                <img src="{{ asset('../image/rpg.jpg') }}" alt="IMG">
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-sm-6 p-r-25 p-r-15-sr991 rpg">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Travel -->
-                    <div class="tab01 p-b-20">
-                        <div class="tab01-head how2 how2-cl3 bocl12 flex-s-c m-r-10 m-r-0-sr991">
-                            <!-- Brand tab -->
-                            <h3 class="f1-m-2 cl14 tab01-title">
-                                FPS
-                            </h3>
-                        </div>
-
-
-                        <!-- Tab panes -->
-                        <div class="tab-content p-t-35">
-                            <!-- - -->
-                            <div class="tab-pane fade show active" id="tab3-1" role="tabpanel">
-                                <div class="row">
-                                    <div class="col-sm-6 p-r-25 p-r-15-sr991">
-                                        <!-- Item post -->
-                                        <div class="m-b-30">
-                                            <a class="wrap-pic-w hov1 trans-03">
-                                                <img src="{{ asset('../image/fps.jpg') }}" alt="IMG">
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-sm-6 p-r-25 p-r-15-sr991 fps">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-10 col-lg-4">
-                <div class="p-l-10 p-rl-0-sr991 p-b-20">
-                    <!--  -->
-                    <div>
-                        <div class="how2 how2-cl4 flex-s-c">
-                            <h3 class="f1-m-2 cl3 tab01-title">
-                                Most Popular
-                            </h3>
-                        </div>
-
-                        <ul class="p-t-35 most_popular">
-
-                        </ul>
-                    </div>
-
-                    <!--  -->
-                    <div class="p-t-50">
-                        <div class="how2 how2-cl4 flex-s-c">
-                            <h3 class="f1-m-2 cl3 tab01-title">
-                                Category
-                            </h3>
-                        </div>
-
-                        <ul class="p-t-35">
-                            <li class="how-bor3 p-rl-4 side_kategori">
-
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Latest -->
-<section class="bg0 p-t-60 p-b-35">
+<!-- ##### Articles Area Start ##### -->
+<section class="latest-articles-area section-padding-100-0 bg-img bg-pattern bg-fixed" style="background-image: url(assets/frontend/img/bg-img/5.jpg);">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-10 col-lg-8 p-b-20">
-                <div class="how2 how2-cl4 flex-s-c m-r-10 m-r-0-sr991">
-                    <h3 class="f1-m-2 cl3 tab01-title">
-                        Latest Articles
-                    </h3>
-                </div>
+            <div class="col-12 col-lg-8">
+                <div class="mb-100 latest">
+                    <!-- Title -->
+                    <h2 class="section-title mb-70 wow fadeInUp" data-wow-delay="100ms">Latest Articles</h2>
 
-                <div class="row p-t-35 latest">
+                    <!-- *** Single Articles Area *** -->
 
                 </div>
             </div>
 
-            <div class="col-md-10 col-lg-4">
-                <div class="p-l-10 p-rl-0-sr991 p-b-20">
-                    <!-- Tag -->
-                    <div class="p-b-55">
-                        <div class="how2 how2-cl4 flex-s-c m-b-30">
-                            <h3 class="f1-m-2 cl3 tab01-title">
-                                Tags
-                            </h3>
-                        </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <!-- Title -->
 
-                        <div class="flex-wr-s-s m-rl--5 tag">
-
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
 </section>
+<!-- ##### Articles Area End ##### -->
 @endsection

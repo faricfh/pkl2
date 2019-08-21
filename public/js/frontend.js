@@ -6,40 +6,71 @@
         url: url,
         datatype : 'json',
         success : function(berhasil){
-            $.each(berhasil.data.latest_artikel, function(key, value){
+            $.each(berhasil.data.latest, function(key, value){
                 console.log(berhasil)
                 $(".latest").append(
                 `
-                    <div class="col-sm-6 p-r-25 p-r-15-sr991">
-                        <!-- Item latest -->
-                        <div class="m-b-45 ">
-                            <a href="blog-detail/${value.slug}" class="wrap-pic-w hov1 trans-03">
-                                <img src="../assets/img/artikel/${value.foto}" alt="IMG" style="height:200px">
-                            </a>
+                <div class="single-articles-area style-2 d-flex flex-wrap mb-30 wow fadeInUp" data-wow-delay="300ms">
+                    <div class="article-thumbnail">
+                        <img src="/assets/img/artikel/${value.foto}" alt="">
+                    </div>
+                    <div class="article-content">
+                        <a href="singlepost/${value.slug}" class="post-title">${value.judul}</a>
+                        <div class="post-meta">
+                            <a href="#" class="post-date">${value.created_at}</a>
+                            <a href="#" class="post-comments"></a>
+                        </div>
 
-                            <div class="p-t-16">
-                                <h5 class="p-b-5">
-                                    <a href="blog-detail/${value.slug}" class="f1-m-3 cl2 hov-cl10 trans-03">
-                                        ${value.judul}
-                                    </a>
-                                </h5>
+                    </div>
+                </div>
+                `
+                );
+            });
+        }
+    });
 
-                                <span class="cl8">
-                                    <a href="#" class="f1-s-4 cl8 hov-cl10 trans-03">
-                                        By ${value.author}
-                                    </a>
+    // kategori
+    $.ajax({
+        url: url,
+        datatype : 'json',
+        success : function(berhasil){
+            $.each(berhasil.data.kategori, function(key, value){
+                console.log(berhasil)
+                $(".kategori").append(
+                `
+                <div class="single-contact-info d-flex align-items-center">
+                <a href="post/${value.slug}">
+                    <div class="title">
+                        <p>${value.nama_kategori}</p>
+                    </div>
+                </a>
+                </div>
+                `
+                );
+            });
+        }
+    });
 
-                                    <span class="f1-s-3 m-rl-3">
-                                        -
-                                    </span>
-
-                                    <span class="f1-s-3">
-                                        ${value.created_at}
-                                    </span>
-                                </span>
-                            </div>
+    //list random
+    $.ajax({
+        url: url,
+        datatype : 'json',
+        success : function(berhasil){
+            $.each(berhasil.data.list_random, function(key, value){
+                console.log(berhasil)
+                $(".list_random").append(
+                `
+                <a class="nav-link" id="video1" data-toggle="pill" href="singlepost/${value.slug}" role="tab" aria-controls="video-2" aria-selected="false">
+                    <div class="single-video-widget d-flex wow fadeInUp" data-wow-delay="200ms">
+                        <div class="video-thumbnail">
+                            <img src="/assets/img/artikel/${value.foto}" alt="">
+                        </div>
+                        <div class="video-text">
+                            <p class="video-title mb-0">${value.judul}</p>
+                            <span>${value.kategori}</span>
                         </div>
                     </div>
+                </a>
                 `
                 );
             });
@@ -52,76 +83,18 @@
         url: url,
         datatype : 'json',
         success : function(berhasil){
-            $.each(berhasil.data.adventure, function(key, value){
+            $.each(berhasil.data.populer, function(key, value){
                 console.log(berhasil)
-                $(".adventure").append(
+                $(".oke").append(
                 `
-                <div class="flex-wr-sb-s m-b-30">
-                    <a href="blog-detail/${value.slug}" class="size-w-1 wrap-pic-w hov1 trans-03">
-                        <img src="/assets/img/artikel/${value.foto}" alt="IMG" style="height:75px">
-                    </a>
-
-                    <div class="size-w-2">
-                        <h5 class="p-b-5">
-                            <a href="blog-detail/${value.slug}" class="f1-s-5 cl3 hov-cl10 trans-03">
-                                ${value.judul}
-                            </a>
-                        </h5>
-
-                        <span class="cl8">
-                            <a href="#" class="f1-s-6 cl8 hov-cl10 trans-03">
-                                By ${value.author}
-                            </a>
-
-                            <span class="f1-s-3 m-rl-3">
-                                -
-                            </span>
-
-                            <span class="f1-s-3">
-                                ${value.created_at}
-                            </span>
-                        </span>
-                    </div>
-                </div>
-                `
-                );
-            });
-        }
-    });
-
-    $.ajax({
-        url: url,
-        datatype : 'json',
-        success : function(berhasil){
-            $.each(berhasil.data.rpg, function(key, value){
-                console.log(berhasil)
-                $(".rpg").append(
-                `
-                <div class="flex-wr-sb-s m-b-30">
-                    <a href="blog-detail/${value.slug}" class="size-w-1 wrap-pic-w hov1 trans-03">
-                        <img src="/assets/img/artikel/${value.foto}" alt="IMG" style="height:75px">
-                    </a>
-
-                    <div class="size-w-2">
-                        <h5 class="p-b-5">
-                            <a href="blog-detail/${value.slug}" class="f1-s-5 cl3 hov-cl10 trans-03">
-                                ${value.judul}
-                            </a>
-                        </h5>
-
-                        <span class="cl8">
-                            <a href="#" class="f1-s-6 cl8 hov-cl10 trans-03">
-                                By ${value.author}
-                            </a>
-
-                            <span class="f1-s-3 m-rl-3">
-                                -
-                            </span>
-
-                            <span class="f1-s-3">
-                                ${value.created_at}
-                            </span>
-                        </span>
+                <div class="single-games-slide">
+                    <img src="/assets/img/artikel/${value.foto}" alt="" style="width:200px; height:400px">
+                    <div class="slide-text">
+                        <a href="singlepost/${value.slug}" class="game-title">${value.judul}</a>
+                        <div class="meta-data">
+                            <a href="#">User: 9.1/10</a>
+                            <a href="#">${value.kategori}</a>
+                        </div>
                     </div>
                 </div>
                 `

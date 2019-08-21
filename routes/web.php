@@ -28,17 +28,13 @@ Route::get('/blog-list', function () {
     return view('frontend.blog-list');
 });
 
-// end route
-
-//route parameter
-route::get('b_kategori', 'FrontendController@b_kategori');
-route::get('blog-grid/{tag}', 'FrontendController@blogtag');
-route::get('blog-grid', 'FrontendController@blog');
-route::get('blog-detail/{artikel}', 'FrontendController@blogdetail');
-route::get('kategori', 'FrontendController@news');
-route::get('kategori/{kategori}', 'FrontendController@newskategori');
-route::get('kategori/blog-detail/{artikel}', 'FrontendController@blogdetail');
-//end routee
+route::get('kategori', 'FrontendController@kategori');
+// route::get('post/{tag}', 'FrontendController@posttag');
+route::get('post/{kategori}', 'FrontendController@postkategori');
+route::get('post', 'FrontendController@post');
+route::get('singlepost/', 'FrontendController@singletest');
+route::get('singlepost/{artikel}', 'FrontendController@singlepost');
+//end route
 
 Auth::routes();
 
