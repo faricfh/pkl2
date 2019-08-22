@@ -85,16 +85,13 @@
         success : function(berhasil){
             $.each(berhasil.data.populer, function(key, value){
                 console.log(berhasil)
-                $(".oke").append(
+                $(".populer").append(
                 `
-                <div class="single-games-slide">
-                    <img src="/assets/img/artikel/${value.foto}" alt="" style="width:200px; height:400px">
-                    <div class="slide-text">
-                        <a href="singlepost/${value.slug}" class="game-title">${value.judul}</a>
-                        <div class="meta-data">
-                            <a href="#">User: 9.1/10</a>
-                            <a href="#">${value.kategori}</a>
-                        </div>
+                <div class="col-12 col-md-4">
+                    <div>
+                        <img src="/assets/img/artikel/${value.foto}" height="500px" width="500px">
+                        <a href="singlepost/${value.slug}" class="btn egames-btn mt-30">${value.judul}</a>
+
                     </div>
                 </div>
                 `

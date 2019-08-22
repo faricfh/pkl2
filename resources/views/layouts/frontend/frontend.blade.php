@@ -115,66 +115,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- Single Footer Widget -->
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="single-footer-widget mb-70 wow fadeInUp" data-wow-delay="300ms">
-                            <div class="widget-title">
-                                <h4>Game Reviews</h4>
-                            </div>
-                            <div class="widget-content">
-                                <nav>
-                                    <ul>
-                                        <li><a href="#">Doom</a></li>
-                                        <li><a href="#">Grand Theft Auto</a></li>
-                                        <li><a href="#">Bloodborne</a></li>
-                                        <li><a href="#">God of war</a></li>
-                                        <li><a href="#">Persona 5</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Single Footer Widget -->
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="single-footer-widget mb-70 wow fadeInUp" data-wow-delay="500ms">
-                            <div class="widget-title">
-                                <h4>Usefull Links</h4>
-                            </div>
-                            <div class="widget-content">
-                                <nav>
-                                    <ul>
-                                        <li><a href="#">Testimanials</a></li>
-                                        <li><a href="#">Reviews</a></li>
-                                        <li><a href="#">New Games</a></li>
-                                        <li><a href="#">Forum</a></li>
-                                        <li><a href="#">Contact</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Single Footer Widget -->
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="single-footer-widget mb-70 wow fadeInUp" data-wow-delay="700ms">
-                            <div class="widget-title">
-                                <h4>What’s new</h4>
-                            </div>
-                            <div class="widget-content">
-                                <nav>
-                                    <ul>
-                                        <li><a href="#">Doom</a></li>
-                                        <li><a href="#">Grand Theft Auto</a></li>
-                                        <li><a href="#">Bloodborne</a></li>
-                                        <li><a href="#">God of war</a></li>
-                                        <li><a href="#">Persona 5</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

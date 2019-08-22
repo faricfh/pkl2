@@ -20,7 +20,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <!-- Articles Post Area -->
-            <div class="col-12 col-lg-8">
+            <div class="col-12 col-lg-8" id="posts">
                 <div class="mt-100">
 
                     <!-- *** Single Articles Area *** -->
@@ -29,7 +29,7 @@
                     </div>
 
                     <!-- ### Pagination Area ### -->
-                    <nav aria-label="Page navigation example">
+                    <nav aria-label="Page navigation example" id="oke">
                         <ul class="pagination mt-100">
                             {{ $artikel->links() }}
                         </ul>
@@ -70,23 +70,26 @@
     <div class="container">
         <div class="row">
             <!-- Article Thumbnail -->
+            @foreach ($data as $data1)
             <div class="col-12 col-lg-6">
-                <div class="article-thumbnail mb-100">
-                    <img src="{{ asset('assets/frontend/img/bg-img/4.jpg') }}" alt="">
-                </div>
-            </div>
-            <!-- Article Content -->
-            <div class="col-12 col-lg-6">
-                <div class="article-content mb-100">
-                    <a href="single-post.html" class="post-title">Sony’s new releases for 2018</a>
-                    <div class="post-meta">
-                        <a href="#" class="post-date">July 12, 2018</a>
-                        <a href="#" class="post-comments">2 Comments</a>
+                    <div class="article-thumbnail mb-100">
+                        <img src="/assets/img/artikel/{{ $data1->foto }}" alt="">
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris velit arcu, scelerisque dignissim massa quis, mattis facilisis erat. Aliquam erat volutpat. Sed efficitur diam. Eenean ut eros in ligula mollis lacinia eu in metus. In diam leo, convallis id nisi sed, mollis malesuada arcu. Aenean nisi tellus, posuere quis quam nec, mattis tempor dui. Suspendisse non ante mollis, fermentum erat non, fermentum neque. Phasellus vulputate, odio sit amet rhoncus interdum, est est condimentum velit, non condimentum lectus sapien id ante. Nullam sed quam hendrerit, cursus augue at, ultricies erat. Nulla sed pharetra ligula.</p>
-                    <a href="#" class="btn egames-btn mt-50">Read More</a>
                 </div>
-            </div>
+                <!-- Article Content -->
+                <div class="col-12 col-lg-6">
+                    <div class="article-content mb-100">
+                        <a href="single-post.html" class="post-title">{{ $data1->judul }}</a>
+                        <div class="post-meta">
+                            <a href="#" class="post-date">{{ $data1->created_at }}</a>
+                            <a href="#" class="post-comments"></a>
+                        </div>
+                        <p>{!! str_limit($data1->konten, 300) !!}</p>
+                        <a href="singlepost/{{ $data1->slug }}" class="btn egames-btn mt-50">Baca</a>
+                    </div>
+                </div>
+            @endforeach
+
         </div>
     </div>
 </section>

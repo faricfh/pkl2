@@ -43,112 +43,16 @@
 
                         <!-- Single Widget Area -->
                         <div class="single-widget-area video-widget">
-                            <!-- Single Video Widget -->
-                            <div class="single-video-widget d-flex">
-                                <div class="video-thumbnail">
-                                    <img src="{{ asset('assets/frontend/img/bg-img/14.jpg') }}" alt="">
-                                </div>
-                                <div class="video-text">
-                                    <a href="#" class="video-title">Assemble Your Squad and Join the Battle</a>
-                                    <span>Nintendo Wii, PS4, XBox 360</span>
-                                </div>
-                                <div class="video-rating">8.3/10</div>
-                            </div>
+                            <div class="random">
 
-                            <!-- Single Video Widget -->
-                            <div class="single-video-widget d-flex">
-                                <div class="video-thumbnail">
-                                    <img src="{{ asset('assets/frontend/img/bg-img/15.jpg') }}" alt="">
-                                </div>
-                                <div class="video-text">
-                                    <a href="#" class="video-title">Tips to improve your game</a>
-                                    <span>Nintendo Wii, PS4, XBox 360</span>
-                                </div>
-                                <div class="video-rating">8.3/10</div>
-                            </div>
-
-                            <!-- Single Video Widget -->
-                            <div class="single-video-widget d-flex">
-                                <div class="video-thumbnail">
-                                    <img src="{{ asset('assets/frontend/img/bg-img/16.jpg') }}" alt="">
-                                </div>
-                                <div class="video-text">
-                                    <a href="#" class="video-title">Game reviews: the best of 2018</a>
-                                    <span>Nintendo Wii, PS4, XBox 360</span>
-                                </div>
-                                <div class="video-rating">8.3/10</div>
-                            </div>
-
-                            <!-- Single Video Widget -->
-                            <div class="single-video-widget d-flex">
-                                <div class="video-thumbnail">
-                                    <img src="{{ asset('assets/frontend/img/bg-img/17.jpg') }}" alt="">
-                                </div>
-                                <div class="video-text">
-                                    <a href="#" class="video-title">Assemble Your Squad and Join the Battle</a>
-                                    <span>Nintendo Wii, PS4, XBox 360</span>
-                                </div>
-                                <div class="video-rating">8.3/10</div>
-                            </div>
-
-                            <!-- Single Video Widget -->
-                            <div class="single-video-widget d-flex">
-                                <div class="video-thumbnail">
-                                    <img src="{{ asset('assets/frontend/img/bg-img/18.jpg') }}" alt="">
-                                </div>
-                                <div class="video-text">
-                                    <a href="#" class="video-title">New to gaming? Here are some tips</a>
-                                    <span>Nintendo Wii, PS4, XBox 360</span>
-                                </div>
-                                <div class="video-rating">8.3/10</div>
                             </div>
                         </div>
 
                         <!-- Single Widget Area -->
                         <div class="single-widget-area post-widget">
                             <h4 class="widget-title">Latest Posts</h4>
-                            <!-- Single Post Widget -->
-                            <div class="single-post-area d-flex">
-                                <div class="blog-thumbnail">
-                                    <img src="{{ asset('assets/frontend/img/bg-img/19.jpg') }}" alt="">
-                                </div>
-                                <div class="blog-content">
-                                    <a href="#" class="post-title">New to gaming? Here are some tips</a>
-                                    <span>Nintendo Wii, PS4, XBox 360</span>
-                                </div>
-                            </div>
+                            <div class="postlatest">
 
-                            <!-- Single Post Widget -->
-                            <div class="single-post-area d-flex">
-                                <div class="blog-thumbnail">
-                                    <img src="{{ asset('assets/frontend/img/bg-img/20.jpg') }}" alt="">
-                                </div>
-                                <div class="blog-content">
-                                    <a href="#" class="post-title">Gaming at a new lever: 2018 new release</a>
-                                    <span>Nintendo Wii, PS4, XBox 360</span>
-                                </div>
-                            </div>
-
-                            <!-- Single Post Widget -->
-                            <div class="single-post-area d-flex">
-                                <div class="blog-thumbnail">
-                                    <img src="{{ asset('assets/frontend/img/bg-img/21.jpg') }}" alt="">
-                                </div>
-                                <div class="blog-content">
-                                    <a href="#" class="post-title">2018 Comicon: See the lastest news</a>
-                                    <span>Nintendo Wii, PS4, XBox 360</span>
-                                </div>
-                            </div>
-
-                            <!-- Single Post Widget -->
-                            <div class="single-post-area d-flex">
-                                <div class="blog-thumbnail">
-                                    <img src="{{ asset('assets/frontend/img/bg-img/22.jpg') }}" alt="">
-                                </div>
-                                <div class="blog-content">
-                                    <a href="#" class="post-title">New to gaming? Here are some tips</a>
-                                    <span>Nintendo Wii, PS4, XBox 360</span>
-                                </div>
                             </div>
                         </div>
 

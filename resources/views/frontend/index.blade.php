@@ -79,13 +79,11 @@
         </div>
     </div>
 
-    <div class="tab-content wow fadeInUp" data-wow-delay="500ms" id="myTabContent">
-        <div class="tab-pane fade show active" id="popular" role="tabpanel" aria-labelledby="popular-tab">
-            <!-- Popular Games Slideshow -->
-            <div class="popular-games-slideshow owl-carousel">
-                <div class="oke">
+    <div>
+        <div class="container">
+            <div class="row populer">
+                <!-- Single Games Area -->
 
-                </div>
             </div>
         </div>
     </div>
@@ -109,62 +107,6 @@
                     <div class="tab-pane fade show active" id="video-1" role="tabpanel" aria-labelledby="video1">
                         <div class="video-playground bg-img" style="background-image: url(assets/frontend/img/bg-img/45.jpg);">
                            <!-- Play Button -->
-                            <div class="play-btn">
-                                <a href="https://www.youtube.com/watch?v=7HKoqNJtMTQ" class="play-button"><img src="{{ asset('assets/frontend/img/core-img/play.png') }}" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="video-2" role="tabpanel" aria-labelledby="video2">
-                        <div class="video-playground bg-img" style="background-image: url(assets/frontend/img/bg-img/46.jpg);">
-                            <!-- Play Button -->
-                            <div class="play-btn">
-                                <a href="https://www.youtube.com/watch?v=7HKoqNJtMTQ" class="play-button"><img src="{{ asset('assets/frontend/img/core-img/play.png') }}" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="video-3" role="tabpanel" aria-labelledby="video3">
-                        <div class="video-playground bg-img" style="background-image: url(assets/frontend/img/bg-img/47.jpg);">
-                            <!-- Play Button -->
-                            <div class="play-btn">
-                                <a href="https://www.youtube.com/watch?v=7HKoqNJtMTQ" class="play-button"><img src="{{ asset('assets/frontend/img/core-img/play.png') }}" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="video-4" role="tabpanel" aria-labelledby="video4">
-                        <div class="video-playground bg-img" style="background-image: url(assets/frontend/img/bg-img/48.jpg);">
-                            <!-- Play Button -->
-                            <div class="play-btn">
-                                <a href="https://www.youtube.com/watch?v=7HKoqNJtMTQ" class="play-button"><img src="{{ asset('assets/frontend/img/core-img/play.png') }}" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="video-5" role="tabpanel" aria-labelledby="video5">
-                        <div class="video-playground bg-img" style="background-image: url(assets/frontend/img/bg-img/49.jpg);">
-                            <!-- Play Button -->
-                            <div class="play-btn">
-                                <a href="https://www.youtube.com/watch?v=7HKoqNJtMTQ" class="play-button"><img src="{{ asset('assets/frontend/img/core-img/play.png') }}" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="video-6" role="tabpanel" aria-labelledby="video6">
-                        <div class="video-playground bg-img" style="background-image: url(assets/frontend/img/bg-img/45.jpg);">
-                            <!-- Play Button -->
-                            <div class="play-btn">
-                                <a href="https://www.youtube.com/watch?v=7HKoqNJtMTQ" class="play-button"><img src="{{ asset('assets/frontend/img/core-img/play.png') }}" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="video-7" role="tabpanel" aria-labelledby="video7">
-                        <div class="video-playground bg-img" style="background-image: url(assets/frontend/img/bg-img/46.jpg);">
-                            <!-- Play Button -->
-                            <div class="play-btn">
-                                <a href="https://www.youtube.com/watch?v=7HKoqNJtMTQ" class="play-button"><img src="{{ asset('assets/frontend/img/core-img/play.png') }}" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="video-8" role="tabpanel" aria-labelledby="video8">
-                        <div class="video-playground bg-img" style="background-image: url(assets/frontend/img/bg-img/47.jpg);">
-                            <!-- Play Button -->
                             <div class="play-btn">
                                 <a href="https://www.youtube.com/watch?v=7HKoqNJtMTQ" class="play-button"><img src="{{ asset('assets/frontend/img/core-img/play.png') }}" alt=""></a>
                             </div>

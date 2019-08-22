@@ -117,7 +117,8 @@ class FrontendController extends Controller
 
     public function post(){
         $artikel = Artikel::orderBy('created_at','desc')->paginate(8);
-        return view('frontend.post',compact('artikel'));
+        $data = Artikel::inRandomOrder()->take(1)->get();
+        return view('frontend.post',compact('artikel','data'));
     }
 
      // post TAG
@@ -138,8 +139,9 @@ class FrontendController extends Controller
          $artikel = $kategori->artikel()->latest()->paginate(8);
          $popular = Artikel::inRandomOrder()->take(5)->get();
          $tag = Tag::all();
+         $data = Artikel::inRandomOrder()->take(1)->get();
 
-         return view('frontend.post',compact('artikel'));
+         return view('frontend.post',compact('artikel','data'));
      }
 
      public function kategori()

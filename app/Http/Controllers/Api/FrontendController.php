@@ -20,9 +20,22 @@ class FrontendController extends Controller
     public function singlepost(Artikel $artikel)
     {
         $artikel = Artikel::with('user', 'kategori','tag')->where('slug', '=', $artikel->slug)->first();
+        $latest = Artikel::select('artikels.judul', 'artikels.slug', 'foto', 'konten','artikels.created_at', 'kategoris.nama_kategori as kategori',
+        'users.name as author')
+        ->join('users', 'users.id', '=', 'artikels.id_user')
+        ->join('kategoris', 'kategoris.id', '=', 'artikels.id_kategori')->orderBy('created_at', 'desc')->take(4)->get();
+        $random = Artikel::select('artikels.judul', 'artikels.slug', 'foto', 'konten','artikels.created_at', 'kategoris.nama_kategori as kategori',
+        'users.name as author')
+        ->join('users', 'users.id', '=', 'artikels.id_user')
+        ->join('kategoris', 'kategoris.id', '=', 'artikels.id_kategori')->inRandomOrder()->take(8)->get();
         $response = [
             'success' => true,
-            'data' => $artikel,
+            'data' =>
+            [
+                'artikel' => $artikel,
+                'latest' => $latest,
+                'random' => $random
+            ],
             'message' => 'Berhasil.'
         ];
         // dd($artikel);
@@ -51,10 +64,10 @@ class FrontendController extends Controller
         ->join('users', 'users.id', '=', 'artikels.id_user')
         ->join('kategoris', 'kategoris.id', '=', 'artikels.id_kategori')->inRandomOrder()->take(8)->get();
 
-        $populer = Artikel::select('artikels.judul', 'artikels.slug', 'foto', 'konten', 'kategoris.nama_kategori as kategori',
+        $populer = Artikel::select('artikels.judul', 'artikels.slug', 'foto', 'konten','artikels.created_at', 'kategoris.nama_kategori as kategori',
                 'users.name as author')
         ->join('users', 'users.id', '=', 'artikels.id_user')
-        ->join('kategoris', 'kategoris.id', '=', 'artikels.id_kategori')->take(2)->get();
+        ->join('kategoris', 'kategoris.id', '=', 'artikels.id_kategori')->inRandomOrder()->take(3)->get();
 
         $kategori = Kategori::all();
         $b_kategori = Kategori::all();
