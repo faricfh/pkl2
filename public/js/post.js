@@ -69,7 +69,7 @@
                         <img src="/assets/img/artikel/${value.foto}" alt="">
                     </div>
                     <div class="video-text">
-                        <a href="#" class="video-title">${value.judul}</a>
+                        <a href="singlepost/${value.slug}" class="video-title">${value.judul}</a>
                         <span><h8s>${value.kategori}</h8s> - By ${value.author} - ${value.created_at}</span>
                     </div>
                 </div>
