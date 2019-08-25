@@ -1,15 +1,14 @@
-var url = 'api/frontend';
-
+var url = "api/frontend";
 
 // latest
 $.ajax({
     url: url,
-    datatype : 'json',
-    success : function(berhasil){
-        $.each(berhasil.data.latest, function(key, value){
-            console.log(berhasil)
+    datatype: "json",
+    success: function(berhasil) {
+        $.each(berhasil.data.latest, function(key, value) {
+            console.log(berhasil);
             $(".latest").append(
-            `
+                `
             <div class="single-articles-area style-2 d-flex flex-wrap mb-30 wow fadeInUp" data-wow-delay="300ms">
                 <div class="article-thumbnail">
                     <img src="/assets/img/artikel/${value.foto}" alt="">
@@ -32,12 +31,12 @@ $.ajax({
 // kategori
 $.ajax({
     url: url,
-    datatype : 'json',
-    success : function(berhasil){
-        $.each(berhasil.data.kategori, function(key, value){
-            console.log(berhasil)
+    datatype: "json",
+    success: function(berhasil) {
+        $.each(berhasil.data.kategori, function(key, value) {
+            console.log(berhasil);
             $(".kategori").append(
-            `
+                `
             <div class="single-contact-info d-flex align-items-center">
             <a href="post/${value.slug}">
                 <div class="title">
@@ -54,12 +53,12 @@ $.ajax({
 //list random
 $.ajax({
     url: url,
-    datatype : 'json',
-    success : function(berhasil){
-        $.each(berhasil.data.list_random, function(key, value){
-            console.log(berhasil)
+    datatype: "json",
+    success: function(berhasil) {
+        $.each(berhasil.data.list_random, function(key, value) {
+            console.log(berhasil);
             $(".list_random").append(
-            `
+                `
             <a class="nav-link" id="video1" data-toggle="pill" href="singlepost/${value.slug}" role="tab" aria-controls="video-2" aria-selected="false">
                 <div class="single-video-widget d-flex wow fadeInUp" data-wow-delay="200ms">
                     <div class="video-thumbnail">
@@ -81,12 +80,12 @@ $.ajax({
 
 $.ajax({
     url: url,
-    datatype : 'json',
-    success : function(berhasil){
-        $.each(berhasil.data.populer, function(key, value){
-            console.log(berhasil)
+    datatype: "json",
+    success: function(berhasil) {
+        $.each(berhasil.data.populer, function(key, value) {
+            console.log(berhasil);
             $(".populer").append(
-            `
+                `
             <div class="col-12 col-md-4">
                 <div>
                     <img src="/assets/img/artikel/${value.foto}" height="300px" width="300px">
@@ -99,7 +98,3 @@ $.ajax({
         });
     }
 });
-
-
-
-

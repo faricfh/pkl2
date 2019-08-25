@@ -35,7 +35,7 @@
         method: "GET",
         datatype: "json",
         success: function(berhasil) {
-            $.each(berhasil.data.latest, function(key, value) {
+            $.each(berhasil.data.latest2, function(key, value) {
                 console.log(berhasil);
                 $(".postlatest").append(
                     `
@@ -59,7 +59,7 @@
         method: "GET",
         datatype: "json",
         success: function(berhasil) {
-            $.each(berhasil.data.random, function(key, value) {
+            $.each(berhasil.data.random2, function(key, value) {
                 console.log(berhasil);
                 $(".random").append(
                     `

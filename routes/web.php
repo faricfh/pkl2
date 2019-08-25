@@ -15,21 +15,12 @@
 Route::get('/', function () {
     return view('frontend.index');
 });
-Route::get('/about', function () {
-    return view('frontend.about');
-});
-Route::get('/blog-detail', function () {
-    return view('frontend.blog-detail');
-});
+
 Route::get('/contact', function () {
     return view('frontend.contact');
 });
-Route::get('/blog-list', function () {
-    return view('frontend.blog-list');
-});
 
 route::get('kategori', 'FrontendController@kategori');
-// route::get('post/{tag}', 'FrontendController@posttag');
 route::get('post/{kategori}', 'FrontendController@postkategori');
 route::get('post', 'FrontendController@post');
 route::get('singlepost/', 'FrontendController@singletest');
@@ -58,4 +49,3 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::resource('artikel', 'Artikel_Controller');
     Route::resource('review', 'Review_Controller');
 });
-
