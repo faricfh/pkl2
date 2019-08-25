@@ -25,12 +25,12 @@
                         <div class="col-12 col-lg-4">
                             <div class="contact-content mb-100">
                                 <a href="#" class="mb-50 d-block"><img src="{{ asset('image/logo.png') }}" width="200px" height="200px"></a>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris velit arcu, scelerisque dignissim massa quis, mattis facilisis erat.</p>
+                                <p></p>
                             </div>
                         </div>
                         <div class="col-12 col-lg-4">
                             <div class="contact-content mb-100">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris velit arcu, scelerisque dignissim massa quis, mattis facilisis erat. Aliquam erat volutpat. Sed efficitur diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris velit arcu, scelerisque.</p>
+                                <p>Hubungi lah kami jiga ada sesuatu!</p>
                             </div>
                         </div>
                         <div class="col-12 col-lg-4">

@@ -64,7 +64,7 @@
         <div class="row">
             <div class="col-12">
                 <!-- Title -->
-                <h2 class="section-title mb-70 wow fadeInUp" data-wow-delay="100ms">This Month’s Pick</h2>
+                <h2 class="section-title mb-70 wow fadeInUp" data-wow-delay="100ms"></h2>
             </div>
         </div>
 
