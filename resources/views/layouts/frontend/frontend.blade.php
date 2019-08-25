@@ -12,7 +12,7 @@
     <title>Egames - Gaming Magazine Template</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="{{ asset('assets/frontend/img/core-img/favicon.ico') }}">
+    <link rel="icon" href="{{ asset('image/logo.png') }}">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="{{  asset('assets/frontend/style.css') }}">
@@ -39,7 +39,7 @@
                     <div class="col-12 d-flex align-items-center justify-content-between">
                         <!-- Logo Area -->
                         <div class="logo">
-                            <a href="{{ url('/') }}"><img src="{{ asset('assets/frontend/img/core-img/logo.png') }}" alt=""></a>
+                            <a href="{{ url('/') }}"><img src="{{ asset('image/logo.png') }}" width="200px" height="200px"></a>
                         </div>
                     </div>
                 </div>
@@ -108,7 +108,7 @@
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="single-footer-widget mb-70 wow fadeInUp" data-wow-delay="100ms">
                             <div class="widget-title">
-                                <a href="index.html"><img src="{{ asset('assets/frontend/img/core-img/logo2.png') }}" alt=""></a>
+                                <a href="index.html"><img src="{{ asset('image/logo.png') }}" width="200px" height="200px"></a>
                             </div>
                             <div class="widget-content">
                                 <p>Carilah game mu disini yang telah kami rekomendasikan</p>

@@ -24,7 +24,7 @@
                     <div class="row">
                         <div class="col-12 col-lg-4">
                             <div class="contact-content mb-100">
-                                <a href="#" class="mb-50 d-block"><img src="{{ asset('assets/frontend/img/core-img/logo.png') }}" alt=""></a>
+                                <a href="#" class="mb-50 d-block"><img src="{{ asset('image/logo.png') }}" width="200px" height="200px"></a>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris velit arcu, scelerisque dignissim massa quis, mattis facilisis erat.</p>
                             </div>
                         </div>
