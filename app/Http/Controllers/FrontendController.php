@@ -106,8 +106,8 @@ class FrontendController extends Controller
 
     public function singlepost(Artikel $artikel)
     {
-
-        return view('frontend.singlepost');
+        $artikel = Artikel::with('user', 'kategori','tag')->where('slug', '=', $artikel->slug)->first();
+        return view('frontend.singlepost',compact('artikel'));
     }
 
     public function singletest(){
@@ -116,29 +116,18 @@ class FrontendController extends Controller
     }
 
     public function post(){
-        $artikel = Artikel::orderBy('created_at','desc')->paginate(8);
+        $artikel = Artikel::select('artikels.judul', 'artikels.slug', 'foto', 'konten','artikels.created_at', 'kategoris.nama_kategori as kategori','users.name as author')
+        ->join('users', 'users.id', '=', 'artikels.id_user')
+        ->join('kategoris', 'kategoris.id', '=', 'artikels.id_kategori')->paginate(8);
         $data = Artikel::inRandomOrder()->take(1)->get();
         return view('frontend.post',compact('artikel','data'));
     }
-
-     // post TAG
-    //  public function posttag(Tag $tag)
-    //  {
-    //      $kategori = Kategori::all();
-    //      $artikel = $tag->artikel()->latest()->paginate(8);
-    //      $popular = Artikel::inRandomOrder()->take(5)->get();
-    //      $tag = Tag::all();
-
-    //      return view('frontend.post',compact('artikel'));
-    //  }
 
      // post KATEGORI
      public function postkategori(Kategori $kategori)
      {
 
          $artikel = $kategori->artikel()->latest()->paginate(8);
-         $popular = Artikel::inRandomOrder()->take(5)->get();
-         $tag = Tag::all();
          $data = Artikel::inRandomOrder()->take(1)->get();
 
          return view('frontend.post',compact('artikel','data'));

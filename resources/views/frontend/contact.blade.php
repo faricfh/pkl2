@@ -2,7 +2,7 @@
 <!-- Breadcrumb -->
 @section('content')
     <!-- ##### Breadcrumb Area Start ##### -->
-    <section class="breadcrumb-area bg-img bg-overlay" style="background-image: url(assets/frontend/img/bg-img/23.jpg);">
+    <section class="breadcrumb-area bg-img bg-overlay" style="background-image: url('image/banner.jpg');">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <!-- Breadcrumb Text -->

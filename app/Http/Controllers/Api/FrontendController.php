@@ -70,9 +70,6 @@ class FrontendController extends Controller
         ->join('kategoris', 'kategoris.id', '=', 'artikels.id_kategori')->inRandomOrder()->take(3)->get();
 
         $kategori = Kategori::all();
-        $b_kategori = Kategori::all();
-        $tag = Tag::all();
-        $user = User::all();
         $respons = [
             'success' => true,
             'data' => [
@@ -80,10 +77,8 @@ class FrontendController extends Controller
             'list_random' => $list_random,
             'populer' => $populer,
             'kategori' => $kategori,
-            'tag' => $tag,
-            'user' => $user,
             'post' => $post,
-            'b_kategori' => $b_kategori
+
         ],
         'message' => 'Berhasil'
         ];
@@ -170,13 +165,14 @@ class FrontendController extends Controller
                 'users.name as author')
         ->join('users', 'users.id', '=', 'artikels.id_user')
         ->join('kategoris', 'kategoris.id', '=', 'artikels.id_kategori')->inRandomOrder()->take(8)->get();
-
+        $kategori = Kategori::all();
         $response = [
             'success' => true,
             'data' => [
                 'artikel' => $artikel,
                 'latest' => $latest,
-                'random' => $random
+                'random' => $random,
+                'kategori' => $kategori
             ],
             'message' => 'Berhasil.'
         ];
@@ -210,6 +206,4 @@ class FrontendController extends Controller
         return response()->json($response, 200);
 
     }
-
-
 }

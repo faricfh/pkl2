@@ -1,13 +1,13 @@
 @extends('layouts.frontend.frontend')
 @section('content')
 <!-- ##### Breadcrumb Area Start ##### -->
-<section class="breadcrumb-area bg-img bg-overlay" style="background-image: url(assets/frontend/img/bg-img/3.jpg);">
+<section class="breadcrumb-area bg-img bg-overlay" style="background-image: url('image/banner.jpg');">
     <div class="container h-100">
         <div class="row h-100 align-items-center">
             <!-- Breadcrumb Text -->
             <div class="col-12">
                 <div class="breadcrumb-text">
-                    <h2>Kategori</h2>
+                    <h2>Artikel</h2>
                 </div>
             </div>
         </div>
@@ -24,8 +24,21 @@
                 <div class="mt-100">
 
                     <!-- *** Single Articles Area *** -->
-                    <div class="artikel">
-
+                    <div>
+                        @foreach ($artikel as $datas)
+                        <div class="single-articles-area d-flex flex-wrap mb-30">
+                                <div class="article-thumbnail">
+                                    <img src="/assets/img/artikel/{{ $datas->foto }}" alt="">
+                                </div>
+                                <div class="article-content">
+                                    <a href="{{ url('singlepost/'.$datas->slug) }}" class="post-title">{{ $datas->judul }}</a>
+                                    <div class="post-meta">
+                                        <a href="#" class="post-date">{{ $datas->created_at->format('d - m - Y') }}</a>
+                                    </div>
+                                    <p>{!! str_limit($datas->konten,250) !!}</p>
+                                </div>
+                            </div>
+                        @endforeach
                     </div>
 
                     <!-- ### Pagination Area ### -->
@@ -85,7 +98,7 @@
                             <a href="#" class="post-comments"></a>
                         </div>
                         <p>{!! str_limit($data1->konten, 300) !!}</p>
-                        <a href="singlepost/{{ $data1->slug }}" class="btn egames-btn mt-50">Baca</a>
+                        <a href="{{ url('singlepost/'.$datas->slug) }}" class="btn egames-btn mt-50">Baca</a>
                     </div>
                 </div>
             @endforeach
